@@ -1,0 +1,195 @@
+[gd_scene load_steps=6 format=3 uid="uid://daalcexf040y6"]
+
+[ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
+[ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
+[ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="3_qwr6x"]
+[ext_resource type="PackedScene" uid="uid://dfhkdk1dveuxf" path="res://Saves/YEL.tscn" id="4_dd3sd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2bqej"]
+radius = 39.3847
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(60, 35)
+scale = Vector2(0.253906, 0.246094)
+script = ExtResource("1_mraw2")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-98.4616, 27.1942)
+scale = Vector2(2.46154, 2.46154)
+texture = ExtResource("2_mkeex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-98.4617, 28.4444)
+shape = SubResource("CircleShape2D_2bqej")
+
+[node name="canvas" type="Node2D" parent="."]
+
+[node name="StaticBody2D" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 0)
+
+[node name="StaticBody2D2" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 30)
+
+[node name="StaticBody2D3" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(106, 60)
+
+[node name="StaticBody2D4" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(84, 120)
+
+[node name="StaticBody2D5" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 120)
+
+[node name="StaticBody2D6" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 120)
+
+[node name="StaticBody2D7" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 120)
+
+[node name="StaticBody2D8" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(84, 60)
+
+[node name="StaticBody2D9" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 60)
+
+[node name="StaticBody2D10" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 60)
+
+[node name="StaticBody2D11" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 120)
+
+[node name="StaticBody2D12" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 0)
+
+[node name="StaticBody2D13" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 30)
+
+[node name="StaticBody2D14" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 60)
+
+[node name="StaticBody2D15" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 90)
+
+[node name="StaticBody2D16" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 0)
+
+[node name="StaticBody2D17" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(106, 120)
+
+[node name="StaticBody2D18" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 150)
+
+[node name="StaticBody2D19" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 180)
+
+[node name="StaticBody2D20" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 210)
+
+[node name="StaticBody2D21" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 390)
+
+[node name="StaticBody2D22" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 420)
+
+[node name="StaticBody2D23" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 450)
+
+[node name="StaticBody2D24" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 360)
+
+[node name="StaticBody2D26" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 270)
+
+[node name="StaticBody2D27" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 300)
+
+[node name="StaticBody2D28" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-4, 330)
+
+[node name="StaticBody2D29" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 150)
+
+[node name="StaticBody2D30" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 180)
+
+[node name="StaticBody2D31" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 210)
+
+[node name="StaticBody2D32" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 390)
+
+[node name="StaticBody2D33" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 420)
+
+[node name="StaticBody2D34" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 450)
+
+[node name="StaticBody2D35" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 360)
+
+[node name="StaticBody2D37" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 270)
+
+[node name="StaticBody2D38" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 300)
+
+[node name="StaticBody2D39" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(18, 330)
+
+[node name="StaticBody2D40" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 150)
+
+[node name="StaticBody2D43" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 390)
+
+[node name="StaticBody2D44" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 420)
+
+[node name="StaticBody2D45" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 450)
+
+[node name="StaticBody2D46" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 360)
+
+[node name="StaticBody2D48" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 270)
+
+[node name="StaticBody2D49" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 300)
+
+[node name="StaticBody2D50" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(40, 330)
+
+[node name="StaticBody2D51" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 150)
+
+[node name="StaticBody2D53" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 210)
+
+[node name="StaticBody2D54" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 390)
+
+[node name="StaticBody2D55" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 420)
+
+[node name="StaticBody2D56" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 450)
+
+[node name="StaticBody2D57" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 360)
+
+[node name="StaticBody2D58" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 240)
+
+[node name="StaticBody2D59" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 270)
+
+[node name="StaticBody2D60" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 300)
+
+[node name="StaticBody2D61" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(62, 330)
+
+[node name="StaticBody2D25" parent="canvas" instance=ExtResource("4_dd3sd")]
+position = Vector2(-3, 236)

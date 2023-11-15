@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://7db52q5hgsxx"]
+
+[ext_resource type="Texture2D" uid="uid://dtpcbhbcq25d2" path="res://Sprites/DUBOK.png" id="1_tq4xw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_samid"]
+size = Vector2(22, 30)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("1_tq4xw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(17, 15)
+shape = SubResource("RectangleShape2D_samid")
