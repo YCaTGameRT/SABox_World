@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cykj0f638qw8x" path="res://Sprites/BOXMan.png" id="1_bp6ny"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="2_x4imd"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_potbe"]
-size = Vector2(247, 248.5)
+[sub_resource type="CircleShape2D" id="CircleShape2D_2bqej"]
+radius = 123.204
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,6 +14,8 @@ scale = Vector2(0.253906, 0.246094)
 texture = ExtResource("1_bp6ny")
 script = ExtResource("2_x4imd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
-position = Vector2(-3.5, 3.75)
-shape = SubResource("RectangleShape2D_potbe")
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/CharacterBody2D"]
+position = Vector2(-5.9077, 2.03174)
+shape = SubResource("CircleShape2D_2bqej")
