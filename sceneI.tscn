@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://daalcexf040y6"]
+[gd_scene load_steps=6 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
 [ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
@@ -23,6 +23,9 @@ texture = ExtResource("2_mkeex")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-98.4617, 28.4444)
 shape = SubResource("CircleShape2D_2bqej")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(2.4, 2.4)
 
 [node name="canvas" type="Node2D" parent="."]
 
