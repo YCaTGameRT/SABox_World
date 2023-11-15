@@ -8,14 +8,15 @@ radius = 123.204
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(35.5, 34.5)
 scale = Vector2(0.253906, 0.246094)
-texture = ExtResource("1_bp6ny")
 script = ExtResource("2_x4imd")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Sprite2D"]
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(1, 1)
+texture = ExtResource("1_bp6ny")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-5.9077, 2.03174)
 shape = SubResource("CircleShape2D_2bqej")
