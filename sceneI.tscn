@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=8 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
 [ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
 [ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="3_qwr6x"]
 [ext_resource type="PackedScene" uid="uid://dfhkdk1dveuxf" path="res://Saves/YEL.tscn" id="4_dd3sd"]
 [ext_resource type="PackedScene" uid="uid://cx7d1wdwq6li" path="res://Saves/NPC1.tscn" id="5_tfxpy"]
+[ext_resource type="Texture2D" uid="uid://82h8d1mxibhk" path="res://Sprites/grass.png" id="6_4thk3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2bqej"]
 radius = 39.3847
@@ -1035,3 +1036,13 @@ position = Vector2(-28, -30)
 
 [node name="NPC1" parent="canvas" instance=ExtResource("5_tfxpy")]
 position = Vector2(-6, 240)
+
+[node name="background" type="Sprite2D" parent="."]
+
+[node name="Grass" type="Sprite2D" parent="."]
+z_index = -20
+texture_repeat = 2
+position = Vector2(598, 345)
+texture = ExtResource("6_4thk3")
+region_enabled = true
+region_rect = Rect2(0, 0, 2800, 2000)
