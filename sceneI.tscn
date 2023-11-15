@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=7 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
 [ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
 [ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="3_qwr6x"]
 [ext_resource type="PackedScene" uid="uid://dfhkdk1dveuxf" path="res://Saves/YEL.tscn" id="4_dd3sd"]
+[ext_resource type="PackedScene" uid="uid://cx7d1wdwq6li" path="res://Saves/NPC1.tscn" id="5_tfxpy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2bqej"]
 radius = 39.3847
@@ -30,170 +31,1007 @@ zoom = Vector2(2.4, 2.4)
 
 [node name="canvas" type="Node2D" parent="."]
 
-[node name="StaticBody2D" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 0)
+[node name="Oak" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 0)
 
-[node name="StaticBody2D2" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 30)
+[node name="Oak2" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 30)
 
-[node name="StaticBody2D3" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(106, 60)
+[node name="Oak3" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, 60)
 
-[node name="StaticBody2D4" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(84, 120)
+[node name="Oak4" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, 120)
 
-[node name="StaticBody2D5" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 120)
+[node name="Oak5" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 120)
 
-[node name="StaticBody2D6" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 120)
+[node name="Oak6" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 120)
 
-[node name="StaticBody2D7" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 120)
+[node name="Oak7" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 120)
 
-[node name="StaticBody2D8" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(84, 60)
+[node name="Oak8" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, 60)
 
-[node name="StaticBody2D9" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 60)
+[node name="Oak9" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 60)
 
-[node name="StaticBody2D10" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 60)
+[node name="Oak10" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 60)
 
-[node name="StaticBody2D11" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 120)
+[node name="Oak11" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 120)
 
-[node name="StaticBody2D12" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 0)
+[node name="Oak12" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 0)
 
-[node name="StaticBody2D13" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 30)
+[node name="Oak13" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 30)
 
-[node name="StaticBody2D14" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 60)
+[node name="Oak14" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 60)
 
-[node name="StaticBody2D15" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 90)
+[node name="Oak15" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 90)
 
-[node name="StaticBody2D16" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 0)
+[node name="Oak16" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 0)
 
-[node name="StaticBody2D17" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(106, 120)
+[node name="Oak17" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, 120)
 
-[node name="StaticBody2D18" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 150)
+[node name="Oak18" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 150)
 
-[node name="StaticBody2D19" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 180)
+[node name="Oak19" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 180)
 
-[node name="StaticBody2D20" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 210)
+[node name="Oak20" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 210)
 
-[node name="StaticBody2D21" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 390)
+[node name="Oak21" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 390)
 
-[node name="StaticBody2D22" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 420)
+[node name="Oak22" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 420)
 
-[node name="StaticBody2D23" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 450)
+[node name="Oak23" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 450)
 
-[node name="StaticBody2D24" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 360)
+[node name="Oak24" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 360)
 
-[node name="StaticBody2D26" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 270)
+[node name="Oak26" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 270)
 
-[node name="StaticBody2D27" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 300)
+[node name="Oak27" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 300)
 
-[node name="StaticBody2D28" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(-4, 330)
+[node name="Oak28" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 330)
 
-[node name="StaticBody2D29" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 150)
+[node name="Oak29" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 150)
 
-[node name="StaticBody2D30" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 180)
+[node name="Oak30" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 180)
 
-[node name="StaticBody2D31" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 210)
+[node name="Oak31" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 210)
 
-[node name="StaticBody2D32" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 390)
+[node name="Oak32" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 390)
 
-[node name="StaticBody2D33" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 420)
+[node name="Oak33" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 420)
 
-[node name="StaticBody2D34" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 450)
+[node name="Oak34" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 450)
 
-[node name="StaticBody2D35" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 360)
+[node name="Oak35" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 360)
 
-[node name="StaticBody2D37" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 270)
+[node name="Oak37" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 270)
 
-[node name="StaticBody2D38" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 300)
+[node name="Oak38" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 300)
 
-[node name="StaticBody2D39" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(18, 330)
+[node name="Oak39" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 330)
 
-[node name="StaticBody2D40" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 150)
+[node name="Oak40" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 150)
 
-[node name="StaticBody2D43" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 390)
+[node name="Oak43" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 390)
 
-[node name="StaticBody2D44" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 420)
+[node name="Oak44" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 420)
 
-[node name="StaticBody2D45" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 450)
+[node name="Oak45" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 450)
 
-[node name="StaticBody2D46" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 360)
+[node name="Oak46" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 360)
 
-[node name="StaticBody2D48" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 270)
+[node name="Oak48" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 270)
 
-[node name="StaticBody2D49" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 300)
+[node name="Oak49" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 300)
 
-[node name="StaticBody2D50" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(40, 330)
+[node name="Oak50" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 330)
 
-[node name="StaticBody2D51" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 150)
+[node name="Oak51" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 150)
 
-[node name="StaticBody2D53" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 210)
+[node name="Oak53" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 210)
 
-[node name="StaticBody2D54" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 390)
+[node name="Oak54" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 390)
 
-[node name="StaticBody2D55" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 420)
+[node name="Oak55" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 420)
 
-[node name="StaticBody2D56" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 450)
+[node name="Oak56" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 450)
 
-[node name="StaticBody2D57" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 360)
+[node name="Oak57" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 360)
 
-[node name="StaticBody2D58" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 240)
+[node name="Oak58" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 240)
 
-[node name="StaticBody2D59" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 270)
+[node name="Oak59" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 270)
 
-[node name="StaticBody2D60" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 300)
+[node name="Oak60" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 300)
 
-[node name="StaticBody2D61" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(62, 330)
+[node name="Oak61" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 330)
 
-[node name="StaticBody2D25" parent="canvas" instance=ExtResource("4_dd3sd")]
-position = Vector2(-3, 236)
+[node name="maybeOak25" parent="canvas" instance=ExtResource("4_dd3sd")]
+position = Vector2(17, 236)
+
+[node name="Oak36" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 600)
+
+[node name="Oak41" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 630)
+
+[node name="Oak47" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 570)
+
+[node name="Oak52" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 480)
+
+[node name="Oak62" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 510)
+
+[node name="Oak63" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 540)
+
+[node name="Oak42" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 120)
+
+[node name="Oak64" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 0)
+
+[node name="Oak65" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 30)
+
+[node name="Oak66" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 60)
+
+[node name="Oak67" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 90)
+
+[node name="Oak68" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 150)
+
+[node name="Oak69" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 180)
+
+[node name="Oak70" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 210)
+
+[node name="Oak71" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 390)
+
+[node name="Oak72" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 420)
+
+[node name="Oak73" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 450)
+
+[node name="Oak74" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 360)
+
+[node name="Oak75" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 270)
+
+[node name="Oak76" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 300)
+
+[node name="Oak77" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 330)
+
+[node name="Oak78" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 600)
+
+[node name="Oak79" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 630)
+
+[node name="Oak80" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 570)
+
+[node name="Oak81" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 480)
+
+[node name="Oak82" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 510)
+
+[node name="Oak83" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 540)
+
+[node name="Oak84" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 240)
+
+[node name="Oak85" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(170, 0)
+
+[node name="Oak86" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(148, 0)
+
+[node name="Oak87" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(126, 0)
+
+[node name="Oak88" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, 0)
+
+[node name="Oak89" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, 0)
+
+[node name="Oak90" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 0)
+
+[node name="Oak91" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(236, 0)
+
+[node name="Oak92" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(192, 0)
+
+[node name="Oak93" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(214, 0)
+
+[node name="Oak94" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(368, 0)
+
+[node name="Oak95" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(346, 0)
+
+[node name="Oak96" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(324, 0)
+
+[node name="Oak97" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(302, 0)
+
+[node name="Oak98" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(280, 0)
+
+[node name="Oak99" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(258, 0)
+
+[node name="Oak100" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(434, 0)
+
+[node name="Oak101" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(390, 0)
+
+[node name="Oak102" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(412, 0)
+
+[node name="Oak103" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(566, 0)
+
+[node name="Oak104" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(544, 0)
+
+[node name="Oak105" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(522, 0)
+
+[node name="Oak106" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(500, 0)
+
+[node name="Oak107" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(478, 0)
+
+[node name="Oak108" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(456, 0)
+
+[node name="Oak109" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(632, 0)
+
+[node name="Oak110" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(588, 0)
+
+[node name="Oak111" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(610, 0)
+
+[node name="Oak112" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(764, 0)
+
+[node name="Oak113" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(742, 0)
+
+[node name="Oak114" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(720, 0)
+
+[node name="Oak115" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(698, 0)
+
+[node name="Oak116" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(676, 0)
+
+[node name="Oak117" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(654, 0)
+
+[node name="Oak118" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(830, 0)
+
+[node name="Oak119" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(786, 0)
+
+[node name="Oak120" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(808, 0)
+
+[node name="Oak121" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(962, 0)
+
+[node name="Oak122" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(940, 0)
+
+[node name="Oak123" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(918, 0)
+
+[node name="Oak124" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(896, 0)
+
+[node name="Oak125" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(874, 0)
+
+[node name="Oak126" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(852, 0)
+
+[node name="Oak127" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1028, 0)
+
+[node name="Oak128" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(984, 0)
+
+[node name="Oak129" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1006, 0)
+
+[node name="Oak133" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1094, 0)
+
+[node name="Oak134" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1072, 0)
+
+[node name="Oak135" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1050, 0)
+
+[node name="Oak130" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 120)
+
+[node name="Oak131" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 0)
+
+[node name="Oak132" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 30)
+
+[node name="Oak136" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 60)
+
+[node name="Oak137" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 90)
+
+[node name="Oak138" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 150)
+
+[node name="Oak139" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 180)
+
+[node name="Oak140" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 210)
+
+[node name="Oak141" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 390)
+
+[node name="Oak142" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 420)
+
+[node name="Oak143" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 450)
+
+[node name="Oak144" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 360)
+
+[node name="Oak145" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 270)
+
+[node name="Oak146" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 300)
+
+[node name="Oak147" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 330)
+
+[node name="Oak148" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 600)
+
+[node name="Oak149" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 630)
+
+[node name="Oak150" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 570)
+
+[node name="Oak151" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 480)
+
+[node name="Oak152" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 510)
+
+[node name="Oak153" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 540)
+
+[node name="Oak154" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 240)
+
+[node name="Oak155" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 120)
+
+[node name="Oak156" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 0)
+
+[node name="Oak157" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 30)
+
+[node name="Oak158" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 60)
+
+[node name="Oak159" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 90)
+
+[node name="Oak160" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 150)
+
+[node name="Oak161" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 180)
+
+[node name="Oak162" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 210)
+
+[node name="Oak163" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 390)
+
+[node name="Oak164" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 420)
+
+[node name="Oak165" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 450)
+
+[node name="Oak166" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 360)
+
+[node name="Oak167" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 270)
+
+[node name="Oak168" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 300)
+
+[node name="Oak169" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 330)
+
+[node name="Oak170" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 600)
+
+[node name="Oak171" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 630)
+
+[node name="Oak172" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 570)
+
+[node name="Oak173" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 480)
+
+[node name="Oak174" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 510)
+
+[node name="Oak175" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 540)
+
+[node name="Oak176" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 240)
+
+[node name="Oak177" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, -30)
+
+[node name="Oak178" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, -30)
+
+[node name="Oak179" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(170, -30)
+
+[node name="Oak180" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(148, -30)
+
+[node name="Oak181" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(126, -30)
+
+[node name="Oak182" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, -30)
+
+[node name="Oak183" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, -30)
+
+[node name="Oak184" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, -30)
+
+[node name="Oak185" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(236, -30)
+
+[node name="Oak186" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(192, -30)
+
+[node name="Oak187" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(214, -30)
+
+[node name="Oak188" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(368, -30)
+
+[node name="Oak189" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(346, -30)
+
+[node name="Oak190" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(324, -30)
+
+[node name="Oak191" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(302, -30)
+
+[node name="Oak192" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(280, -30)
+
+[node name="Oak193" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(258, -30)
+
+[node name="Oak194" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(434, -30)
+
+[node name="Oak195" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(390, -30)
+
+[node name="Oak196" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(412, -30)
+
+[node name="Oak197" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(566, -30)
+
+[node name="Oak198" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(544, -30)
+
+[node name="Oak199" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(522, -30)
+
+[node name="Oak200" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(500, -30)
+
+[node name="Oak201" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(478, -30)
+
+[node name="Oak202" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(456, -30)
+
+[node name="Oak203" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(632, -30)
+
+[node name="Oak204" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(588, -30)
+
+[node name="Oak205" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(610, -30)
+
+[node name="Oak206" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(764, -30)
+
+[node name="Oak207" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(742, -30)
+
+[node name="Oak208" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(720, -30)
+
+[node name="Oak209" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(698, -30)
+
+[node name="Oak210" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(676, -30)
+
+[node name="Oak211" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(654, -30)
+
+[node name="Oak212" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(830, -30)
+
+[node name="Oak213" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(786, -30)
+
+[node name="Oak214" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(808, -30)
+
+[node name="Oak215" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(962, -30)
+
+[node name="Oak216" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(940, -30)
+
+[node name="Oak217" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(918, -30)
+
+[node name="Oak218" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(896, -30)
+
+[node name="Oak219" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(874, -30)
+
+[node name="Oak220" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(852, -30)
+
+[node name="Oak221" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1028, -30)
+
+[node name="Oak222" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(984, -30)
+
+[node name="Oak223" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1006, -30)
+
+[node name="Oak224" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1094, -30)
+
+[node name="Oak225" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1072, -30)
+
+[node name="Oak226" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1050, -30)
+
+[node name="Oak227" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 630)
+
+[node name="Oak228" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 630)
+
+[node name="Oak229" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(170, 630)
+
+[node name="Oak230" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(148, 630)
+
+[node name="Oak231" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(126, 630)
+
+[node name="Oak232" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, 630)
+
+[node name="Oak233" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, 630)
+
+[node name="Oak234" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 630)
+
+[node name="Oak235" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(236, 630)
+
+[node name="Oak236" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(192, 630)
+
+[node name="Oak237" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(214, 630)
+
+[node name="Oak238" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(368, 630)
+
+[node name="Oak239" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(346, 630)
+
+[node name="Oak240" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(324, 630)
+
+[node name="Oak241" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(302, 630)
+
+[node name="Oak242" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(280, 630)
+
+[node name="Oak243" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(258, 630)
+
+[node name="Oak244" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(434, 630)
+
+[node name="Oak245" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(390, 630)
+
+[node name="Oak246" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(412, 630)
+
+[node name="Oak247" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(566, 630)
+
+[node name="Oak248" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(544, 630)
+
+[node name="Oak249" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(522, 630)
+
+[node name="Oak250" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(500, 630)
+
+[node name="Oak251" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(478, 630)
+
+[node name="Oak252" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(456, 630)
+
+[node name="Oak253" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(632, 630)
+
+[node name="Oak254" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(588, 630)
+
+[node name="Oak255" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(610, 630)
+
+[node name="Oak256" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(764, 630)
+
+[node name="Oak257" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(742, 630)
+
+[node name="Oak258" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(720, 630)
+
+[node name="Oak259" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(698, 630)
+
+[node name="Oak260" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(676, 630)
+
+[node name="Oak261" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(654, 630)
+
+[node name="Oak262" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(830, 630)
+
+[node name="Oak263" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(786, 630)
+
+[node name="Oak264" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(808, 630)
+
+[node name="Oak265" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(962, 630)
+
+[node name="Oak266" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(940, 630)
+
+[node name="Oak267" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(918, 630)
+
+[node name="Oak268" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(896, 630)
+
+[node name="Oak269" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(874, 630)
+
+[node name="Oak270" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(852, 630)
+
+[node name="Oak271" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1028, 630)
+
+[node name="Oak272" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(984, 630)
+
+[node name="Oak273" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1006, 630)
+
+[node name="Oak274" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1094, 630)
+
+[node name="Oak275" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1072, 630)
+
+[node name="Oak276" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1050, 630)
+
+[node name="Oak277" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 660)
+
+[node name="Oak278" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 660)
+
+[node name="Oak279" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(170, 660)
+
+[node name="Oak280" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(148, 660)
+
+[node name="Oak281" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(126, 660)
+
+[node name="Oak282" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, 660)
+
+[node name="Oak283" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, 660)
+
+[node name="Oak284" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 660)
+
+[node name="Oak285" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(236, 660)
+
+[node name="Oak286" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(192, 660)
+
+[node name="Oak287" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(214, 660)
+
+[node name="Oak288" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(368, 660)
+
+[node name="Oak289" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(346, 660)
+
+[node name="Oak290" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(324, 660)
+
+[node name="Oak291" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(302, 660)
+
+[node name="Oak292" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(280, 660)
+
+[node name="Oak293" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(258, 660)
+
+[node name="Oak294" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(434, 660)
+
+[node name="Oak295" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(390, 660)
+
+[node name="Oak296" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(412, 660)
+
+[node name="Oak297" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(566, 660)
+
+[node name="Oak298" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(544, 660)
+
+[node name="Oak299" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(522, 660)
+
+[node name="Oak300" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(500, 660)
+
+[node name="Oak301" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(478, 660)
+
+[node name="Oak302" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(456, 660)
+
+[node name="Oak303" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(632, 660)
+
+[node name="Oak304" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(588, 660)
+
+[node name="Oak305" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(610, 660)
+
+[node name="Oak306" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(764, 660)
+
+[node name="Oak307" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(742, 660)
+
+[node name="Oak308" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(720, 660)
+
+[node name="Oak309" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(698, 660)
+
+[node name="Oak310" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(676, 660)
+
+[node name="Oak311" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(654, 660)
+
+[node name="Oak312" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(830, 660)
+
+[node name="Oak313" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(786, 660)
+
+[node name="Oak314" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(808, 660)
+
+[node name="Oak315" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(962, 660)
+
+[node name="Oak316" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(940, 660)
+
+[node name="Oak317" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(918, 660)
+
+[node name="Oak318" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(896, 660)
+
+[node name="Oak319" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(874, 660)
+
+[node name="Oak320" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(852, 660)
+
+[node name="Oak321" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1028, 660)
+
+[node name="Oak322" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(984, 660)
+
+[node name="Oak323" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1006, 660)
+
+[node name="Oak324" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1094, 660)
+
+[node name="Oak325" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1072, 660)
+
+[node name="Oak326" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1050, 660)
+
+[node name="Oak327" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 660)
+
+[node name="Oak328" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, 660)
+
+[node name="Oak329" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, 660)
+
+[node name="Oak330" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, 660)
+
+[node name="Oak331" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1116, -30)
+
+[node name="Oak332" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(1138, -30)
+
+[node name="Oak333" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, -30)
+
+[node name="Oak334" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-28, -30)
+
+[node name="NPC1" parent="canvas" instance=ExtResource("5_tfxpy")]
+position = Vector2(-6, 240)
