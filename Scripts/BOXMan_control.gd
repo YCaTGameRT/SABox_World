@@ -1,6 +1,6 @@
 class_name BOXMan_control extends CharacterBody2D
 
-var speed = 14000
+var speed = 140
 
 func _process(delta):
 	var move_up = Input.is_action_pressed("movement_up")
@@ -13,5 +13,5 @@ func _process(delta):
 	if move_up != move_down: movement_vector.y = 1 if move_down else -1
 	if move_right != move_left: movement_vector.x = 1 if move_right else -1
 	
-	velocity = movement_vector.normalized() * speed * delta
+	velocity = movement_vector.normalized() * speed
 	move_and_slide()
