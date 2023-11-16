@@ -26,7 +26,6 @@ texture = ExtResource("2_mkeex")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-106.339, 28.4444)
-scale = Vector2(1, 1)
 shape = SubResource("CircleShape2D_2bqej")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
@@ -195,7 +194,7 @@ position = Vector2(60, 300)
 position = Vector2(60, 330)
 
 [node name="maybeOak25" parent="canvas" instance=ExtResource("4_dd3sd")]
-position = Vector2(17, 236)
+position = Vector2(-394, 206)
 
 [node name="Oak36" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-6, 600)
@@ -1023,7 +1022,7 @@ position = Vector2(-6, -30)
 position = Vector2(-28, -30)
 
 [node name="NPC1" parent="canvas" instance=ExtResource("5_tfxpy")]
-position = Vector2(-6, 240)
+position = Vector2(-427, 209)
 
 [node name="Oak335" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-50, 120)
@@ -7121,7 +7120,17 @@ position = Vector2(-666, -30)
 [node name="Oak2361" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-666, 0)
 
+[node name="Oak31" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(-6, 240)
+
+[node name="Oak162" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 240)
+
+[node name="Oak167" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 240)
+
 [node name="background" type="Sprite2D" parent="."]
+visible = false
 z_index = -20
 texture_repeat = 2
 position = Vector2(598, 345)
