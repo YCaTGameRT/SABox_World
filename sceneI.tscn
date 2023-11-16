@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=13 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
 [ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cymo1d4ee5a7f" path="res://Saves/INVISDUB.tscn" id="6_i1guq"]
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
+[ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2bqej"]
 radius = 39.3847
@@ -6992,3 +6993,36 @@ script = ExtResource("9_1lg83")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="river/StaticBody2D"]
 shape = SubResource("RectangleShape2D_7ud1v")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(1061, 461.075)
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("10_j2jhc")
+action = "movement_up"
+visibility_mode = 1
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(1146.93, 642.925)
+rotation = 3.14159
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("10_j2jhc")
+action = "movement_down"
+visibility_mode = 1
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(5, 643)
+rotation = -1.5708
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("10_j2jhc")
+action = "movement_up"
+visibility_mode = 1
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(181.925, 557)
+rotation = 1.5708
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("10_j2jhc")
+action = "movement_right"
+visibility_mode = 1
