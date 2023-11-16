@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cymo1d4ee5a7f"]
 
-[ext_resource type="Texture2D" uid="uid://dtpcbhbcq25d2" path="res://Sprites/DUBOK.png" id="1_g3r8v"]
+[ext_resource type="Texture2D" uid="uid://cmciii0nu2obl" path="res://Sprites/INVISEDUB.png" id="1_6gx72"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6qia0"]
 size = Vector2(22, 30)
@@ -9,7 +9,7 @@ size = Vector2(22, 30)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(16, 16)
-texture = ExtResource("1_g3r8v")
+texture = ExtResource("1_6gx72")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(17, 15)
