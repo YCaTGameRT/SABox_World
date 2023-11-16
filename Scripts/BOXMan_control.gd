@@ -1,5 +1,7 @@
 class_name BOXMan_control extends CharacterBody2D
 
+@onready var player_sprite = $"./Sprite2D"
+
 var speed = 140
 
 func _process(delta):
@@ -11,7 +13,9 @@ func _process(delta):
 	var movement_vector = Vector2(0, 0)
 	
 	if move_up != move_down: movement_vector.y = 1 if move_down else -1
-	if move_right != move_left: movement_vector.x = 1 if move_right else -1
+	if move_right != move_left:
+		movement_vector.x = 1 if move_right else -1
+		player_sprite.flip_h = move_right
 	
 	velocity = movement_vector.normalized() * speed
 	move_and_slide()
