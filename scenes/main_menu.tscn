@@ -46,3 +46,6 @@ offset_bottom = 51.0
 grow_horizontal = 0
 icon = ExtResource("1_fadfd")
 icon_alignment = 1
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
