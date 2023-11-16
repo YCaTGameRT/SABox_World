@@ -7016,7 +7016,7 @@ position = Vector2(5, 643)
 rotation = -1.5708
 scale = Vector2(0.491428, 0.491428)
 texture_normal = ExtResource("10_j2jhc")
-action = "movement_up"
+action = "movement_left"
 visibility_mode = 1
 
 [node name="TouchScreenButton4" type="TouchScreenButton" parent="CanvasLayer"]
