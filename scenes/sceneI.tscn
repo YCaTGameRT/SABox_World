@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=15 format=3 uid="uid://dl6ve4yp1x0xj"]
 
+[ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
 [ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
 [ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="3_qwr6x"]
@@ -11,11 +12,13 @@
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
+[ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ud1v"]
 size = Vector2(67, 1500)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_df3qd")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(60, 35)
@@ -7322,7 +7325,8 @@ region_rect = Rect2(0, 0, 2800, 2000)
 
 [node name="river" type="Sprite2D" parent="."]
 texture_repeat = 2
-position = Vector2(626, 307)
+position = Vector2(626.5, 307)
+scale = Vector2(1.01515, 1)
 texture = ExtResource("8_c8smf")
 region_enabled = true
 region_rect = Rect2(0, 0, 66, 1500)
@@ -7397,3 +7401,14 @@ scale = Vector2(0.491428, 0.491428)
 texture_normal = ExtResource("10_j2jhc")
 action = "movement_down"
 visibility_mode = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+icon = ExtResource("13_y2d7u")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
