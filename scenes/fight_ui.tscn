@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://c54axeocgg2x1"]
+
+[ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="1_qtn7d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_01drw"]
+size = Vector2(120, 648)
+
+[node name="Fight UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.121569, 0.121569, 0.345098, 1)
+
+[node name="UI" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -195.0
+offset_right = 194.0
+offset_bottom = 195.0
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 52.0
+grow_horizontal = 2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(266, 327)
+scale = Vector2(3.90625, 3.84375)
+texture = ExtResource("1_qtn7d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(266, 324)
+shape = SubResource("RectangleShape2D_01drw")
