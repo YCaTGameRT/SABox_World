@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=13 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
 [ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
@@ -11,9 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_2bqej"]
-radius = 39.3847
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ud1v"]
 size = Vector2(67, 1500)
@@ -31,9 +28,10 @@ position = Vector2(-106.339, 27.1942)
 scale = Vector2(2.46154, 2.46154)
 texture = ExtResource("2_mkeex")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-106.339, 28.4444)
-shape = SubResource("CircleShape2D_2bqej")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(-121.185, 23.4444)
+scale = Vector2(1.48461, 1.3127)
+polygon = PackedVector2Array(0.871, -24.626, 17.719, -24.626, 28.562, -16.325, 34.271, -6.188, 34.271, 11.375, 28.57, 22.3821, 18.134, 30.408, 0.926, 30.408, -8.56998, 22.3821, -13.8757, 10, -13.8757, -5.47763, -9.207, -15.39)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-7.87698, -3.05176e-05)
