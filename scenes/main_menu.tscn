@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3wcvwxrd6od8"]
+[gd_scene load_steps=5 format=3 uid="uid://b3wcvwxrd6od8"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_7nhs7"]
 [ext_resource type="Texture2D" uid="uid://cw8mx8ijbgmd2" path="res://Sprites/EXIT.png" id="1_fadfd"]
+[ext_resource type="Texture2D" uid="uid://btumygdqdqnvg" path="res://Sprites/Play.png" id="2_dw3mq"]
+[ext_resource type="Texture2D" uid="uid://b5k7erlgu3o4t" path="res://Sprites/Title.png" id="3_11f13"]
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -28,13 +30,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -162.0
-offset_top = -62.0
-offset_right = 162.0
-offset_bottom = 62.0
+offset_left = -161.0
+offset_top = 5.0
+offset_right = 163.0
+offset_bottom = 129.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "PLAY"
+icon = ExtResource("2_dw3mq")
+icon_alignment = 1
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 1
@@ -46,6 +49,18 @@ offset_bottom = 51.0
 grow_horizontal = 0
 icon = ExtResource("1_fadfd")
 icon_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 81.0
+offset_right = 814.0
+offset_bottom = 272.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel"]
+position = Vector2(237, 96)
+scale = Vector2(0.94, 0.633333)
+texture = ExtResource("3_11f13")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
