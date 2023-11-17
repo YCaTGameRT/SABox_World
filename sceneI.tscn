@@ -40,7 +40,6 @@ position = Vector2(-7.87698, -3.05176e-05)
 zoom = Vector2(2.4, 2.4)
 
 [node name="canvas" type="Node2D" parent="."]
-visible = false
 
 [node name="Oak" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(38, 0)
@@ -7316,7 +7315,6 @@ position = Vector2(852, 120)
 position = Vector2(830, 120)
 
 [node name="background" type="Sprite2D" parent="."]
-visible = false
 z_index = -20
 texture_repeat = 2
 position = Vector2(598, 345)
