@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkqasubg5lw2f"]
+
+[ext_resource type="Texture2D" uid="uid://dxsk8euyctuuy" path="res://Sprites/rock.png" id="1_65ev4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkolx"]
+size = Vector2(66, 90)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(33, 45)
+scale = Vector2(1.03125, 1.40625)
+texture = ExtResource("1_65ev4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(33, 45)
+shape = SubResource("RectangleShape2D_fkolx")

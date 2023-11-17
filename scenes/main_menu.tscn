@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3wcvwxrd6od8"]
+[gd_scene load_steps=6 format=3 uid="uid://b3wcvwxrd6od8"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_7nhs7"]
 [ext_resource type="Texture2D" uid="uid://cw8mx8ijbgmd2" path="res://Sprites/EXIT.png" id="1_fadfd"]
 [ext_resource type="Texture2D" uid="uid://btumygdqdqnvg" path="res://Sprites/Play.png" id="2_dw3mq"]
+[ext_resource type="Texture2D" uid="uid://3a32gsyaxvpo" path="res://Sprites/MB.png" id="2_pmkuo"]
 [ext_resource type="Texture2D" uid="uid://b5k7erlgu3o4t" path="res://Sprites/Title.png" id="3_11f13"]
 
 [node name="main_menu" type="Control"]
@@ -22,6 +23,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.121569, 0.121569, 0.345098, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="background"]
+position = Vector2(576, 324)
+scale = Vector2(1.44, 1.08)
+texture = ExtResource("2_pmkuo")
 
 [node name="Play" type="Button" parent="."]
 layout_mode = 1
