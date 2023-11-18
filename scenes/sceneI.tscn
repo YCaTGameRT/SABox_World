@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=16 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
@@ -11,11 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://bkqasubg5lw2f" path="res://Saves/Rock.tscn" id="7_xad8e"]
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
+[ext_resource type="PackedScene" uid="uid://ba8hb21dcinmw" path="res://Saves/TABLE.tscn" id="9_rjo25"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ud1v"]
-size = Vector2(67, 1500)
+size = Vector2(66, 1500)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_df3qd")
@@ -202,7 +203,7 @@ position = Vector2(60, 300)
 position = Vector2(60, 330)
 
 [node name="maybeOak25" parent="canvas" instance=ExtResource("4_dd3sd")]
-position = Vector2(-394, 206)
+position = Vector2(-401, 206)
 
 [node name="Oak36" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-6, 600)
@@ -994,7 +995,7 @@ position = Vector2(-6, -30)
 position = Vector2(-28, -30)
 
 [node name="NPC1" parent="canvas" instance=ExtResource("5_tfxpy")]
-position = Vector2(-424, 209)
+position = Vector2(-425, 213)
 
 [node name="Oak335" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-50, 120)
@@ -6913,10 +6914,9 @@ position = Vector2(654, 510)
 position = Vector2(654, 480)
 
 [node name="River" type="StaticBody2D" parent="canvas"]
-position = Vector2(626, 307)
+position = Vector2(627, 307)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="canvas/River"]
-position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_7ud1v")
 
 [node name="Oak2327" parent="canvas" instance=ExtResource("3_qwr6x")]
@@ -7315,6 +7315,12 @@ position = Vector2(852, 120)
 [node name="Oak2408" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(830, 120)
 
+[node name="Tabl2" parent="canvas" instance=ExtResource("9_rjo25")]
+position = Vector2(-375, 240)
+
+[node name="Tabl" parent="canvas" instance=ExtResource("9_rjo25")]
+position = Vector2(571, 390)
+
 [node name="background" type="Sprite2D" parent="."]
 z_index = -20
 texture_repeat = 2
@@ -7325,8 +7331,8 @@ region_rect = Rect2(0, 0, 2800, 2000)
 
 [node name="river" type="Sprite2D" parent="."]
 texture_repeat = 2
-position = Vector2(626.5, 307)
-scale = Vector2(1.01515, 1)
+position = Vector2(627, 307)
+scale = Vector2(0.999999, 1)
 texture = ExtResource("8_c8smf")
 region_enabled = true
 region_rect = Rect2(0, 0, 66, 1500)
