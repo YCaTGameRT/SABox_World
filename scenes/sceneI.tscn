@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bkqasubg5lw2f" path="res://Saves/Rock.tscn" id="7_xad8e"]
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
-[ext_resource type="PackedScene" path="res://Saves/TABLE.tscn" id="9_rjo25"]
+[ext_resource type="PackedScene" uid="uid://ba8hb21dcinmw" path="res://Saves/TABLE.tscn" id="9_rjo25"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
 [ext_resource type="Texture2D" uid="uid://c2afswagrebp8" path="res://Sprites/bridge.png" id="12_hg6xc"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
