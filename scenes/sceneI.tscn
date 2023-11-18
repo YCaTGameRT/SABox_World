@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=19 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
@@ -11,12 +11,19 @@
 [ext_resource type="PackedScene" uid="uid://bkqasubg5lw2f" path="res://Saves/Rock.tscn" id="7_xad8e"]
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
-[ext_resource type="PackedScene" uid="uid://ba8hb21dcinmw" path="res://Saves/TABLE.tscn" id="9_rjo25"]
+[ext_resource type="PackedScene" path="res://Saves/TABLE.tscn" id="9_rjo25"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
+[ext_resource type="Texture2D" uid="uid://c2afswagrebp8" path="res://Sprites/bridge.png" id="12_hg6xc"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
+size = Vector2(47.2616, 12.1905)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ud1v"]
 size = Vector2(66, 1500)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o7tfh"]
+size = Vector2(74.0001, 40)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_df3qd")
@@ -24,6 +31,7 @@ script = ExtResource("1_df3qd")
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(60, 35)
 scale = Vector2(0.253906, 0.246094)
+collision_mask = 3
 floor_max_angle = 0.0
 script = ExtResource("1_mraw2")
 
@@ -40,6 +48,13 @@ polygon = PackedVector2Array(0.871, -24.626, 17.719, -24.626, 28.562, -16.325, 3
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-7.87698, -3.05176e-05)
 zoom = Vector2(2.4, 2.4)
+
+[node name="bridge_detector" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/bridge_detector"]
+position = Vector2(-106.339, 54.8571)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_hcjgw")
 
 [node name="canvas" type="Node2D" parent="."]
 
@@ -6913,12 +6928,6 @@ position = Vector2(654, 510)
 [node name="Oak1551" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(654, 480)
 
-[node name="River" type="StaticBody2D" parent="canvas"]
-position = Vector2(627, 307)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="canvas/River"]
-shape = SubResource("RectangleShape2D_7ud1v")
-
 [node name="Oak2327" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-644, 180)
 
@@ -7318,9 +7327,6 @@ position = Vector2(830, 120)
 [node name="Tabl2" parent="canvas" instance=ExtResource("9_rjo25")]
 position = Vector2(-375, 240)
 
-[node name="Tabl" parent="canvas" instance=ExtResource("9_rjo25")]
-position = Vector2(571, 390)
-
 [node name="background" type="Sprite2D" parent="."]
 z_index = -20
 texture_repeat = 2
@@ -7330,6 +7336,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 2800, 2000)
 
 [node name="river" type="Sprite2D" parent="."]
+z_index = -10
 texture_repeat = 2
 position = Vector2(627, 307)
 scale = Vector2(0.999999, 1)
@@ -7337,6 +7344,28 @@ texture = ExtResource("8_c8smf")
 region_enabled = true
 region_rect = Rect2(0, 0, 66, 1500)
 script = ExtResource("9_1lg83")
+
+[node name="River" type="StaticBody2D" parent="river"]
+position = Vector2(627, 307)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="river/River"]
+position = Vector2(-627, -307)
+shape = SubResource("RectangleShape2D_7ud1v")
+
+[node name="Sprite2D" type="Sprite2D" parent="river"]
+z_index = 5
+texture_repeat = 2
+position = Vector2(0, 113)
+texture = ExtResource("12_hg6xc")
+region_enabled = true
+region_rect = Rect2(0, 0, 74, 40)
+
+[node name="Area2D" type="Area2D" parent="river/Sprite2D"]
+metadata/collision_tag = "bridge"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="river/Sprite2D/Area2D"]
+shape = SubResource("RectangleShape2D_o7tfh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -7417,4 +7446,6 @@ offset_bottom = 40.0
 grow_horizontal = 0
 icon = ExtResource("13_y2d7u")
 
+[connection signal="area_entered" from="CharacterBody2D/bridge_detector" to="CharacterBody2D" method="_on_bridge_detector_area_entered"]
+[connection signal="area_exited" from="CharacterBody2D/bridge_detector" to="CharacterBody2D" method="_on_bridge_detector_area_exited"]
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="exit"]
