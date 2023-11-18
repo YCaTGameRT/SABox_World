@@ -96,4 +96,4 @@ icon = ExtResource("1_fadfd")
 icon_alignment = 1
 
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="CanvasLayer/background/TextureRect/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/background/TextureRect/Quit" to="." method="quit"]
