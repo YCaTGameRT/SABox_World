@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3wcvwxrd6od8"]
+[gd_scene load_steps=10 format=3 uid="uid://b3wcvwxrd6od8"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_7nhs7"]
 [ext_resource type="Texture2D" uid="uid://cw8mx8ijbgmd2" path="res://Sprites/EXIT.png" id="1_fadfd"]
 [ext_resource type="Texture2D" uid="uid://btumygdqdqnvg" path="res://Sprites/Play.png" id="2_dw3mq"]
 [ext_resource type="Texture2D" uid="uid://3a32gsyaxvpo" path="res://Sprites/MB.png" id="2_pmkuo"]
+[ext_resource type="Texture2D" uid="uid://0fjci5syshgr" path="res://Sprites/to_window_icon.png" id="3_5t20i"]
 [ext_resource type="Texture2D" uid="uid://b5k7erlgu3o4t" path="res://Sprites/Title.png" id="3_11f13"]
+[ext_resource type="Texture2D" uid="uid://bkpg6mx2c1tax" path="res://Sprites/to_fullscreen_icon.png" id="6_hnd6k"]
 
 [sub_resource type="Gradient" id="Gradient_xgjnp"]
 offsets = PackedFloat32Array(0, 0.677419, 1)
@@ -13,7 +15,7 @@ colors = PackedColorArray(0, 0, 0, 0.588235, 0, 0, 0, 0.588235, 0, 0, 0, 0)
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_gno61"]
 gradient = SubResource("Gradient_xgjnp")
 
-[node name="main_menu" type="Control"]
+[node name="main_menu" type="Control" node_paths=PackedStringArray("toggle_fullscreen_sprite")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,6 +23,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7nhs7")
+toggle_fullscreen_sprite = NodePath("CanvasLayer/background/TextureRect/toggle_fullscreen/TextureRect")
+to_fullscreen_texture = ExtResource("6_hnd6k")
+to_window_texture = ExtResource("3_5t20i")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -95,5 +100,33 @@ grow_horizontal = 0
 icon = ExtResource("1_fadfd")
 icon_alignment = 1
 
+[node name="toggle_fullscreen" type="Button" parent="CanvasLayer/background/TextureRect"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -51.0
+offset_top = 51.0
+offset_bottom = 102.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/background/TextureRect/toggle_fullscreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -12.5
+offset_right = 20.5
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_hnd6k")
+expand_mode = 1
+stretch_mode = 4
+
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/Play" to="." method="play"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/Quit" to="." method="quit"]
+[connection signal="pressed" from="CanvasLayer/background/TextureRect/toggle_fullscreen" to="." method="toggle_fullscreen"]
