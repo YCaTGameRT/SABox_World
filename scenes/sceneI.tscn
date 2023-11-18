@@ -7411,4 +7411,4 @@ offset_bottom = 40.0
 grow_horizontal = 0
 icon = ExtResource("13_y2d7u")
 
-[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="exit"]
