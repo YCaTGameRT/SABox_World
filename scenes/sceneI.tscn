@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
-[ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="2_mkeex"]
+[ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
 [ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="3_qwr6x"]
 [ext_resource type="PackedScene" uid="uid://dfhkdk1dveuxf" path="res://Saves/YEL.tscn" id="4_dd3sd"]
 [ext_resource type="PackedScene" uid="uid://cx7d1wdwq6li" path="res://Saves/NPC1.tscn" id="5_tfxpy"]
@@ -35,30 +35,18 @@ size = Vector2(66.0001, 9.5)
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_df3qd")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(60, 35)
-scale = Vector2(0.253906, 0.246094)
-collision_mask = 3
-floor_max_angle = 0.0
+[node name="BOXman" parent="." instance=ExtResource("2_4ff61")]
 script = ExtResource("1_mraw2")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(-106.339, 27.1942)
-scale = Vector2(2.46154, 2.46154)
-texture = ExtResource("2_mkeex")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
-position = Vector2(-121.185, 23.4444)
-scale = Vector2(1.48461, 1.3127)
-polygon = PackedVector2Array(0.871, -24.626, 17.719, -24.626, 28.562, -16.325, 34.271, -6.188, 34.271, 11.375, 28.57, 22.3821, 18.134, 30.408, 0.926, 30.408, -8.56998, 22.3821, -13.8757, 10, -13.8757, -5.47763, -9.207, -15.39)
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(-7.87698, -3.05176e-05)
+[node name="Camera2D" type="Camera2D" parent="BOXman"]
+position = Vector2(-7.87697, -3.05176e-05)
+scale = Vector2(1, 1)
 zoom = Vector2(2.4, 2.4)
 
-[node name="bridge_detector" type="Area2D" parent="CharacterBody2D"]
+[node name="bridge_detector" type="Area2D" parent="BOXman"]
+scale = Vector2(1, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/bridge_detector"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BOXman/bridge_detector"]
 position = Vector2(-106.339, 54.8571)
 scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_hcjgw")
@@ -7511,6 +7499,6 @@ offset_bottom = 40.0
 grow_horizontal = 0
 icon = ExtResource("13_y2d7u")
 
-[connection signal="area_entered" from="CharacterBody2D/bridge_detector" to="CharacterBody2D" method="_on_bridge_detector_area_entered"]
-[connection signal="area_exited" from="CharacterBody2D/bridge_detector" to="CharacterBody2D" method="_on_bridge_detector_area_exited"]
+[connection signal="area_entered" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_entered"]
+[connection signal="area_exited" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_exited"]
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="exit"]
