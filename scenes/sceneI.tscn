@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=21 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bkqasubg5lw2f" path="res://Saves/Rock.tscn" id="7_xad8e"]
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
-[ext_resource type="PackedScene" uid="uid://ba8hb21dcinmw" path="res://Saves/TABLE.tscn" id="9_rjo25"]
+[ext_resource type="PackedScene" path="res://Saves/TABLE.tscn" id="9_rjo25"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
 [ext_resource type="Texture2D" uid="uid://c2afswagrebp8" path="res://Sprites/bridge.png" id="12_hg6xc"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
@@ -24,6 +24,12 @@ size = Vector2(66, 1500)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o7tfh"]
 size = Vector2(74.0001, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6o0jm"]
+size = Vector2(66.0001, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6l6f"]
+size = Vector2(66.0001, 9.5)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_df3qd")
@@ -7366,6 +7372,16 @@ metadata/collision_tag = "bridge"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="river/Sprite2D/Area2D"]
 shape = SubResource("RectangleShape2D_o7tfh")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="river/Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="river/Sprite2D/StaticBody2D"]
+position = Vector2(0, -37)
+shape = SubResource("RectangleShape2D_6o0jm")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="river/Sprite2D/StaticBody2D"]
+position = Vector2(0, 24.75)
+shape = SubResource("RectangleShape2D_x6l6f")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
