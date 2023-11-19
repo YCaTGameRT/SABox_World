@@ -1,18 +1,183 @@
-[gd_scene load_steps=5 format=3 uid="uid://eoktbsge7j4m"]
+[gd_scene load_steps=12 format=3 uid="uid://eoktbsge7j4m"]
 
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="1_fuawb"]
-[ext_resource type="Script" path="res://Scripts/BOXMan_td_base_control.gd" id="2_153tb"]
+[ext_resource type="Script" path="res://Scripts/BOXMan_cucumber_battle_control.gd" id="2_eyrnp"]
+[ext_resource type="Texture2D" uid="uid://b8mjg7iajiw5l" path="res://Sprites/cucumber-stone-battle/sword.png" id="3_l3y24"]
 [ext_resource type="Texture2D" uid="uid://82h8d1mxibhk" path="res://Sprites/grass.png" id="3_n6ysj"]
 [ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="4_0cf6r"]
+[ext_resource type="Texture2D" uid="uid://ducfmaksdu0mn" path="res://Sprites/cucumber-stone-battle/cucumber.png" id="5_5o3x5"]
+[ext_resource type="Texture2D" uid="uid://317884ofuovq" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_1.png" id="6_mn20v"]
+[ext_resource type="Texture2D" uid="uid://c57ajyxg4fc2p" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_3.png" id="8_72ymx"]
+[ext_resource type="Texture2D" uid="uid://cbyau71vmytg1" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_2.png" id="9_inn0c"]
+
+[sub_resource type="Animation" id="Animation_rplco"]
+resource_name = "cucumber_comes_animation"
+length = 6.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BOXman:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(146, -112), Vector2(223, -111)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BOXman/Sword:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-1.08698, -19.0217), Vector2(-1.08698, -19.0217), Vector2(-27.7174, 4.89131)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [2.19811, 2.19811, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.10315, 1.13817), Vector2(1.10315, 1.13817), Vector2(0.543478, 0.543478)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("for_anim/Cucumber-stoneWithSword:texture")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 3.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_mn20v"), ExtResource("9_inn0c")]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("for_anim/Cucumber-stoneWithSword:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 4.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("for_anim/Cucumber-stoneWithSword2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 5.7, 6.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(277, -119), Vector2(277, -119), Vector2(699, -696)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("for_anim/Cucumber-stoneWithSword3:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 5.7, 6.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(246, -119), Vector2(246, -119), Vector2(-274, 375)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Cucumber:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 6.1, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.53938, -1.53938, 0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Cucumber:flip_h")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 6.5, 6.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nk68q"]
+_data = {
+"cucumber_comes_animation": SubResource("Animation_rplco")
+}
 
 [node name="cucumber-stone-battle" type="Node2D"]
 
-[node name="BOXman" parent="." instance=ExtResource("1_fuawb")]
-script = ExtResource("2_153tb")
+[node name="BOXman" parent="." node_paths=PackedStringArray("anim_player") instance=ExtResource("1_fuawb")]
+position = Vector2(223, -111)
+script = ExtResource("2_eyrnp")
+anim_player = NodePath("../AnimationPlayer")
 
 [node name="Camera2D" type="Camera2D" parent="BOXman"]
 position = Vector2(-7.87697, -3.05176e-05)
 zoom = Vector2(2.4, 2.4)
+
+[node name="Sword" type="Sprite2D" parent="BOXman"]
+position = Vector2(-59.077, 4.06351)
+scale = Vector2(3.93846, 4.06349)
+texture = ExtResource("3_l3y24")
 
 [node name="background" type="Sprite2D" parent="."]
 z_index = -20
@@ -21,6 +186,13 @@ position = Vector2(214, -82)
 texture = ExtResource("3_n6ysj")
 region_enabled = true
 region_rect = Rect2(0, 0, 2000, 1500)
+
+[node name="Cucumber" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(261, -119)
+scale = Vector2(1, 1)
+texture = ExtResource("5_5o3x5")
+flip_h = true
 
 [node name="map" type="Node2D" parent="."]
 
@@ -417,3 +589,41 @@ position = Vector2(704, 116)
 
 [node name="StaticBody2D48" parent="map/u" instance=ExtResource("4_0cf6r")]
 position = Vector2(726, 116)
+
+[node name="for_anim" type="Node2D" parent="."]
+
+[node name="Cucumber-stoneWithSword" type="Sprite2D" parent="for_anim"]
+visible = false
+position = Vector2(259, -119)
+scale = Vector2(1.84, 1.84)
+texture = ExtResource("9_inn0c")
+flip_h = true
+
+[node name="Sword" type="Sprite2D" parent="for_anim/Cucumber-stoneWithSword"]
+visible = false
+position = Vector2(-27.7174, 4.89131)
+scale = Vector2(0.543478, 0.543478)
+texture = ExtResource("3_l3y24")
+
+[node name="Cucumber-stoneWithSword2" type="Sprite2D" parent="for_anim"]
+z_index = -1
+position = Vector2(699, -696)
+scale = Vector2(1.84, 1.84)
+texture = ExtResource("8_72ymx")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(0, 0, 15, 19)
+
+[node name="Cucumber-stoneWithSword3" type="Sprite2D" parent="for_anim"]
+z_index = -1
+position = Vector2(-274, 375)
+scale = Vector2(1.84, 1.84)
+texture = ExtResource("8_72ymx")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(14, 0, 21, 19)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nk68q")
+}
