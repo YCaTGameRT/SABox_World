@@ -1,0 +1,419 @@
+[gd_scene load_steps=5 format=3 uid="uid://eoktbsge7j4m"]
+
+[ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="1_fuawb"]
+[ext_resource type="Script" path="res://Scripts/BOXMan_td_base_control.gd" id="2_153tb"]
+[ext_resource type="Texture2D" uid="uid://82h8d1mxibhk" path="res://Sprites/grass.png" id="3_n6ysj"]
+[ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="4_0cf6r"]
+
+[node name="cucumber-stone-battle" type="Node2D"]
+
+[node name="BOXman" parent="." instance=ExtResource("1_fuawb")]
+script = ExtResource("2_153tb")
+
+[node name="Camera2D" type="Camera2D" parent="BOXman"]
+position = Vector2(-7.87697, -3.05176e-05)
+zoom = Vector2(2.4, 2.4)
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -20
+texture_repeat = 2
+position = Vector2(214, -82)
+texture = ExtResource("3_n6ysj")
+region_enabled = true
+region_rect = Rect2(0, 0, 2000, 1500)
+
+[node name="map" type="Node2D" parent="."]
+
+[node name="l" type="Node2D" parent="map"]
+
+[node name="StaticBody2D" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 116)
+
+[node name="StaticBody2D2" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 86)
+
+[node name="StaticBody2D3" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 56)
+
+[node name="StaticBody2D4" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 26)
+
+[node name="StaticBody2D5" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -4)
+
+[node name="StaticBody2D6" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -34)
+
+[node name="StaticBody2D7" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -64)
+
+[node name="StaticBody2D8" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -94)
+
+[node name="StaticBody2D9" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -124)
+
+[node name="StaticBody2D10" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -154)
+
+[node name="StaticBody2D11" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -184)
+
+[node name="StaticBody2D12" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -214)
+
+[node name="StaticBody2D13" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -244)
+
+[node name="StaticBody2D14" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -274)
+
+[node name="StaticBody2D15" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -304)
+
+[node name="StaticBody2D16" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -334)
+
+[node name="r" type="Node2D" parent="map"]
+position = Vector2(1078, 0)
+
+[node name="StaticBody2D" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 116)
+
+[node name="StaticBody2D2" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 86)
+
+[node name="StaticBody2D3" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 56)
+
+[node name="StaticBody2D4" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 26)
+
+[node name="StaticBody2D5" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -4)
+
+[node name="StaticBody2D6" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -34)
+
+[node name="StaticBody2D7" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -64)
+
+[node name="StaticBody2D8" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -94)
+
+[node name="StaticBody2D9" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -124)
+
+[node name="StaticBody2D10" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -154)
+
+[node name="StaticBody2D11" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -184)
+
+[node name="StaticBody2D12" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -214)
+
+[node name="StaticBody2D13" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -244)
+
+[node name="StaticBody2D14" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -274)
+
+[node name="StaticBody2D15" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -304)
+
+[node name="StaticBody2D16" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -334)
+
+[node name="b" type="Node2D" parent="map"]
+
+[node name="StaticBody2D" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-308, 116)
+
+[node name="StaticBody2D2" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-286, 116)
+
+[node name="StaticBody2D3" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-264, 116)
+
+[node name="StaticBody2D4" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-242, 116)
+
+[node name="StaticBody2D5" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-220, 116)
+
+[node name="StaticBody2D6" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-198, 116)
+
+[node name="StaticBody2D7" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-176, 116)
+
+[node name="StaticBody2D8" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-154, 116)
+
+[node name="StaticBody2D9" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-132, 116)
+
+[node name="StaticBody2D10" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-110, 116)
+
+[node name="StaticBody2D11" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-88, 116)
+
+[node name="StaticBody2D12" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-66, 116)
+
+[node name="StaticBody2D13" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-44, 116)
+
+[node name="StaticBody2D14" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-22, 116)
+
+[node name="StaticBody2D15" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(0, 116)
+
+[node name="StaticBody2D16" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(22, 116)
+
+[node name="StaticBody2D17" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(44, 116)
+
+[node name="StaticBody2D18" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(66, 116)
+
+[node name="StaticBody2D19" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(88, 116)
+
+[node name="StaticBody2D20" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(110, 116)
+
+[node name="StaticBody2D21" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(132, 116)
+
+[node name="StaticBody2D22" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(154, 116)
+
+[node name="StaticBody2D23" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(176, 116)
+
+[node name="StaticBody2D24" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(198, 116)
+
+[node name="StaticBody2D25" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(220, 116)
+
+[node name="StaticBody2D26" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(242, 116)
+
+[node name="StaticBody2D27" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(264, 116)
+
+[node name="StaticBody2D28" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(286, 116)
+
+[node name="StaticBody2D29" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(308, 116)
+
+[node name="StaticBody2D30" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(330, 116)
+
+[node name="StaticBody2D31" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(352, 116)
+
+[node name="StaticBody2D32" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(374, 116)
+
+[node name="StaticBody2D33" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(396, 116)
+
+[node name="StaticBody2D34" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(418, 116)
+
+[node name="StaticBody2D35" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(440, 116)
+
+[node name="StaticBody2D36" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(462, 116)
+
+[node name="StaticBody2D37" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(484, 116)
+
+[node name="StaticBody2D38" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(506, 116)
+
+[node name="StaticBody2D39" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(528, 116)
+
+[node name="StaticBody2D40" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(550, 116)
+
+[node name="StaticBody2D41" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(572, 116)
+
+[node name="StaticBody2D42" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(594, 116)
+
+[node name="StaticBody2D43" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(616, 116)
+
+[node name="StaticBody2D44" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(638, 116)
+
+[node name="StaticBody2D45" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(660, 116)
+
+[node name="StaticBody2D46" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(682, 116)
+
+[node name="StaticBody2D47" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(704, 116)
+
+[node name="StaticBody2D48" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(726, 116)
+
+[node name="u" type="Node2D" parent="map"]
+position = Vector2(0, -450)
+
+[node name="StaticBody2D" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-308, 116)
+
+[node name="StaticBody2D2" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-286, 116)
+
+[node name="StaticBody2D3" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-264, 116)
+
+[node name="StaticBody2D4" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-242, 116)
+
+[node name="StaticBody2D5" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-220, 116)
+
+[node name="StaticBody2D6" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-198, 116)
+
+[node name="StaticBody2D7" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-176, 116)
+
+[node name="StaticBody2D8" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-154, 116)
+
+[node name="StaticBody2D9" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-132, 116)
+
+[node name="StaticBody2D10" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-110, 116)
+
+[node name="StaticBody2D11" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-88, 116)
+
+[node name="StaticBody2D12" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-66, 116)
+
+[node name="StaticBody2D13" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-44, 116)
+
+[node name="StaticBody2D14" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-22, 116)
+
+[node name="StaticBody2D15" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(0, 116)
+
+[node name="StaticBody2D16" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(22, 116)
+
+[node name="StaticBody2D17" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(44, 116)
+
+[node name="StaticBody2D18" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(66, 116)
+
+[node name="StaticBody2D19" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(88, 116)
+
+[node name="StaticBody2D20" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(110, 116)
+
+[node name="StaticBody2D21" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(132, 116)
+
+[node name="StaticBody2D22" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(154, 116)
+
+[node name="StaticBody2D23" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(176, 116)
+
+[node name="StaticBody2D24" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(198, 116)
+
+[node name="StaticBody2D25" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(220, 116)
+
+[node name="StaticBody2D26" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(242, 116)
+
+[node name="StaticBody2D27" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(264, 116)
+
+[node name="StaticBody2D28" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(286, 116)
+
+[node name="StaticBody2D29" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(308, 116)
+
+[node name="StaticBody2D30" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(330, 116)
+
+[node name="StaticBody2D31" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(352, 116)
+
+[node name="StaticBody2D32" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(374, 116)
+
+[node name="StaticBody2D33" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(396, 116)
+
+[node name="StaticBody2D34" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(418, 116)
+
+[node name="StaticBody2D35" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(440, 116)
+
+[node name="StaticBody2D36" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(462, 116)
+
+[node name="StaticBody2D37" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(484, 116)
+
+[node name="StaticBody2D38" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(506, 116)
+
+[node name="StaticBody2D39" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(528, 116)
+
+[node name="StaticBody2D40" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(550, 116)
+
+[node name="StaticBody2D41" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(572, 116)
+
+[node name="StaticBody2D42" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(594, 116)
+
+[node name="StaticBody2D43" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(616, 116)
+
+[node name="StaticBody2D44" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(638, 116)
+
+[node name="StaticBody2D45" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(660, 116)
+
+[node name="StaticBody2D46" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(682, 116)
+
+[node name="StaticBody2D47" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(704, 116)
+
+[node name="StaticBody2D48" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(726, 116)
