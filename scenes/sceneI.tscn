@@ -1,8 +1,8 @@
 [gd_scene load_steps=22 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
-[ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
+[ext_resource type="Script" path="res://Scripts/BOXMan_scene1_control.gd" id="3_ejpo3"]
 [ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="3_qwr6x"]
 [ext_resource type="PackedScene" uid="uid://dfhkdk1dveuxf" path="res://Saves/YEL.tscn" id="4_dd3sd"]
 [ext_resource type="PackedScene" uid="uid://cx7d1wdwq6li" path="res://Saves/NPC1.tscn" id="5_tfxpy"]
@@ -36,15 +36,13 @@ size = Vector2(66.0001, 9.5)
 script = ExtResource("1_df3qd")
 
 [node name="BOXman" parent="." instance=ExtResource("2_4ff61")]
-script = ExtResource("1_mraw2")
+script = ExtResource("3_ejpo3")
 
 [node name="Camera2D" type="Camera2D" parent="BOXman"]
 position = Vector2(-7.87697, -3.05176e-05)
-scale = Vector2(1, 1)
 zoom = Vector2(2.4, 2.4)
 
 [node name="bridge_detector" type="Area2D" parent="BOXman"]
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BOXman/bridge_detector"]
 position = Vector2(-106.339, 54.8571)

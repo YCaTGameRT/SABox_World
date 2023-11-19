@@ -1,4 +1,4 @@
-class_name BOXMan_control extends CharacterBody2D
+class_name BOXMan_td_base_control extends CharacterBody2D
 
 @onready var player_sprite = $"./Sprite2D"
 
@@ -19,11 +19,3 @@ func _process(delta):
 	
 	velocity = movement_vector.normalized() * speed
 	move_and_slide()
-
-func _on_bridge_detector_area_entered(area):
-	if area.get_meta("collision_tag") == "bridge":
-		set_collision_mask_value(2, false)
-
-func _on_bridge_detector_area_exited(area):
-	if area.get_meta("collision_tag") == "bridge":
-		set_collision_mask_value(2, true)
