@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=22 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_control.gd" id="1_mraw2"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
 [ext_resource type="PackedScene" path="res://Saves/TABLE.tscn" id="9_rjo25"]
+[ext_resource type="Texture2D" uid="uid://dbsdf32g38wxm" path="res://Sprites/cucumber-stone_with_sword.png" id="10_iboya"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
 [ext_resource type="Texture2D" uid="uid://c2afswagrebp8" path="res://Sprites/bridge.png" id="12_hg6xc"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
@@ -228,6 +229,45 @@ position = Vector2(-401, 206)
 
 [node name="Oak36" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-6, 600)
+
+[node name="Oak228" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 570)
+
+[node name="Oak515" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 570)
+
+[node name="Oak539" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 570)
+
+[node name="Oak563" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, 570)
+
+[node name="Oak596" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, 570)
+
+[node name="Oak620" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(126, 570)
+
+[node name="Oak644" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(16, 540)
+
+[node name="Oak660" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(38, 540)
+
+[node name="Oak684" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(60, 540)
+
+[node name="Oak708" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(82, 540)
+
+[node name="Oak732" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(104, 540)
+
+[node name="Oak635" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(170, 600)
+
+[node name="Oak636" parent="canvas" instance=ExtResource("3_qwr6x")]
+position = Vector2(170, 570)
 
 [node name="Oak41" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(-6, 630)
@@ -711,9 +751,6 @@ position = Vector2(1050, -30)
 
 [node name="Oak227" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(38, 630)
-
-[node name="Oak228" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(16, 630)
 
 [node name="Oak229" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(170, 630)
@@ -7332,6 +7369,18 @@ position = Vector2(830, 120)
 
 [node name="Tabl2" parent="canvas" instance=ExtResource("9_rjo25")]
 position = Vector2(-375, 240)
+
+[node name="cucumber-stone" type="Sprite2D" parent="canvas"]
+z_index = 5
+position = Vector2(33, 649)
+scale = Vector2(0.565, 0.565)
+texture = ExtResource("10_iboya")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="canvas/cucumber-stone"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="canvas/cucumber-stone/StaticBody2D"]
+position = Vector2(-7.07963, -1.77002)
+polygon = PackedVector2Array(1.975, 0, 8.84956, 0, 21.2389, 3.53992, 23.884, 6.065, 24.7788, 8.84961, 24.7788, 12.3894, 19.334, 16.764, 10.619, 18.794, -3.54, 18.794, -10.6195, 14.1593, -10.6195, 10.6195, -1.76991, 1.7699)
 
 [node name="background" type="Sprite2D" parent="."]
 z_index = -20
