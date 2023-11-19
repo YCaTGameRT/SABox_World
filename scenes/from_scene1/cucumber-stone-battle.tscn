@@ -13,7 +13,7 @@
 
 [sub_resource type="Animation" id="Animation_rplco"]
 resource_name = "cucumber_comes_animation"
-length = 6.8
+length = 7.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -21,10 +21,10 @@ tracks/0/path = NodePath("BOXman:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 1, 3.5, 4.3, 5.2, 5.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(146, -112), Vector2(223, -111)]
+"values": [Vector2(146, -112), Vector2(223, -111), Vector2(223, -111), Vector2(195.64, -111), Vector2(195.64, -111), Vector2(170.875, -111)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -105,7 +105,7 @@ tracks/7/path = NodePath("for_anim/Cucumber-stoneWithSword:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 4.1),
+"times": PackedFloat32Array(0, 4.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -117,7 +117,7 @@ tracks/8/path = NodePath("for_anim/Cucumber-stoneWithSword2:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0, 5.7, 6.1),
+"times": PackedFloat32Array(0, 6.4, 6.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(277, -119), Vector2(277, -119), Vector2(699, -696)]
@@ -129,7 +129,7 @@ tracks/9/path = NodePath("for_anim/Cucumber-stoneWithSword3:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(0, 5.7, 6.1),
+"times": PackedFloat32Array(0, 6.4, 6.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(246, -119), Vector2(246, -119), Vector2(-274, 375)]
@@ -141,7 +141,7 @@ tracks/10/path = NodePath("Cucumber:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(0, 6.1, 6.5),
+"times": PackedFloat32Array(0, 6.8, 7.2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [-1.53938, -1.53938, 0.0]
@@ -153,7 +153,7 @@ tracks/11/path = NodePath("Cucumber:flip_h")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 6.5, 6.8),
+"times": PackedFloat32Array(0, 7.2, 7.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, false, true]
@@ -167,7 +167,7 @@ _data = {
 [node name="cucumber-stone-battle" type="Node2D"]
 
 [node name="BOXman" parent="." node_paths=PackedStringArray("anim_player") instance=ExtResource("1_fuawb")]
-position = Vector2(146, -112)
+position = Vector2(170.875, -111)
 script = ExtResource("2_eyrnp")
 anim_player = NodePath("../AnimationPlayer")
 
@@ -176,7 +176,6 @@ position = Vector2(-7.87697, -3.05176e-05)
 zoom = Vector2(2.4, 2.4)
 
 [node name="Sword" type="Sprite2D" parent="BOXman"]
-visible = false
 position = Vector2(-59.077, 4.06351)
 scale = Vector2(3.93846, 4.06349)
 texture = ExtResource("3_l3y24")
@@ -192,8 +191,8 @@ region_rect = Rect2(0, 0, 2000, 1500)
 [node name="Cucumber" type="Sprite2D" parent="."]
 z_index = -2
 position = Vector2(261, -119)
-rotation = -1.53938
 texture = ExtResource("5_5o3x5")
+flip_h = true
 
 [node name="map" type="Node2D" parent="."]
 
@@ -594,20 +593,21 @@ position = Vector2(726, 116)
 [node name="for_anim" type="Node2D" parent="."]
 
 [node name="Cucumber-stoneWithSword" type="Sprite2D" parent="for_anim"]
+visible = false
 position = Vector2(259, -119)
 scale = Vector2(1.84, 1.84)
-texture = ExtResource("6_mn20v")
+texture = ExtResource("9_inn0c")
 flip_h = true
 
 [node name="Sword" type="Sprite2D" parent="for_anim/Cucumber-stoneWithSword"]
-position = Vector2(-1.08698, -19.0217)
-rotation = 2.19811
-scale = Vector2(1.10315, 1.13817)
+visible = false
+position = Vector2(-27.7174, 4.89131)
+scale = Vector2(0.543478, 0.543478)
 texture = ExtResource("3_l3y24")
 
 [node name="Cucumber-stoneWithSword2" type="Sprite2D" parent="for_anim"]
 z_index = -1
-position = Vector2(277, -119)
+position = Vector2(699, -696)
 scale = Vector2(1.84, 1.84)
 texture = ExtResource("8_72ymx")
 flip_h = true
@@ -616,7 +616,7 @@ region_rect = Rect2(0, 0, 15, 19)
 
 [node name="Cucumber-stoneWithSword3" type="Sprite2D" parent="for_anim"]
 z_index = -1
-position = Vector2(246, -119)
+position = Vector2(-274, 375)
 scale = Vector2(1.84, 1.84)
 texture = ExtResource("8_72ymx")
 flip_h = true
