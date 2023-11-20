@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=24 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
@@ -14,11 +14,15 @@
 [ext_resource type="PackedScene" path="res://Saves/TABLE.tscn" id="9_rjo25"]
 [ext_resource type="Texture2D" uid="uid://dbsdf32g38wxm" path="res://Sprites/cucumber-stone_with_sword.png" id="10_iboya"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
+[ext_resource type="Script" path="res://Scripts/Stone.gd" id="11_nm24r"]
 [ext_resource type="Texture2D" uid="uid://c2afswagrebp8" path="res://Sprites/bridge.png" id="12_hg6xc"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
 size = Vector2(47.2616, 12.1905)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4gcqw"]
+radius = 18.83
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ud1v"]
 size = Vector2(66, 1500)
@@ -37,6 +41,7 @@ script = ExtResource("1_df3qd")
 
 [node name="BOXman" parent="." instance=ExtResource("2_4ff61")]
 script = ExtResource("3_ejpo3")
+metadata/collision_tag = "player"
 
 [node name="Camera2D" type="Camera2D" parent="BOXman"]
 position = Vector2(-7.87697, -3.05176e-05)
@@ -7356,17 +7361,31 @@ position = Vector2(830, 120)
 [node name="Tabl2" parent="canvas" instance=ExtResource("9_rjo25")]
 position = Vector2(-375, 240)
 
-[node name="cucumber-stone" type="Sprite2D" parent="canvas"]
+[node name="cucumber-stone" type="Sprite2D" parent="canvas" node_paths=PackedStringArray("area_for_player", "area_for_clicks")]
 z_index = 5
 position = Vector2(33, 649)
 scale = Vector2(0.565, 0.565)
 texture = ExtResource("10_iboya")
+script = ExtResource("11_nm24r")
+area_for_player = NodePath("for_player")
+area_for_clicks = NodePath("for_clicks")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="canvas/cucumber-stone"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="canvas/cucumber-stone/StaticBody2D"]
 position = Vector2(-7.07963, -1.77002)
 polygon = PackedVector2Array(1.975, 0, 8.84956, 0, 21.2389, 3.53992, 23.884, 6.065, 24.7788, 8.84961, 24.7788, 12.3894, 19.334, 16.764, 10.619, 18.794, -3.54, 18.794, -10.6195, 14.1593, -10.6195, 10.6195, -1.76991, 1.7699)
+
+[node name="for_clicks" type="Area2D" parent="canvas/cucumber-stone"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="canvas/cucumber-stone/for_clicks"]
+position = Vector2(-7.07963, -1.77002)
+polygon = PackedVector2Array(1.975, 0, 8.84956, 0, 21.2389, 3.53992, 23.884, 6.065, 24.7788, 8.84961, 24.7788, 12.3894, 19.334, 16.764, 10.619, 18.794, -3.54, 18.794, -10.6195, 14.1593, -10.6195, 10.6195, -1.76991, 1.7699)
+
+[node name="for_player" type="Area2D" parent="canvas/cucumber-stone"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="canvas/cucumber-stone/for_player"]
+shape = SubResource("CircleShape2D_4gcqw")
 
 [node name="background" type="Sprite2D" parent="."]
 z_index = -20
@@ -7419,6 +7438,7 @@ position = Vector2(0, 24.75)
 shape = SubResource("RectangleShape2D_x6l6f")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="tchscreen" type="Control" parent="CanvasLayer"]
 layout_mode = 3
