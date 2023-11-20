@@ -179,6 +179,7 @@ position = Vector2(-7.87697, -3.05176e-05)
 zoom = Vector2(2.4, 2.4)
 
 [node name="Sword" type="Sprite2D" parent="BOXman"]
+z_index = 1
 position = Vector2(-59.077, 4.06351)
 scale = Vector2(3.93846, 4.06349)
 texture = ExtResource("3_l3y24")
