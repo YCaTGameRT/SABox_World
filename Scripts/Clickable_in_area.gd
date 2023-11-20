@@ -11,11 +11,11 @@ func _ready():
 	area_for_clicks.input_event.connect(_clicks_area_input_event)
 
 func _player_area_entered(body):
-	if body.get_meta("collision_tag") == "player":
+	if body.has_meta("collision_tag") and body.get_meta("collision_tag") == "player":
 		_clickable = true
 
 func _player_area_exited(body):
-	if body.get_meta("collision_tag") == "player":
+	if body.has_meta("collision_tag") and body.get_meta("collision_tag") == "player":
 		_clickable = false
 
 func _clicks_area_input_event(viewport, event, shape_idx):
