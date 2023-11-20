@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://eoktbsge7j4m"]
+[gd_scene load_steps=21 format=3 uid="uid://eoktbsge7j4m"]
 
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="1_fuawb"]
 [ext_resource type="Script" path="res://Scripts/BOXMan_cucumber_battle_control.gd" id="2_eyrnp"]
@@ -11,6 +11,28 @@
 [ext_resource type="Texture2D" uid="uid://c57ajyxg4fc2p" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_3.png" id="8_72ymx"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="9_cykbs"]
 [ext_resource type="Texture2D" uid="uid://cbyau71vmytg1" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_2.png" id="9_inn0c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cmatm"]
+bg_color = Color(0.117647, 0.337255, 0.215686, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k1lip"]
+bg_color = Color(0.0470588, 0.568627, 0.0823529, 1)
+
+[sub_resource type="Theme" id="Theme_jnf3u"]
+ProgressBar/colors/font_color = Color(0, 0, 0, 1)
+ProgressBar/styles/background = SubResource("StyleBoxFlat_cmatm")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_k1lip")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6i4a4"]
+bg_color = Color(0.498039, 0, 0.0470588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2gmr"]
+bg_color = Color(0.890196, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_evm7s"]
+ProgressBar/colors/font_color = Color(0, 0, 0, 1)
+ProgressBar/styles/background = SubResource("StyleBoxFlat_6i4a4")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_w2gmr")
 
 [sub_resource type="Animation" id="Animation_rplco"]
 resource_name = "cucumber_comes_animation"
@@ -710,6 +732,56 @@ scale = Vector2(0.491428, 0.491428)
 texture_normal = ExtResource("9_cykbs")
 action = "movement_down"
 visibility_mode = 1
+
+[node name="cucumber_hp" type="ProgressBar" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -159.5
+offset_right = 159.5
+offset_bottom = 27.0
+grow_horizontal = 2
+theme = SubResource("Theme_jnf3u")
+step = 1.0
+value = 100.0
+
+[node name="Label" type="Label" parent="CanvasLayer/cucumber_hp"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.0
+offset_top = -1.0
+offset_right = 39.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "cucumber"
+
+[node name="player_hp" type="ProgressBar" parent="CanvasLayer"]
+offset_right = 190.0
+offset_bottom = 27.0
+theme = SubResource("Theme_evm7s")
+step = 1.0
+value = 100.0
+
+[node name="Label" type="Label" parent="CanvasLayer/player_hp"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.0
+offset_top = -1.0
+offset_right = 39.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "you"
+horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
