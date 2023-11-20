@@ -1,4 +1,4 @@
-extends CharacterBody2D
+class_name Cucumber extends CharacterBody2D
 
 @export var _player: CharacterBody2D
 @export var _anim: AnimationPlayer

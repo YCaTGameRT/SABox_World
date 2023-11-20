@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b8mjg7iajiw5l" path="res://Sprites/cucumber-stone-battle/sword.png" id="3_l3y24"]
 [ext_resource type="Texture2D" uid="uid://82h8d1mxibhk" path="res://Sprites/grass.png" id="3_n6ysj"]
 [ext_resource type="PackedScene" uid="uid://7db52q5hgsxx" path="res://Saves/DUB.tscn" id="4_0cf6r"]
-[ext_resource type="Script" path="res://Scripts/cucumber-stone-battle/cucumber.gd" id="4_upbsb"]
+[ext_resource type="Script" path="res://Scripts/cucumber-stone-battle/Cucumber.gd" id="4_gkqhd"]
 [ext_resource type="Texture2D" uid="uid://ducfmaksdu0mn" path="res://Sprites/cucumber-stone-battle/cucumber.png" id="5_5o3x5"]
 [ext_resource type="Texture2D" uid="uid://317884ofuovq" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_1.png" id="6_mn20v"]
 [ext_resource type="Texture2D" uid="uid://c57ajyxg4fc2p" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_3.png" id="8_72ymx"]
@@ -33,6 +33,9 @@ bg_color = Color(0.890196, 0, 0, 1)
 ProgressBar/colors/font_color = Color(0, 0, 0, 1)
 ProgressBar/styles/background = SubResource("StyleBoxFlat_6i4a4")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_w2gmr")
+
+[sub_resource type="Animation" id="Animation_354my"]
+length = 0.001
 
 [sub_resource type="Animation" id="Animation_rplco"]
 resource_name = "cucumber_comes_animation"
@@ -182,9 +185,6 @@ tracks/11/keys = {
 "values": [false, false, true]
 }
 
-[sub_resource type="Animation" id="Animation_354my"]
-length = 0.001
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nk68q"]
 _data = {
 "RESET": SubResource("Animation_354my"),
@@ -213,7 +213,7 @@ texture = ExtResource("3_l3y24")
 
 [node name="cucumber" type="CharacterBody2D" parent="." node_paths=PackedStringArray("_player", "_anim")]
 position = Vector2(262, -120)
-script = ExtResource("4_upbsb")
+script = ExtResource("4_gkqhd")
 _player = NodePath("../BOXman")
 _anim = NodePath("../AnimationPlayer")
 
