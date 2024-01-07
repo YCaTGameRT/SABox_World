@@ -1,13 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://c54axeocgg2x1"]
+[gd_scene load_steps=5 format=3 uid="uid://c54axeocgg2x1"]
 
 [ext_resource type="Texture2D" uid="uid://cjg2r464m68s1" path="res://Sprites/AC.png" id="1_eydy2"]
-[ext_resource type="Texture2D" uid="uid://4112ruenf2hy" path="res://Sprites/BOXMan2.0.png" id="1_qtn7d"]
 [ext_resource type="Texture2D" uid="uid://bdks67m28cn2" path="res://Sprites/ABB.png" id="2_r3hem"]
 [ext_resource type="Texture2D" uid="uid://d0kwy01bh3cxl" path="res://Sprites/MBB.png" id="3_le8xe"]
 [ext_resource type="Texture2D" uid="uid://vsvaraduw0i4" path="res://Sprites/HB.png" id="4_p87qc"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_01drw"]
-size = Vector2(120, 116)
 
 [node name="Fight UI" type="Control"]
 layout_mode = 3
@@ -25,67 +21,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.121569, 0.121569, 0.345098, 1)
-
-[node name="Actions" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.199074
-anchor_right = 0.168403
-anchor_bottom = 0.800926
-grow_vertical = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect" type="TextureRect" parent="Actions"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 0.179487
-offset_bottom = -18.0
-grow_horizontal = 2
-texture = ExtResource("1_eydy2")
-metadata/_edit_use_anchors_ = true
-
-[node name="Attack" type="Button" parent="Actions"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.228205
-anchor_right = 1.0
-anchor_bottom = 0.428205
-icon = ExtResource("2_r3hem")
-icon_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Move" type="Button" parent="Actions"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.471795
-anchor_right = 1.0
-anchor_bottom = 0.671795
-icon = ExtResource("3_le8xe")
-icon_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Heal" type="Button" parent="Actions"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.730769
-anchor_right = 1.0
-anchor_bottom = 0.930769
-icon = ExtResource("4_p87qc")
-icon_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(0, -2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(266, 327)
-scale = Vector2(3.90625, 3.84375)
-texture = ExtResource("1_qtn7d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(266, 327)
-shape = SubResource("RectangleShape2D_01drw")
 
 [node name="Road1" type="Panel" parent="."]
 layout_mode = 1
@@ -120,13 +55,85 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Dialog" type="Panel" parent="."]
+[node name="TextEdit" type="TextEdit" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0182292
+anchor_left = 0.0494792
 anchor_top = 0.839506
-anchor_right = 0.984375
+anchor_right = 0.948785
 anchor_bottom = 1.0
+text = "Evil Tomato attack you"
+editable = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+metadata/_edit_use_anchors_ = true
+
+[node name="HealathB" type="ProgressBar" parent="."]
+layout_mode = 0
+anchor_left = 0.204861
+anchor_top = 0.307099
+anchor_right = 0.258681
+anchor_bottom = 0.348765
+metadata/_edit_use_anchors_ = true
+
+[node name="HealathP" type="ProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.893229
+anchor_top = 0.300926
+anchor_right = 0.947049
+anchor_bottom = 0.342593
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="MenuBar" type="MenuBar" parent="."]
+layout_mode = 0
+anchor_top = 0.199074
+anchor_right = 0.169271
+anchor_bottom = 0.800926
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.179487
+offset_top = -4.57764e-05
+offset_bottom = 2.28882e-05
 grow_horizontal = 2
-grow_vertical = 0
+texture = ExtResource("1_eydy2")
+metadata/_edit_use_anchors_ = true
+
+[node name="Attack" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.228205
+anchor_right = 1.0
+anchor_bottom = 0.428205
+offset_bottom = -1.52588e-05
+icon = ExtResource("2_r3hem")
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Move" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.471795
+anchor_right = 1.0
+anchor_bottom = 0.671795
+offset_top = 1.52588e-05
+icon = ExtResource("3_le8xe")
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Heal" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.730769
+anchor_right = 1.0
+anchor_bottom = 0.930769
+offset_top = 3.05176e-05
+offset_bottom = 3.05176e-05
+icon = ExtResource("4_p87qc")
+icon_alignment = 1
 metadata/_edit_use_anchors_ = true

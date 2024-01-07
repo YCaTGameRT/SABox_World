@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://docdyh2nhhfwn"]
+
+[ext_resource type="Texture2D" uid="uid://014ua1o2425j" path="res://Sprites/Haus.png" id="1_sl0yx"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(33, 30)
+scale = Vector2(0.515625, 0.46875)
+texture = ExtResource("1_sl0yx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(6, 54, 39, 54, 45, 51, 51, 46, 52, 46, 57, 42, 57, 20, 58, 20, 58, 19, 40, 1, 39, 1, 20, 14, 6, 29, 5, 31, 6, 32)

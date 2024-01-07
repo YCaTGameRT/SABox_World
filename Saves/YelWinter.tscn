@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwtl3uklrxf2w"]
+
+[ext_resource type="PackedScene" uid="uid://dfhkdk1dveuxf" path="res://Saves/YEL.tscn" id="1_7cuvp"]
+[ext_resource type="Texture2D" uid="uid://bxuvi1ri1mkud" path="res://Sprites/Yelka2.png" id="2_dfcy3"]
+
+[node name="StaticBody2D" instance=ExtResource("1_7cuvp")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_dfcy3")
