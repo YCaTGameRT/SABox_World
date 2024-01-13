@@ -11,14 +11,20 @@ config_version=5
 [application]
 
 config/name="SABox World"
+config/version="1.0.2.0"
 run/main_scene="res://scenes/main_menu.tscn"
-config/features=PackedStringArray("4.1", "GL Compatibility")
-config/icon="res://icon.svg"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+boot_splash/bg_color=Color(0.619608, 0.588235, 0, 1)
+boot_splash/image="res://TPG.png"
+config/icon="res://BOXMan2.0.png"
+config/windows_native_icon="res://BOXMan2.0.ico"
+boot_splash/minimum_display_time=3000
 
 [display]
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+mouse_cursor/custom_image="res://cursor.png"
 
 [input]
 
