@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf7dhhn8hriw0"]
+
+[ext_resource type="Texture2D" uid="uid://df6qg0y6djygh" path="res://Sprites/SBunny.png" id="1_tjtyt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_samid"]
+size = Vector2(44, 30)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(22, 0.999999)
+scale = Vector2(0.44, 0.58)
+texture = ExtResource("1_tjtyt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(22, 15)
+shape = SubResource("RectangleShape2D_samid")

@@ -6,4 +6,6 @@
 [node name="StaticBody2D" instance=ExtResource("1_7cuvp")]
 
 [node name="Sprite2D" parent="." index="0"]
+position = Vector2(16, 18.5)
+scale = Vector2(1, 1.09375)
 texture = ExtResource("2_dfcy3")
