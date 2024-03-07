@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://bkqasubg5lw2f" path="res://Saves/Rock.tscn" id="7_xad8e"]
 [ext_resource type="Texture2D" uid="uid://dgqg3j42drakv" path="res://Sprites/water.png" id="8_c8smf"]
 [ext_resource type="Script" path="res://Scripts/River.gd" id="9_1lg83"]
-[ext_resource type="PackedScene" uid="uid://ba8hb21dcinmw" path="res://Saves/TABLE.tscn" id="9_rjo25"]
 [ext_resource type="PackedScene" uid="uid://docdyh2nhhfwn" path="res://Saves/DOM.tscn" id="10_8gv0e"]
 [ext_resource type="Texture2D" uid="uid://dbsdf32g38wxm" path="res://Sprites/cucumber-stone_with_sword.png" id="10_iboya"]
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
@@ -22,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://bteu8ihmvnauh" path="res://Saves/DUBSpring.tscn" id="14_lh2ly"]
 [ext_resource type="Texture2D" uid="uid://e3v3owknk6h2" path="res://Sprites/grassWinter.png" id="15_2j80h"]
 [ext_resource type="Texture2D" uid="uid://b0ixcd4bygjy4" path="res://Sprites/grassSpring2.png" id="17_lwg8k"]
+[ext_resource type="PackedScene" uid="uid://clkpklphbgcvq" path="res://Saves/MYTOMATOES.tscn" id="23_mak6f"]
 [ext_resource type="PackedScene" uid="uid://bf7dhhn8hriw0" path="res://Saves/Bunny.tscn" id="23_qd421"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
@@ -8689,9 +8689,6 @@ position = Vector2(852, 120)
 
 [node name="Oak2408" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(830, 120)
-
-[node name="Tabl2" parent="canvas" instance=ExtResource("9_rjo25")]
-position = Vector2(-375, 240)
 
 [node name="cucumber-stone" type="Sprite2D" parent="canvas" node_paths=PackedStringArray("area_for_player", "area_for_clicks")]
 z_index = 5
@@ -20443,6 +20440,9 @@ icon = ExtResource("13_y2d7u")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("23_qd421")]
 position = Vector2(308, 1680)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("23_mak6f")]
+position = Vector2(-375, 240)
 
 [connection signal="area_entered" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_entered"]
 [connection signal="area_exited" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_exited"]
