@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=28 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://dwtl3uklrxf2w" path="res://Saves/YelWinter.tscn" id="13_gi7wk"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
 [ext_resource type="Texture2D" uid="uid://e3v3owknk6h2" path="res://Sprites/grassWinter.png" id="15_2j80h"]
+[ext_resource type="Texture2D" uid="uid://cdjbwqyqc5erw" path="res://Sprites/grassSpring.png" id="16_7o14g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
 size = Vector2(47.2616, 12.1905)
@@ -806,9 +807,6 @@ position = Vector2(522, 630)
 [node name="Oak250" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 630)
 
-[node name="Oak251" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 630)
-
 [node name="Oak252" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 630)
 
@@ -943,9 +941,6 @@ position = Vector2(522, 660)
 
 [node name="Oak300" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 660)
-
-[node name="Oak301" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 660)
 
 [node name="Oak302" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 660)
@@ -3998,9 +3993,6 @@ position = Vector2(522, 780)
 [node name="Oak1372" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 780)
 
-[node name="Oak1373" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 780)
-
 [node name="Oak1374" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 780)
 
@@ -4117,9 +4109,6 @@ position = Vector2(522, 750)
 
 [node name="Oak1416" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 750)
-
-[node name="Oak1417" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 750)
 
 [node name="Oak1418" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 750)
@@ -4238,9 +4227,6 @@ position = Vector2(522, 720)
 [node name="Oak1460" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 720)
 
-[node name="Oak1461" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 720)
-
 [node name="Oak1462" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 720)
 
@@ -4357,9 +4343,6 @@ position = Vector2(522, 690)
 
 [node name="Oak1504" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 690)
-
-[node name="Oak1505" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 690)
 
 [node name="Oak1506" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 690)
@@ -4478,9 +4461,6 @@ position = Vector2(522, 900)
 [node name="Oak1548" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 900)
 
-[node name="Oak1549" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 900)
-
 [node name="Oak1550" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 900)
 
@@ -4597,9 +4577,6 @@ position = Vector2(522, 870)
 
 [node name="Oak1592" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 870)
-
-[node name="Oak1593" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 870)
 
 [node name="Oak1594" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 870)
@@ -4718,9 +4695,6 @@ position = Vector2(522, 840)
 [node name="Oak1636" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 840)
 
-[node name="Oak1637" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 840)
-
 [node name="Oak1638" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 840)
 
@@ -4837,9 +4811,6 @@ position = Vector2(522, 810)
 
 [node name="Oak1680" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(500, 810)
-
-[node name="Oak1681" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(478, 810)
 
 [node name="Oak1682" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(456, 810)
@@ -13789,6 +13760,15 @@ texture = ExtResource("15_2j80h")
 region_enabled = true
 region_rect = Rect2(0, 0, 2800, 2000)
 
+[node name="backgroundSpring" type="Sprite2D" parent="."]
+z_index = -20
+texture_repeat = 2
+position = Vector2(-104, 1255)
+scale = Vector2(0.545487, 0.3249)
+texture = ExtResource("16_7o14g")
+region_enabled = true
+region_rect = Rect2(0, 0, 2800, 2000)
+
 [node name="river" type="Sprite2D" parent="."]
 z_index = -10
 texture_repeat = 2
@@ -13830,6 +13810,24 @@ shape = SubResource("RectangleShape2D_6o0jm")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="river/Sprite2D/StaticBody2D"]
 position = Vector2(0, 24.75)
 shape = SubResource("RectangleShape2D_x6l6f")
+
+[node name="ozero" type="Sprite2D" parent="."]
+z_index = -10
+texture_repeat = 2
+position = Vector2(473, 1203.5)
+scale = Vector2(5.66667, 0.195333)
+texture = ExtResource("8_c8smf")
+region_enabled = true
+region_rect = Rect2(0, 0, 66, 1500)
+script = ExtResource("9_1lg83")
+
+[node name="River" type="StaticBody2D" parent="ozero"]
+position = Vector2(627, 307)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ozero/River"]
+position = Vector2(-627, -307)
+shape = SubResource("RectangleShape2D_7ud1v")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
