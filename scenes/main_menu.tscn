@@ -92,6 +92,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="New Game" type="Button" parent="CanvasLayer/background/TextureRect/sidebar"]
+visible = false
 layout_mode = 0
 offset_left = 19.0
 offset_top = 313.0
@@ -116,6 +117,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Load" type="Button" parent="CanvasLayer/background/TextureRect/sidebar"]
+visible = false
 layout_mode = 0
 offset_left = 19.0
 offset_top = 399.0
