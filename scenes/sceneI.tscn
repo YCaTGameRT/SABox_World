@@ -36,7 +36,7 @@ size = Vector2(47.2616, 12.1905)
 radius = 18.83
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ud1v"]
-size = Vector2(66, 1500)
+size = Vector2(374, 270)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o7tfh"]
 size = Vector2(74.0001, 40)
@@ -29272,10 +29272,9 @@ shape = SubResource("RectangleShape2D_x6l6f")
 z_index = -10
 texture_repeat = 2
 position = Vector2(473, 1215)
-scale = Vector2(5.66667, 0.18)
 texture = ExtResource("8_c8smf")
 region_enabled = true
-region_rect = Rect2(0, 0, 66, 1500)
+region_rect = Rect2(12, 0, 374, 270)
 script = ExtResource("9_1lg83")
 
 [node name="River" type="StaticBody2D" parent="ozero"]
