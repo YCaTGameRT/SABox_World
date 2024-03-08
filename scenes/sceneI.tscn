@@ -46,7 +46,7 @@ size = Vector2(66.0001, 10)
 size = Vector2(66.0001, 9.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ud1v"]
-size = Vector2(373.5, 270)
+size = Vector2(374, 270)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_df3qd")
@@ -29285,7 +29285,7 @@ position = Vector2(627, 307)
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ozero/River"]
-position = Vector2(-626.75, -307)
+position = Vector2(-627, -307)
 shape = SubResource("RectangleShape2D_7ud1v")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
