@@ -1,9 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://doyk488jp4x8s"]
+[gd_scene load_steps=2 format=3 uid="uid://doyk488jp4x8s"]
 
 [ext_resource type="Texture2D" uid="uid://ddlhv4axp8rc6" path="res://Sprites/tablesak.png" id="1_irvba"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_samid"]
-size = Vector2(44, 30)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
@@ -12,6 +9,5 @@ position = Vector2(22.5, 14.5)
 scale = Vector2(0.45, 0.62)
 texture = ExtResource("1_irvba")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(22, 15)
-shape = SubResource("RectangleShape2D_samid")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(4, 29, 6, 29, 6, 24, 37, 21, 37, 28, 40, 28, 41, 0, 5, 3, 3, 23, 3, 29)

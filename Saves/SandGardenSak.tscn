@@ -1,9 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cv2r10ixlfjjp"]
+[gd_scene load_steps=2 format=3 uid="uid://cv2r10ixlfjjp"]
 
 [ext_resource type="Texture2D" uid="uid://fytqrwjhlu4v" path="res://Sprites/SandSAD.png" id="1_5otm7"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_samid"]
-size = Vector2(44, 30)
 
 [node name="StaticBody2D1" type="StaticBody2D"]
 
@@ -12,18 +9,5 @@ position = Vector2(43, 30)
 scale = Vector2(0.92, 1.2)
 texture = ExtResource("1_5otm7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(22, 15)
-shape = SubResource("RectangleShape2D_samid")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(66, 15)
-shape = SubResource("RectangleShape2D_samid")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(22, 45)
-shape = SubResource("RectangleShape2D_samid")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(66, 45)
-shape = SubResource("RectangleShape2D_samid")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(1, 8, 1, 60, 87, 49, 87, 0)
