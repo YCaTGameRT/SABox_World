@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=36 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://dqkafnfhkdfdv" path="res://Saves/KatanaTop.tscn" id="26_h07m0"]
 [ext_resource type="PackedScene" uid="uid://doyk488jp4x8s" path="res://Saves/TableSakura.tscn" id="27_qewml"]
 [ext_resource type="PackedScene" uid="uid://cv2r10ixlfjjp" path="res://Saves/SandGardenSak.tscn" id="28_mko82"]
+[ext_resource type="PackedScene" uid="uid://j4evow7mpuft" path="res://Saves/BIGYel.tscn" id="29_a1xse"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
 size = Vector2(47.2616, 12.1905)
@@ -29182,7 +29183,7 @@ position = Vector2(1666, 510)
 position = Vector2(-375, 240)
 
 [node name="Bunny_)" parent="canvas" instance=ExtResource("23_qd421")]
-position = Vector2(308, 1680)
+position = Vector2(330, 1620)
 
 [node name="Katana" parent="canvas" instance=ExtResource("26_h07m0")]
 position = Vector2(2244, 150)
@@ -29226,8 +29227,8 @@ region_rect = Rect2(0, 0, 2800, 2000)
 [node name="backgroundSpring" type="Sprite2D" parent="."]
 z_index = -20
 texture_repeat = 2
-position = Vector2(-418, 1470.05)
-scale = Vector2(0.77, 0.53995)
+position = Vector2(-418, 1470)
+scale = Vector2(0.77, 0.54)
 texture = ExtResource("17_lwg8k")
 region_enabled = true
 region_rect = Rect2(0, 0, 2800, 2000)
@@ -29365,6 +29366,9 @@ offset_left = -40.0
 offset_bottom = 40.0
 grow_horizontal = 0
 icon = ExtResource("13_y2d7u")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("29_a1xse")]
+position = Vector2(1679, 1489)
 
 [connection signal="area_entered" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_entered"]
 [connection signal="area_exited" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_exited"]
