@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://s80j2se4shty"]
+
+[ext_resource type="Texture2D" uid="uid://7ii5b4kfxkew" path="res://Sprites/DUBOKSakura.png" id="1_agfum"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnxav"]
+size = Vector2(22, 30)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 15.5)
+scale = Vector2(0.9375, 0.96875)
+texture = ExtResource("1_agfum")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(17, 15)
+shape = SubResource("RectangleShape2D_mnxav")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=35 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
@@ -18,11 +18,16 @@
 [ext_resource type="Texture2D" uid="uid://c2afswagrebp8" path="res://Sprites/bridge.png" id="12_hg6xc"]
 [ext_resource type="PackedScene" uid="uid://dwtl3uklrxf2w" path="res://Saves/YelWinter.tscn" id="13_gi7wk"]
 [ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
+[ext_resource type="PackedScene" uid="uid://s80j2se4shty" path="res://Saves/SAKURA.tscn" id="14_25jtn"]
 [ext_resource type="PackedScene" uid="uid://bteu8ihmvnauh" path="res://Saves/DUBSpring.tscn" id="14_lh2ly"]
 [ext_resource type="Texture2D" uid="uid://e3v3owknk6h2" path="res://Sprites/grassWinter.png" id="15_2j80h"]
 [ext_resource type="Texture2D" uid="uid://b0ixcd4bygjy4" path="res://Sprites/grassSpring2.png" id="17_lwg8k"]
+[ext_resource type="Texture2D" uid="uid://coi6rnqu6paru" path="res://Sprites/grassSakuraB.png" id="18_ceugv"]
 [ext_resource type="PackedScene" uid="uid://clkpklphbgcvq" path="res://Saves/MYTOMATOES.tscn" id="23_mak6f"]
 [ext_resource type="PackedScene" uid="uid://bf7dhhn8hriw0" path="res://Saves/Bunny.tscn" id="23_qd421"]
+[ext_resource type="PackedScene" uid="uid://dqkafnfhkdfdv" path="res://Saves/KatanaTop.tscn" id="26_h07m0"]
+[ext_resource type="PackedScene" uid="uid://doyk488jp4x8s" path="res://Saves/TableSakura.tscn" id="27_qewml"]
+[ext_resource type="PackedScene" uid="uid://cv2r10ixlfjjp" path="res://Saves/SandGardenSak.tscn" id="28_mko82"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
 size = Vector2(47.2616, 12.1905)
@@ -329,17 +334,11 @@ position = Vector2(1116, 600)
 [node name="Oak79" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1116, 630)
 
-[node name="Oak80" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1116, 570)
-
 [node name="Oak81" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1116, 480)
 
 [node name="Oak82" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1116, 510)
-
-[node name="Oak83" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1116, 540)
 
 [node name="Oak84" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1116, 240)
@@ -527,17 +526,11 @@ position = Vector2(1138, 600)
 [node name="Oak149" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1138, 630)
 
-[node name="Oak150" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1138, 570)
-
 [node name="Oak151" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1138, 480)
 
 [node name="Oak152" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1138, 510)
-
-[node name="Oak153" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1138, 540)
 
 [node name="Oak154" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1138, 240)
@@ -2492,17 +2485,11 @@ position = Vector2(1380, 600)
 [node name="Oak855" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1380, 630)
 
-[node name="Oak856" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1380, 570)
-
 [node name="Oak857" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1380, 480)
 
 [node name="Oak858" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1380, 510)
-
-[node name="Oak859" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1380, 540)
 
 [node name="Oak860" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1380, 240)
@@ -2561,17 +2548,11 @@ position = Vector2(1358, 600)
 [node name="Oak879" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1358, 630)
 
-[node name="Oak880" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1358, 570)
-
 [node name="Oak881" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1358, 480)
 
 [node name="Oak882" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1358, 510)
-
-[node name="Oak883" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1358, 540)
 
 [node name="Oak884" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1358, 240)
@@ -2630,17 +2611,11 @@ position = Vector2(1336, 600)
 [node name="Oak903" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1336, 630)
 
-[node name="Oak904" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1336, 570)
-
 [node name="Oak905" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1336, 480)
 
 [node name="Oak906" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1336, 510)
-
-[node name="Oak907" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1336, 540)
 
 [node name="Oak908" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1336, 240)
@@ -2699,17 +2674,11 @@ position = Vector2(1314, 600)
 [node name="Oak927" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1314, 630)
 
-[node name="Oak928" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1314, 570)
-
 [node name="Oak929" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1314, 480)
 
 [node name="Oak930" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1314, 510)
-
-[node name="Oak931" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1314, 540)
 
 [node name="Oak932" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1314, 240)
@@ -2768,17 +2737,11 @@ position = Vector2(1292, 600)
 [node name="Oak951" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1292, 630)
 
-[node name="Oak952" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1292, 570)
-
 [node name="Oak953" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1292, 480)
 
 [node name="Oak954" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1292, 510)
-
-[node name="Oak955" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1292, 540)
 
 [node name="Oak956" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1292, 240)
@@ -2837,17 +2800,11 @@ position = Vector2(1270, 600)
 [node name="Oak975" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1270, 630)
 
-[node name="Oak976" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1270, 570)
-
 [node name="Oak977" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1270, 480)
 
 [node name="Oak978" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1270, 510)
-
-[node name="Oak979" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1270, 540)
 
 [node name="Oak980" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1270, 240)
@@ -2906,17 +2863,11 @@ position = Vector2(1248, 600)
 [node name="Oak999" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1248, 630)
 
-[node name="Oak1000" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1248, 570)
-
 [node name="Oak1001" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1248, 480)
 
 [node name="Oak1002" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1248, 510)
-
-[node name="Oak1003" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1248, 540)
 
 [node name="Oak1004" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1248, 240)
@@ -2975,17 +2926,11 @@ position = Vector2(1226, 600)
 [node name="Oak1023" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1226, 630)
 
-[node name="Oak1024" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1226, 570)
-
 [node name="Oak1025" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1226, 480)
 
 [node name="Oak1026" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1226, 510)
-
-[node name="Oak1027" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1226, 540)
 
 [node name="Oak1028" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1226, 240)
@@ -3044,17 +2989,11 @@ position = Vector2(1204, 600)
 [node name="Oak1047" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1204, 630)
 
-[node name="Oak1048" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1204, 570)
-
 [node name="Oak1049" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1204, 480)
 
 [node name="Oak1050" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1204, 510)
-
-[node name="Oak1051" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1204, 540)
 
 [node name="Oak1052" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1204, 240)
@@ -3113,17 +3052,11 @@ position = Vector2(1182, 600)
 [node name="Oak1071" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1182, 630)
 
-[node name="Oak1072" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1182, 570)
-
 [node name="Oak1073" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1182, 480)
 
 [node name="Oak1074" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1182, 510)
-
-[node name="Oak1075" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1182, 540)
 
 [node name="Oak1076" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1182, 240)
@@ -3182,17 +3115,11 @@ position = Vector2(1160, 600)
 [node name="Oak1095" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1160, 630)
 
-[node name="Oak1096" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1160, 570)
-
 [node name="Oak1097" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1160, 480)
 
 [node name="Oak1098" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1160, 510)
-
-[node name="Oak1099" parent="canvas" instance=ExtResource("3_qwr6x")]
-position = Vector2(1160, 540)
 
 [node name="Oak1100" parent="canvas" instance=ExtResource("3_qwr6x")]
 position = Vector2(1160, 240)
@@ -20269,15 +20196,4755 @@ position = Vector2(346, 1650)
 [node name="OakS1685" parent="canvas" instance=ExtResource("14_lh2ly")]
 position = Vector2(346, 1680)
 
+[node name="Sakura" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1402, 600)
+
+[node name="Sakura2" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1424, 600)
+
+[node name="Sakura3" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1446, 600)
+
+[node name="Sakura4" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1468, 600)
+
+[node name="Sakura5" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 600)
+
+[node name="Sakura6" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 600)
+
+[node name="Sakura7" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 600)
+
+[node name="Sakura8" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 600)
+
+[node name="Sakura9" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 600)
+
+[node name="Sakura10" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 600)
+
+[node name="Sakura11" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 600)
+
+[node name="Sakura12" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 600)
+
+[node name="Sakura13" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 600)
+
+[node name="Sakura29" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 630)
+
+[node name="Sakura30" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 630)
+
+[node name="Sakura31" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 630)
+
+[node name="Sakura32" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 630)
+
+[node name="Sakura33" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 630)
+
+[node name="Sakura34" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 630)
+
+[node name="Sakura35" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 630)
+
+[node name="Sakura36" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 630)
+
+[node name="Sakura37" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 630)
+
+[node name="Sakura38" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 630)
+
+[node name="Sakura39" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 660)
+
+[node name="Sakura40" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 660)
+
+[node name="Sakura41" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 660)
+
+[node name="Sakura42" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 660)
+
+[node name="Sakura43" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 660)
+
+[node name="Sakura44" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 660)
+
+[node name="Sakura45" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 660)
+
+[node name="Sakura46" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 660)
+
+[node name="Sakura47" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 660)
+
+[node name="Sakura48" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 660)
+
+[node name="Sakura49" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 690)
+
+[node name="Sakura50" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 690)
+
+[node name="Sakura51" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 690)
+
+[node name="Sakura52" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 690)
+
+[node name="Sakura53" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 690)
+
+[node name="Sakura54" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 690)
+
+[node name="Sakura55" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 690)
+
+[node name="Sakura56" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 690)
+
+[node name="Sakura57" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 690)
+
+[node name="Sakura58" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 690)
+
+[node name="Sakura59" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 720)
+
+[node name="Sakura60" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 720)
+
+[node name="Sakura61" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 720)
+
+[node name="Sakura62" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 720)
+
+[node name="Sakura63" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 720)
+
+[node name="Sakura64" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 720)
+
+[node name="Sakura65" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 720)
+
+[node name="Sakura66" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 720)
+
+[node name="Sakura67" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 720)
+
+[node name="Sakura68" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 720)
+
+[node name="Sakura69" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 750)
+
+[node name="Sakura70" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 750)
+
+[node name="Sakura71" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 750)
+
+[node name="Sakura72" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 750)
+
+[node name="Sakura73" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 750)
+
+[node name="Sakura74" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 750)
+
+[node name="Sakura75" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 750)
+
+[node name="Sakura76" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 750)
+
+[node name="Sakura77" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 750)
+
+[node name="Sakura78" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 750)
+
+[node name="Sakura79" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 780)
+
+[node name="Sakura80" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 780)
+
+[node name="Sakura81" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 780)
+
+[node name="Sakura82" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 780)
+
+[node name="Sakura83" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 780)
+
+[node name="Sakura84" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 780)
+
+[node name="Sakura85" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 780)
+
+[node name="Sakura86" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 780)
+
+[node name="Sakura87" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 780)
+
+[node name="Sakura88" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 780)
+
+[node name="Sakura89" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 810)
+
+[node name="Sakura90" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 810)
+
+[node name="Sakura91" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 810)
+
+[node name="Sakura92" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 810)
+
+[node name="Sakura93" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 810)
+
+[node name="Sakura94" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 810)
+
+[node name="Sakura95" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 810)
+
+[node name="Sakura96" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 810)
+
+[node name="Sakura97" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 810)
+
+[node name="Sakura98" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 810)
+
+[node name="Sakura99" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 840)
+
+[node name="Sakura100" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 840)
+
+[node name="Sakura101" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 840)
+
+[node name="Sakura102" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 840)
+
+[node name="Sakura103" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 840)
+
+[node name="Sakura104" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 840)
+
+[node name="Sakura105" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 840)
+
+[node name="Sakura106" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 840)
+
+[node name="Sakura107" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 840)
+
+[node name="Sakura108" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 840)
+
+[node name="Sakura109" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 870)
+
+[node name="Sakura110" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 870)
+
+[node name="Sakura111" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 870)
+
+[node name="Sakura112" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 870)
+
+[node name="Sakura113" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 870)
+
+[node name="Sakura114" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 870)
+
+[node name="Sakura115" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 870)
+
+[node name="Sakura116" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 870)
+
+[node name="Sakura117" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 870)
+
+[node name="Sakura118" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 870)
+
+[node name="Sakura119" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 900)
+
+[node name="Sakura120" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 900)
+
+[node name="Sakura121" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 900)
+
+[node name="Sakura122" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 900)
+
+[node name="Sakura123" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 900)
+
+[node name="Sakura124" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 900)
+
+[node name="Sakura125" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 900)
+
+[node name="Sakura126" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 900)
+
+[node name="Sakura127" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 900)
+
+[node name="Sakura128" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 900)
+
+[node name="Sakura129" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 180)
+
+[node name="Sakura130" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 180)
+
+[node name="Sakura131" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 180)
+
+[node name="Sakura132" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 180)
+
+[node name="Sakura133" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 180)
+
+[node name="Sakura134" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 180)
+
+[node name="Sakura135" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 180)
+
+[node name="Sakura136" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 180)
+
+[node name="Sakura137" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 180)
+
+[node name="Sakura138" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 180)
+
+[node name="Sakura139" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 210)
+
+[node name="Sakura140" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 210)
+
+[node name="Sakura141" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 210)
+
+[node name="Sakura142" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 210)
+
+[node name="Sakura143" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 210)
+
+[node name="Sakura144" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 210)
+
+[node name="Sakura145" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 210)
+
+[node name="Sakura146" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 210)
+
+[node name="Sakura147" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 210)
+
+[node name="Sakura148" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 210)
+
+[node name="Sakura149" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 240)
+
+[node name="Sakura150" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 240)
+
+[node name="Sakura151" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 240)
+
+[node name="Sakura152" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 240)
+
+[node name="Sakura153" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 240)
+
+[node name="Sakura154" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 240)
+
+[node name="Sakura155" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 240)
+
+[node name="Sakura156" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 240)
+
+[node name="Sakura157" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 240)
+
+[node name="Sakura158" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 240)
+
+[node name="Sakura159" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 270)
+
+[node name="Sakura160" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 270)
+
+[node name="Sakura161" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 270)
+
+[node name="Sakura162" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 270)
+
+[node name="Sakura163" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 270)
+
+[node name="Sakura164" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 270)
+
+[node name="Sakura165" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 270)
+
+[node name="Sakura166" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 270)
+
+[node name="Sakura167" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 270)
+
+[node name="Sakura168" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 270)
+
+[node name="Sakura169" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 300)
+
+[node name="Sakura170" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 300)
+
+[node name="Sakura171" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 300)
+
+[node name="Sakura172" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 300)
+
+[node name="Sakura173" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 300)
+
+[node name="Sakura174" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 300)
+
+[node name="Sakura175" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 300)
+
+[node name="Sakura176" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 300)
+
+[node name="Sakura177" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 300)
+
+[node name="Sakura178" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 300)
+
+[node name="Sakura179" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 330)
+
+[node name="Sakura180" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 330)
+
+[node name="Sakura181" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 330)
+
+[node name="Sakura182" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 330)
+
+[node name="Sakura183" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 330)
+
+[node name="Sakura184" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 330)
+
+[node name="Sakura185" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 330)
+
+[node name="Sakura186" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 330)
+
+[node name="Sakura187" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 330)
+
+[node name="Sakura188" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 330)
+
+[node name="Sakura189" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 360)
+
+[node name="Sakura190" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 360)
+
+[node name="Sakura191" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 360)
+
+[node name="Sakura192" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 360)
+
+[node name="Sakura193" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 360)
+
+[node name="Sakura194" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 360)
+
+[node name="Sakura195" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 360)
+
+[node name="Sakura196" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 360)
+
+[node name="Sakura197" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 360)
+
+[node name="Sakura198" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 360)
+
+[node name="Sakura199" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 390)
+
+[node name="Sakura200" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 390)
+
+[node name="Sakura201" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 390)
+
+[node name="Sakura202" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 390)
+
+[node name="Sakura203" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 390)
+
+[node name="Sakura204" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 390)
+
+[node name="Sakura205" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 390)
+
+[node name="Sakura206" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 390)
+
+[node name="Sakura207" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 390)
+
+[node name="Sakura208" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 390)
+
+[node name="Sakura209" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 420)
+
+[node name="Sakura210" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 420)
+
+[node name="Sakura211" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 420)
+
+[node name="Sakura212" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 420)
+
+[node name="Sakura213" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 420)
+
+[node name="Sakura214" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 420)
+
+[node name="Sakura215" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 420)
+
+[node name="Sakura216" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 420)
+
+[node name="Sakura217" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 420)
+
+[node name="Sakura218" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 420)
+
+[node name="Sakura219" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 450)
+
+[node name="Sakura220" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 450)
+
+[node name="Sakura221" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 450)
+
+[node name="Sakura222" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 450)
+
+[node name="Sakura223" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 450)
+
+[node name="Sakura224" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 450)
+
+[node name="Sakura225" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 450)
+
+[node name="Sakura226" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 450)
+
+[node name="Sakura227" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 450)
+
+[node name="Sakura228" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 450)
+
+[node name="Sakura239" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, -120)
+
+[node name="Sakura240" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, -120)
+
+[node name="Sakura241" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, -120)
+
+[node name="Sakura242" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, -120)
+
+[node name="Sakura243" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, -120)
+
+[node name="Sakura244" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, -120)
+
+[node name="Sakura245" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, -120)
+
+[node name="Sakura246" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, -120)
+
+[node name="Sakura247" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, -120)
+
+[node name="Sakura248" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, -120)
+
+[node name="Sakura249" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, -90)
+
+[node name="Sakura250" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, -90)
+
+[node name="Sakura251" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, -90)
+
+[node name="Sakura252" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, -90)
+
+[node name="Sakura253" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, -90)
+
+[node name="Sakura254" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, -90)
+
+[node name="Sakura255" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, -90)
+
+[node name="Sakura256" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, -90)
+
+[node name="Sakura257" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, -90)
+
+[node name="Sakura258" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, -90)
+
+[node name="Sakura259" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, -60)
+
+[node name="Sakura260" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, -60)
+
+[node name="Sakura261" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, -60)
+
+[node name="Sakura262" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, -60)
+
+[node name="Sakura263" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, -60)
+
+[node name="Sakura264" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, -60)
+
+[node name="Sakura265" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, -60)
+
+[node name="Sakura266" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, -60)
+
+[node name="Sakura267" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, -60)
+
+[node name="Sakura268" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, -60)
+
+[node name="Sakura339" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, -210)
+
+[node name="Sakura340" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, -210)
+
+[node name="Sakura341" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, -210)
+
+[node name="Sakura342" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, -210)
+
+[node name="Sakura343" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, -210)
+
+[node name="Sakura344" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, -210)
+
+[node name="Sakura345" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, -210)
+
+[node name="Sakura346" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, -210)
+
+[node name="Sakura347" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, -210)
+
+[node name="Sakura348" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, -210)
+
+[node name="Sakura349" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, -180)
+
+[node name="Sakura350" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, -180)
+
+[node name="Sakura351" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, -180)
+
+[node name="Sakura352" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, -180)
+
+[node name="Sakura353" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, -180)
+
+[node name="Sakura354" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, -180)
+
+[node name="Sakura355" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, -180)
+
+[node name="Sakura356" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, -180)
+
+[node name="Sakura357" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, -180)
+
+[node name="Sakura358" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, -180)
+
+[node name="Sakura359" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, -150)
+
+[node name="Sakura360" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, -150)
+
+[node name="Sakura361" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, -150)
+
+[node name="Sakura362" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, -150)
+
+[node name="Sakura363" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, -150)
+
+[node name="Sakura364" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, -150)
+
+[node name="Sakura365" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, -150)
+
+[node name="Sakura366" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, -150)
+
+[node name="Sakura367" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, -150)
+
+[node name="Sakura368" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, -150)
+
+[node name="Sakura269" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, -30)
+
+[node name="Sakura270" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, -30)
+
+[node name="Sakura271" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, -30)
+
+[node name="Sakura272" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, -30)
+
+[node name="Sakura273" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, -30)
+
+[node name="Sakura274" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, -30)
+
+[node name="Sakura275" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, -30)
+
+[node name="Sakura276" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, -30)
+
+[node name="Sakura277" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, -30)
+
+[node name="Sakura278" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, -30)
+
+[node name="Sakura279" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 0)
+
+[node name="Sakura280" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 0)
+
+[node name="Sakura281" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 0)
+
+[node name="Sakura282" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 0)
+
+[node name="Sakura283" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 0)
+
+[node name="Sakura284" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 0)
+
+[node name="Sakura285" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 0)
+
+[node name="Sakura286" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 0)
+
+[node name="Sakura287" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 0)
+
+[node name="Sakura288" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 0)
+
+[node name="Sakura369" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, -120)
+
+[node name="Sakura370" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, -120)
+
+[node name="Sakura371" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, -120)
+
+[node name="Sakura372" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, -120)
+
+[node name="Sakura373" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, -120)
+
+[node name="Sakura374" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, -120)
+
+[node name="Sakura375" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, -120)
+
+[node name="Sakura376" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, -120)
+
+[node name="Sakura377" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, -120)
+
+[node name="Sakura378" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, -120)
+
+[node name="Sakura379" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, -90)
+
+[node name="Sakura380" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, -90)
+
+[node name="Sakura381" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, -90)
+
+[node name="Sakura382" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, -90)
+
+[node name="Sakura383" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, -90)
+
+[node name="Sakura384" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, -90)
+
+[node name="Sakura385" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, -90)
+
+[node name="Sakura386" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, -90)
+
+[node name="Sakura387" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, -90)
+
+[node name="Sakura388" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, -90)
+
+[node name="Sakura389" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, -60)
+
+[node name="Sakura390" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, -60)
+
+[node name="Sakura391" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, -60)
+
+[node name="Sakura392" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, -60)
+
+[node name="Sakura393" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, -60)
+
+[node name="Sakura394" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, -60)
+
+[node name="Sakura395" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, -60)
+
+[node name="Sakura396" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, -60)
+
+[node name="Sakura397" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, -60)
+
+[node name="Sakura398" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, -60)
+
+[node name="Sakura399" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, -210)
+
+[node name="Sakura400" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, -210)
+
+[node name="Sakura401" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, -210)
+
+[node name="Sakura402" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, -210)
+
+[node name="Sakura403" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, -210)
+
+[node name="Sakura404" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, -210)
+
+[node name="Sakura405" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, -210)
+
+[node name="Sakura406" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, -210)
+
+[node name="Sakura407" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, -210)
+
+[node name="Sakura408" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, -210)
+
+[node name="Sakura409" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, -180)
+
+[node name="Sakura410" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, -180)
+
+[node name="Sakura411" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, -180)
+
+[node name="Sakura412" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, -180)
+
+[node name="Sakura413" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, -180)
+
+[node name="Sakura414" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, -180)
+
+[node name="Sakura415" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, -180)
+
+[node name="Sakura416" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, -180)
+
+[node name="Sakura417" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, -180)
+
+[node name="Sakura418" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, -180)
+
+[node name="Sakura419" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, -150)
+
+[node name="Sakura420" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, -150)
+
+[node name="Sakura421" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, -150)
+
+[node name="Sakura422" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, -150)
+
+[node name="Sakura423" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, -150)
+
+[node name="Sakura424" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, -150)
+
+[node name="Sakura425" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, -150)
+
+[node name="Sakura426" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, -150)
+
+[node name="Sakura427" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, -150)
+
+[node name="Sakura428" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, -150)
+
+[node name="Sakura429" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, -30)
+
+[node name="Sakura430" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, -30)
+
+[node name="Sakura431" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, -30)
+
+[node name="Sakura432" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, -30)
+
+[node name="Sakura433" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, -30)
+
+[node name="Sakura434" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, -30)
+
+[node name="Sakura435" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, -30)
+
+[node name="Sakura436" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, -30)
+
+[node name="Sakura437" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, -30)
+
+[node name="Sakura438" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, -30)
+
+[node name="Sakura439" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 0)
+
+[node name="Sakura440" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 0)
+
+[node name="Sakura441" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 0)
+
+[node name="Sakura442" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 0)
+
+[node name="Sakura443" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 0)
+
+[node name="Sakura444" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 0)
+
+[node name="Sakura445" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 0)
+
+[node name="Sakura446" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 0)
+
+[node name="Sakura447" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 0)
+
+[node name="Sakura448" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 0)
+
+[node name="Sakura449" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, -120)
+
+[node name="Sakura450" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, -120)
+
+[node name="Sakura451" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, -120)
+
+[node name="Sakura452" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, -120)
+
+[node name="Sakura453" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, -120)
+
+[node name="Sakura454" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, -120)
+
+[node name="Sakura455" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, -120)
+
+[node name="Sakura456" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, -120)
+
+[node name="Sakura457" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, -120)
+
+[node name="Sakura458" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, -120)
+
+[node name="Sakura459" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, -90)
+
+[node name="Sakura460" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, -90)
+
+[node name="Sakura461" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, -90)
+
+[node name="Sakura462" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, -90)
+
+[node name="Sakura463" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, -90)
+
+[node name="Sakura464" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, -90)
+
+[node name="Sakura465" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, -90)
+
+[node name="Sakura466" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, -90)
+
+[node name="Sakura467" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, -90)
+
+[node name="Sakura468" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, -90)
+
+[node name="Sakura469" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, -60)
+
+[node name="Sakura470" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, -60)
+
+[node name="Sakura471" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, -60)
+
+[node name="Sakura472" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, -60)
+
+[node name="Sakura473" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, -60)
+
+[node name="Sakura474" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, -60)
+
+[node name="Sakura475" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, -60)
+
+[node name="Sakura476" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, -60)
+
+[node name="Sakura477" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, -60)
+
+[node name="Sakura478" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, -60)
+
+[node name="Sakura479" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, -210)
+
+[node name="Sakura480" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, -210)
+
+[node name="Sakura481" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, -210)
+
+[node name="Sakura482" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, -210)
+
+[node name="Sakura483" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, -210)
+
+[node name="Sakura484" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, -210)
+
+[node name="Sakura485" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, -210)
+
+[node name="Sakura486" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, -210)
+
+[node name="Sakura487" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, -210)
+
+[node name="Sakura488" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, -210)
+
+[node name="Sakura489" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, -180)
+
+[node name="Sakura490" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, -180)
+
+[node name="Sakura491" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, -180)
+
+[node name="Sakura492" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, -180)
+
+[node name="Sakura493" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, -180)
+
+[node name="Sakura494" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, -180)
+
+[node name="Sakura495" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, -180)
+
+[node name="Sakura496" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, -180)
+
+[node name="Sakura497" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, -180)
+
+[node name="Sakura498" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, -180)
+
+[node name="Sakura499" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, -150)
+
+[node name="Sakura500" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, -150)
+
+[node name="Sakura501" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, -150)
+
+[node name="Sakura502" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, -150)
+
+[node name="Sakura503" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, -150)
+
+[node name="Sakura504" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, -150)
+
+[node name="Sakura505" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, -150)
+
+[node name="Sakura506" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, -150)
+
+[node name="Sakura507" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, -150)
+
+[node name="Sakura508" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, -150)
+
+[node name="Sakura509" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, -30)
+
+[node name="Sakura510" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, -30)
+
+[node name="Sakura511" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, -30)
+
+[node name="Sakura512" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, -30)
+
+[node name="Sakura513" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, -30)
+
+[node name="Sakura514" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, -30)
+
+[node name="Sakura515" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, -30)
+
+[node name="Sakura516" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, -30)
+
+[node name="Sakura517" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, -30)
+
+[node name="Sakura518" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, -30)
+
+[node name="Sakura519" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 0)
+
+[node name="Sakura520" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 0)
+
+[node name="Sakura521" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 0)
+
+[node name="Sakura522" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 0)
+
+[node name="Sakura523" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 0)
+
+[node name="Sakura524" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 0)
+
+[node name="Sakura525" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 0)
+
+[node name="Sakura526" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 0)
+
+[node name="Sakura527" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 0)
+
+[node name="Sakura528" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 0)
+
+[node name="Sakura529" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, -120)
+
+[node name="Sakura530" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, -120)
+
+[node name="Sakura531" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, -120)
+
+[node name="Sakura532" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, -120)
+
+[node name="Sakura533" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, -120)
+
+[node name="Sakura534" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, -120)
+
+[node name="Sakura535" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, -120)
+
+[node name="Sakura536" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, -120)
+
+[node name="Sakura537" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, -120)
+
+[node name="Sakura538" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, -120)
+
+[node name="Sakura539" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, -90)
+
+[node name="Sakura540" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, -90)
+
+[node name="Sakura541" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, -90)
+
+[node name="Sakura542" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, -90)
+
+[node name="Sakura543" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, -90)
+
+[node name="Sakura544" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, -90)
+
+[node name="Sakura545" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, -90)
+
+[node name="Sakura546" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, -90)
+
+[node name="Sakura547" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, -90)
+
+[node name="Sakura548" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, -90)
+
+[node name="Sakura549" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, -60)
+
+[node name="Sakura550" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, -60)
+
+[node name="Sakura551" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, -60)
+
+[node name="Sakura552" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, -60)
+
+[node name="Sakura553" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, -60)
+
+[node name="Sakura554" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, -60)
+
+[node name="Sakura555" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, -60)
+
+[node name="Sakura556" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, -60)
+
+[node name="Sakura557" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, -60)
+
+[node name="Sakura558" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, -60)
+
+[node name="Sakura559" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, -210)
+
+[node name="Sakura560" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, -210)
+
+[node name="Sakura561" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, -210)
+
+[node name="Sakura562" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, -210)
+
+[node name="Sakura563" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, -210)
+
+[node name="Sakura564" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, -210)
+
+[node name="Sakura565" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, -210)
+
+[node name="Sakura566" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, -210)
+
+[node name="Sakura567" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, -210)
+
+[node name="Sakura568" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, -210)
+
+[node name="Sakura569" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, -180)
+
+[node name="Sakura570" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, -180)
+
+[node name="Sakura571" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, -180)
+
+[node name="Sakura572" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, -180)
+
+[node name="Sakura573" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, -180)
+
+[node name="Sakura574" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, -180)
+
+[node name="Sakura575" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, -180)
+
+[node name="Sakura576" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, -180)
+
+[node name="Sakura577" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, -180)
+
+[node name="Sakura578" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, -180)
+
+[node name="Sakura579" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, -150)
+
+[node name="Sakura580" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, -150)
+
+[node name="Sakura581" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, -150)
+
+[node name="Sakura582" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, -150)
+
+[node name="Sakura583" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, -150)
+
+[node name="Sakura584" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, -150)
+
+[node name="Sakura585" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, -150)
+
+[node name="Sakura586" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, -150)
+
+[node name="Sakura587" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, -150)
+
+[node name="Sakura588" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, -150)
+
+[node name="Sakura589" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, -30)
+
+[node name="Sakura590" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, -30)
+
+[node name="Sakura591" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, -30)
+
+[node name="Sakura592" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, -30)
+
+[node name="Sakura593" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, -30)
+
+[node name="Sakura594" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, -30)
+
+[node name="Sakura595" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, -30)
+
+[node name="Sakura596" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, -30)
+
+[node name="Sakura597" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, -30)
+
+[node name="Sakura598" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, -30)
+
+[node name="Sakura599" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 0)
+
+[node name="Sakura600" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 0)
+
+[node name="Sakura1427" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 120)
+
+[node name="Sakura1428" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 150)
+
+[node name="Sakura1429" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 180)
+
+[node name="Sakura1430" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 30)
+
+[node name="Sakura1431" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 60)
+
+[node name="Sakura1432" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 90)
+
+[node name="Sakura1466" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 120)
+
+[node name="Sakura1467" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 150)
+
+[node name="Sakura1468" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 180)
+
+[node name="Sakura1469" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 30)
+
+[node name="Sakura1470" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 60)
+
+[node name="Sakura1471" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 90)
+
+[node name="Sakura1433" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 210)
+
+[node name="Sakura1434" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 240)
+
+[node name="Sakura1435" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 330)
+
+[node name="Sakura1436" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 30)
+
+[node name="Sakura1437" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 60)
+
+[node name="Sakura1438" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 360)
+
+[node name="Sakura1439" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 390)
+
+[node name="Sakura1440" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 330)
+
+[node name="Sakura1441" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 90)
+
+[node name="Sakura1442" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 120)
+
+[node name="Sakura1472" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 450)
+
+[node name="Sakura1473" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 480)
+
+[node name="Sakura1474" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 510)
+
+[node name="Sakura1475" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 360)
+
+[node name="Sakura1476" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 390)
+
+[node name="Sakura1477" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 420)
+
+[node name="Sakura1478" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 450)
+
+[node name="Sakura1479" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 480)
+
+[node name="Sakura1480" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 510)
+
+[node name="Sakura1481" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 360)
+
+[node name="Sakura1482" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 390)
+
+[node name="Sakura1483" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 420)
+
+[node name="Sakura1509" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 480)
+
+[node name="Sakura1510" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 510)
+
+[node name="Sakura1511" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 540)
+
+[node name="Sakura1512" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 450)
+
+[node name="Sakura1508" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 420)
+
+[node name="Sakura1484" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 540)
+
+[node name="Sakura1485" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 570)
+
+[node name="Sakura1513" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 570)
+
+[node name="Sakura1517" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 480)
+
+[node name="Sakura1518" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 510)
+
+[node name="Sakura1519" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 540)
+
+[node name="Sakura1520" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 450)
+
+[node name="Sakura1521" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 570)
+
+[node name="Sakura1486" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 360)
+
+[node name="Sakura1487" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 390)
+
+[node name="Sakura1488" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 420)
+
+[node name="Sakura1489" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 450)
+
+[node name="Sakura601" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 0)
+
+[node name="Sakura1570" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 30)
+
+[node name="Sakura1571" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 30)
+
+[node name="Sakura1572" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 30)
+
+[node name="Sakura1573" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 60)
+
+[node name="Sakura1574" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 90)
+
+[node name="Sakura1575" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 30)
+
+[node name="Sakura602" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 0)
+
+[node name="Sakura603" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 0)
+
+[node name="Sakura604" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 0)
+
+[node name="Sakura605" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 0)
+
+[node name="Sakura606" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 0)
+
+[node name="Sakura607" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 0)
+
+[node name="Sakura608" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 0)
+
+[node name="Sakura609" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, -120)
+
+[node name="Sakura610" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, -120)
+
+[node name="Sakura611" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, -120)
+
+[node name="Sakura612" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, -120)
+
+[node name="Sakura613" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, -120)
+
+[node name="Sakura614" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, -120)
+
+[node name="Sakura615" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, -120)
+
+[node name="Sakura616" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, -120)
+
+[node name="Sakura617" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, -120)
+
+[node name="Sakura618" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, -120)
+
+[node name="Sakura619" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, -90)
+
+[node name="Sakura620" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, -90)
+
+[node name="Sakura621" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, -90)
+
+[node name="Sakura622" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, -90)
+
+[node name="Sakura623" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, -90)
+
+[node name="Sakura624" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, -90)
+
+[node name="Sakura625" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, -90)
+
+[node name="Sakura626" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, -90)
+
+[node name="Sakura627" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, -90)
+
+[node name="Sakura628" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, -90)
+
+[node name="Sakura629" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, -60)
+
+[node name="Sakura630" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, -60)
+
+[node name="Sakura631" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, -60)
+
+[node name="Sakura632" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, -60)
+
+[node name="Sakura633" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, -60)
+
+[node name="Sakura634" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, -60)
+
+[node name="Sakura635" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, -60)
+
+[node name="Sakura636" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, -60)
+
+[node name="Sakura637" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, -60)
+
+[node name="Sakura638" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, -60)
+
+[node name="Sakura639" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, -210)
+
+[node name="Sakura640" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, -210)
+
+[node name="Sakura641" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, -210)
+
+[node name="Sakura642" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, -210)
+
+[node name="Sakura643" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, -210)
+
+[node name="Sakura644" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, -210)
+
+[node name="Sakura645" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, -210)
+
+[node name="Sakura646" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, -210)
+
+[node name="Sakura647" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, -210)
+
+[node name="Sakura648" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, -210)
+
+[node name="Sakura649" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, -180)
+
+[node name="Sakura650" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, -180)
+
+[node name="Sakura651" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, -180)
+
+[node name="Sakura652" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, -180)
+
+[node name="Sakura653" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, -180)
+
+[node name="Sakura654" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, -180)
+
+[node name="Sakura655" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, -180)
+
+[node name="Sakura656" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, -180)
+
+[node name="Sakura657" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, -180)
+
+[node name="Sakura658" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, -180)
+
+[node name="Sakura659" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, -150)
+
+[node name="Sakura660" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, -150)
+
+[node name="Sakura661" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, -150)
+
+[node name="Sakura662" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, -150)
+
+[node name="Sakura663" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, -150)
+
+[node name="Sakura664" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, -150)
+
+[node name="Sakura665" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, -150)
+
+[node name="Sakura666" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, -150)
+
+[node name="Sakura667" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, -150)
+
+[node name="Sakura668" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, -150)
+
+[node name="Sakura669" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, -30)
+
+[node name="Sakura670" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, -30)
+
+[node name="Sakura671" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, -30)
+
+[node name="Sakura672" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, -30)
+
+[node name="Sakura673" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, -30)
+
+[node name="Sakura674" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, -30)
+
+[node name="Sakura675" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, -30)
+
+[node name="Sakura676" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, -30)
+
+[node name="Sakura677" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, -30)
+
+[node name="Sakura678" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, -30)
+
+[node name="Sakura679" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 0)
+
+[node name="Sakura680" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 0)
+
+[node name="Sakura681" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 0)
+
+[node name="Sakura682" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 0)
+
+[node name="Sakura683" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 0)
+
+[node name="Sakura684" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 0)
+
+[node name="Sakura685" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 0)
+
+[node name="Sakura686" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 0)
+
+[node name="Sakura687" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 0)
+
+[node name="Sakura688" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 0)
+
+[node name="Sakura1167" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, -120)
+
+[node name="Sakura1168" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, -120)
+
+[node name="Sakura1229" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, -120)
+
+[node name="Sakura1230" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, -120)
+
+[node name="Sakura1231" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, -90)
+
+[node name="Sakura1232" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, -90)
+
+[node name="Sakura1233" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, -90)
+
+[node name="Sakura1234" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, -90)
+
+[node name="Sakura1235" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, -60)
+
+[node name="Sakura1236" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, -60)
+
+[node name="Sakura1237" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, -60)
+
+[node name="Sakura1238" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, -60)
+
+[node name="Sakura1239" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, -210)
+
+[node name="Sakura1240" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, -210)
+
+[node name="Sakura1241" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, -210)
+
+[node name="Sakura1242" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, -210)
+
+[node name="Sakura1243" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, -180)
+
+[node name="Sakura1244" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, -180)
+
+[node name="Sakura1245" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, -180)
+
+[node name="Sakura1246" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, -180)
+
+[node name="Sakura1247" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, -150)
+
+[node name="Sakura1248" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, -150)
+
+[node name="Sakura1249" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, -150)
+
+[node name="Sakura1250" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, -150)
+
+[node name="Sakura1251" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, -30)
+
+[node name="Sakura1252" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, -30)
+
+[node name="Sakura1253" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, -30)
+
+[node name="Sakura1254" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, -30)
+
+[node name="Sakura1255" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 0)
+
+[node name="Sakura1256" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 0)
+
+[node name="Sakura1257" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 0)
+
+[node name="Sakura1258" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 0)
+
+[node name="Sakura1259" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, -120)
+
+[node name="Sakura1260" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, -120)
+
+[node name="Sakura1261" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, -90)
+
+[node name="Sakura1262" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, -90)
+
+[node name="Sakura1263" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, -60)
+
+[node name="Sakura1264" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, -60)
+
+[node name="Sakura1265" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, -210)
+
+[node name="Sakura1266" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, -210)
+
+[node name="Sakura1267" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, -180)
+
+[node name="Sakura1268" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, -180)
+
+[node name="Sakura1269" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, -150)
+
+[node name="Sakura1270" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, -150)
+
+[node name="Sakura1271" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, -30)
+
+[node name="Sakura1272" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, -30)
+
+[node name="Sakura1273" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 0)
+
+[node name="Sakura1274" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 0)
+
+[node name="Sakura689" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 780)
+
+[node name="Sakura690" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 780)
+
+[node name="Sakura691" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 780)
+
+[node name="Sakura692" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 780)
+
+[node name="Sakura693" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 780)
+
+[node name="Sakura694" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 780)
+
+[node name="Sakura695" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 780)
+
+[node name="Sakura696" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 780)
+
+[node name="Sakura697" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 780)
+
+[node name="Sakura698" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 780)
+
+[node name="Sakura699" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 810)
+
+[node name="Sakura700" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 810)
+
+[node name="Sakura701" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 810)
+
+[node name="Sakura702" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 810)
+
+[node name="Sakura703" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 810)
+
+[node name="Sakura704" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 810)
+
+[node name="Sakura705" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 810)
+
+[node name="Sakura706" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 810)
+
+[node name="Sakura707" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 810)
+
+[node name="Sakura708" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 810)
+
+[node name="Sakura709" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 840)
+
+[node name="Sakura710" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 840)
+
+[node name="Sakura711" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 840)
+
+[node name="Sakura712" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 840)
+
+[node name="Sakura713" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 840)
+
+[node name="Sakura714" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 840)
+
+[node name="Sakura715" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 840)
+
+[node name="Sakura716" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 840)
+
+[node name="Sakura717" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 840)
+
+[node name="Sakura718" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 840)
+
+[node name="Sakura719" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 690)
+
+[node name="Sakura720" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 690)
+
+[node name="Sakura721" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 690)
+
+[node name="Sakura722" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 690)
+
+[node name="Sakura723" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 690)
+
+[node name="Sakura724" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 690)
+
+[node name="Sakura725" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 690)
+
+[node name="Sakura726" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 690)
+
+[node name="Sakura727" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 690)
+
+[node name="Sakura728" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 690)
+
+[node name="Sakura729" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 720)
+
+[node name="Sakura730" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 720)
+
+[node name="Sakura731" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 720)
+
+[node name="Sakura732" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 720)
+
+[node name="Sakura733" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 720)
+
+[node name="Sakura734" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 720)
+
+[node name="Sakura735" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 720)
+
+[node name="Sakura736" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 720)
+
+[node name="Sakura1534" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 630)
+
+[node name="Sakura1535" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 630)
+
+[node name="Sakura1542" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 660)
+
+[node name="Sakura1543" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 660)
+
+[node name="Sakura1536" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 660)
+
+[node name="Sakura1537" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 660)
+
+[node name="Sakura1538" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 630)
+
+[node name="Sakura1544" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 600)
+
+[node name="Sakura1545" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 600)
+
+[node name="Sakura1539" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 630)
+
+[node name="Sakura1540" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 660)
+
+[node name="Sakura1541" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 660)
+
+[node name="Sakura737" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 720)
+
+[node name="Sakura738" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 720)
+
+[node name="Sakura739" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 750)
+
+[node name="Sakura740" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 750)
+
+[node name="Sakura741" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 750)
+
+[node name="Sakura742" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 750)
+
+[node name="Sakura743" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 750)
+
+[node name="Sakura744" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 750)
+
+[node name="Sakura745" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 750)
+
+[node name="Sakura746" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 750)
+
+[node name="Sakura747" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 750)
+
+[node name="Sakura748" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 750)
+
+[node name="Sakura749" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 870)
+
+[node name="Sakura750" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 870)
+
+[node name="Sakura751" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 870)
+
+[node name="Sakura752" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 870)
+
+[node name="Sakura753" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 870)
+
+[node name="Sakura754" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 870)
+
+[node name="Sakura755" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 870)
+
+[node name="Sakura756" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 870)
+
+[node name="Sakura757" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 870)
+
+[node name="Sakura758" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 870)
+
+[node name="Sakura759" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 900)
+
+[node name="Sakura760" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 900)
+
+[node name="Sakura761" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 900)
+
+[node name="Sakura762" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 900)
+
+[node name="Sakura763" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 900)
+
+[node name="Sakura764" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 900)
+
+[node name="Sakura765" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 900)
+
+[node name="Sakura766" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 900)
+
+[node name="Sakura767" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 900)
+
+[node name="Sakura768" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 900)
+
+[node name="Sakura769" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 780)
+
+[node name="Sakura770" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 780)
+
+[node name="Sakura771" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 780)
+
+[node name="Sakura772" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 780)
+
+[node name="Sakura773" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 780)
+
+[node name="Sakura774" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 780)
+
+[node name="Sakura775" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 780)
+
+[node name="Sakura776" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 780)
+
+[node name="Sakura777" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 780)
+
+[node name="Sakura778" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 780)
+
+[node name="Sakura779" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 810)
+
+[node name="Sakura780" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 810)
+
+[node name="Sakura781" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 810)
+
+[node name="Sakura782" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 810)
+
+[node name="Sakura783" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 810)
+
+[node name="Sakura784" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 810)
+
+[node name="Sakura785" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 810)
+
+[node name="Sakura786" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 810)
+
+[node name="Sakura787" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 810)
+
+[node name="Sakura788" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 810)
+
+[node name="Sakura789" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 840)
+
+[node name="Sakura790" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 840)
+
+[node name="Sakura791" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 840)
+
+[node name="Sakura792" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 840)
+
+[node name="Sakura793" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 840)
+
+[node name="Sakura794" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 840)
+
+[node name="Sakura795" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 840)
+
+[node name="Sakura796" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 840)
+
+[node name="Sakura797" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 840)
+
+[node name="Sakura798" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 840)
+
+[node name="Sakura799" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 690)
+
+[node name="Sakura800" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 690)
+
+[node name="Sakura801" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 690)
+
+[node name="Sakura802" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 690)
+
+[node name="Sakura803" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 690)
+
+[node name="Sakura804" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 690)
+
+[node name="Sakura805" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 690)
+
+[node name="Sakura806" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 690)
+
+[node name="Sakura807" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 690)
+
+[node name="Sakura808" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 690)
+
+[node name="Sakura809" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 720)
+
+[node name="Sakura810" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 720)
+
+[node name="Sakura811" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 720)
+
+[node name="Sakura812" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 720)
+
+[node name="Sakura813" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 720)
+
+[node name="Sakura814" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 720)
+
+[node name="Sakura815" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 720)
+
+[node name="Sakura816" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 720)
+
+[node name="Sakura1532" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 630)
+
+[node name="Sakura1533" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 660)
+
+[node name="Sakura817" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 720)
+
+[node name="Sakura818" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 720)
+
+[node name="Sakura819" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 750)
+
+[node name="Sakura820" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 750)
+
+[node name="Sakura821" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 750)
+
+[node name="Sakura822" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 750)
+
+[node name="Sakura823" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 750)
+
+[node name="Sakura824" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 750)
+
+[node name="Sakura825" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 750)
+
+[node name="Sakura826" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 750)
+
+[node name="Sakura827" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 750)
+
+[node name="Sakura828" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 750)
+
+[node name="Sakura829" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 870)
+
+[node name="Sakura830" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 870)
+
+[node name="Sakura831" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 870)
+
+[node name="Sakura832" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 870)
+
+[node name="Sakura833" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 870)
+
+[node name="Sakura834" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 870)
+
+[node name="Sakura835" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 870)
+
+[node name="Sakura836" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 870)
+
+[node name="Sakura837" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 870)
+
+[node name="Sakura838" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 870)
+
+[node name="Sakura839" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 900)
+
+[node name="Sakura840" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 900)
+
+[node name="Sakura841" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 900)
+
+[node name="Sakura842" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 900)
+
+[node name="Sakura843" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 900)
+
+[node name="Sakura844" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 900)
+
+[node name="Sakura845" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 900)
+
+[node name="Sakura846" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 900)
+
+[node name="Sakura847" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 900)
+
+[node name="Sakura848" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 900)
+
+[node name="Sakura849" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 780)
+
+[node name="Sakura850" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 780)
+
+[node name="Sakura851" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 780)
+
+[node name="Sakura852" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 780)
+
+[node name="Sakura853" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 780)
+
+[node name="Sakura854" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 780)
+
+[node name="Sakura855" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 780)
+
+[node name="Sakura856" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 780)
+
+[node name="Sakura857" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 780)
+
+[node name="Sakura858" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 780)
+
+[node name="Sakura859" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 810)
+
+[node name="Sakura860" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 810)
+
+[node name="Sakura861" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 810)
+
+[node name="Sakura862" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 810)
+
+[node name="Sakura863" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 810)
+
+[node name="Sakura864" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 810)
+
+[node name="Sakura865" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 810)
+
+[node name="Sakura866" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 810)
+
+[node name="Sakura867" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 810)
+
+[node name="Sakura868" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 810)
+
+[node name="Sakura869" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 840)
+
+[node name="Sakura870" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 840)
+
+[node name="Sakura871" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 840)
+
+[node name="Sakura872" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 840)
+
+[node name="Sakura873" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 840)
+
+[node name="Sakura874" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 840)
+
+[node name="Sakura875" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 840)
+
+[node name="Sakura876" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 840)
+
+[node name="Sakura877" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 840)
+
+[node name="Sakura878" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 840)
+
+[node name="Sakura879" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 690)
+
+[node name="Sakura880" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 690)
+
+[node name="Sakura881" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 690)
+
+[node name="Sakura882" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 690)
+
+[node name="Sakura883" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 690)
+
+[node name="Sakura884" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 690)
+
+[node name="Sakura885" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 690)
+
+[node name="Sakura886" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 690)
+
+[node name="Sakura887" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 690)
+
+[node name="Sakura1522" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 660)
+
+[node name="Sakura1525" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 660)
+
+[node name="Sakura1528" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 660)
+
+[node name="Sakura1530" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 630)
+
+[node name="Sakura1531" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 630)
+
+[node name="Sakura1529" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 660)
+
+[node name="Sakura888" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 690)
+
+[node name="Sakura889" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 720)
+
+[node name="Sakura890" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 720)
+
+[node name="Sakura891" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 720)
+
+[node name="Sakura892" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 720)
+
+[node name="Sakura893" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 720)
+
+[node name="Sakura894" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 720)
+
+[node name="Sakura895" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 720)
+
+[node name="Sakura896" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 720)
+
+[node name="Sakura897" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 720)
+
+[node name="Sakura898" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 720)
+
+[node name="Sakura899" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 750)
+
+[node name="Sakura900" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 750)
+
+[node name="Sakura901" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 750)
+
+[node name="Sakura902" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 750)
+
+[node name="Sakura903" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 750)
+
+[node name="Sakura904" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 750)
+
+[node name="Sakura905" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 750)
+
+[node name="Sakura906" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 750)
+
+[node name="Sakura907" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 750)
+
+[node name="Sakura908" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 750)
+
+[node name="Sakura909" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 870)
+
+[node name="Sakura910" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 870)
+
+[node name="Sakura911" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 870)
+
+[node name="Sakura912" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 870)
+
+[node name="Sakura913" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 870)
+
+[node name="Sakura914" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 870)
+
+[node name="Sakura915" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 870)
+
+[node name="Sakura916" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 870)
+
+[node name="Sakura917" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 870)
+
+[node name="Sakura918" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 870)
+
+[node name="Sakura919" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 900)
+
+[node name="Sakura920" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 900)
+
+[node name="Sakura921" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 900)
+
+[node name="Sakura922" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 900)
+
+[node name="Sakura923" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 900)
+
+[node name="Sakura924" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 900)
+
+[node name="Sakura925" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 900)
+
+[node name="Sakura926" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 900)
+
+[node name="Sakura927" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 900)
+
+[node name="Sakura928" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 900)
+
+[node name="Sakura929" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 780)
+
+[node name="Sakura930" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 780)
+
+[node name="Sakura931" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 780)
+
+[node name="Sakura932" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 780)
+
+[node name="Sakura933" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 780)
+
+[node name="Sakura934" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 780)
+
+[node name="Sakura935" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 780)
+
+[node name="Sakura936" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 780)
+
+[node name="Sakura937" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 780)
+
+[node name="Sakura938" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 780)
+
+[node name="Sakura939" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 810)
+
+[node name="Sakura940" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 810)
+
+[node name="Sakura941" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 810)
+
+[node name="Sakura942" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 810)
+
+[node name="Sakura943" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 810)
+
+[node name="Sakura944" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 810)
+
+[node name="Sakura945" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 810)
+
+[node name="Sakura946" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 810)
+
+[node name="Sakura947" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 810)
+
+[node name="Sakura948" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 810)
+
+[node name="Sakura949" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 840)
+
+[node name="Sakura950" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 840)
+
+[node name="Sakura951" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 840)
+
+[node name="Sakura952" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 840)
+
+[node name="Sakura953" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 840)
+
+[node name="Sakura954" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 840)
+
+[node name="Sakura955" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 840)
+
+[node name="Sakura956" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 840)
+
+[node name="Sakura957" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 840)
+
+[node name="Sakura958" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 840)
+
+[node name="Sakura959" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 690)
+
+[node name="Sakura960" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 690)
+
+[node name="Sakura961" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 690)
+
+[node name="Sakura962" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 690)
+
+[node name="Sakura963" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 690)
+
+[node name="Sakura964" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 690)
+
+[node name="Sakura965" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 690)
+
+[node name="Sakura966" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 690)
+
+[node name="Sakura967" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 690)
+
+[node name="Sakura968" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 690)
+
+[node name="Sakura969" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 720)
+
+[node name="Sakura970" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 720)
+
+[node name="Sakura971" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 720)
+
+[node name="Sakura972" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 720)
+
+[node name="Sakura973" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 720)
+
+[node name="Sakura974" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 720)
+
+[node name="Sakura975" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 720)
+
+[node name="Sakura976" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 720)
+
+[node name="Sakura977" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 720)
+
+[node name="Sakura978" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 720)
+
+[node name="Sakura979" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 750)
+
+[node name="Sakura980" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 750)
+
+[node name="Sakura981" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 750)
+
+[node name="Sakura982" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 750)
+
+[node name="Sakura983" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 750)
+
+[node name="Sakura984" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 750)
+
+[node name="Sakura985" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 750)
+
+[node name="Sakura986" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 750)
+
+[node name="Sakura987" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 750)
+
+[node name="Sakura988" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 750)
+
+[node name="Sakura989" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 870)
+
+[node name="Sakura990" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 870)
+
+[node name="Sakura991" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 870)
+
+[node name="Sakura992" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 870)
+
+[node name="Sakura993" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 870)
+
+[node name="Sakura994" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 870)
+
+[node name="Sakura995" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 870)
+
+[node name="Sakura996" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 870)
+
+[node name="Sakura997" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 870)
+
+[node name="Sakura998" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 870)
+
+[node name="Sakura999" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 900)
+
+[node name="Sakura1000" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 900)
+
+[node name="Sakura1001" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 900)
+
+[node name="Sakura1002" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 900)
+
+[node name="Sakura1003" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 900)
+
+[node name="Sakura1004" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 900)
+
+[node name="Sakura1005" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 900)
+
+[node name="Sakura1006" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 900)
+
+[node name="Sakura1007" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 900)
+
+[node name="Sakura1008" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 900)
+
+[node name="Sakura1009" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 780)
+
+[node name="Sakura1010" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 780)
+
+[node name="Sakura1011" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 780)
+
+[node name="Sakura1012" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 780)
+
+[node name="Sakura1013" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 780)
+
+[node name="Sakura1014" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 810)
+
+[node name="Sakura1015" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 810)
+
+[node name="Sakura1016" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 810)
+
+[node name="Sakura1017" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 810)
+
+[node name="Sakura1018" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 810)
+
+[node name="Sakura1019" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 840)
+
+[node name="Sakura1020" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 840)
+
+[node name="Sakura1021" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 840)
+
+[node name="Sakura1022" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 840)
+
+[node name="Sakura1023" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 840)
+
+[node name="Sakura1024" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 690)
+
+[node name="Sakura1025" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 690)
+
+[node name="Sakura1026" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 690)
+
+[node name="Sakura1027" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 690)
+
+[node name="Sakura1028" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 690)
+
+[node name="Sakura1029" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 720)
+
+[node name="Sakura1030" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 720)
+
+[node name="Sakura1031" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 720)
+
+[node name="Sakura1032" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 720)
+
+[node name="Sakura1033" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 720)
+
+[node name="Sakura1034" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 750)
+
+[node name="Sakura1035" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 750)
+
+[node name="Sakura1036" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 750)
+
+[node name="Sakura1037" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 750)
+
+[node name="Sakura1038" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 750)
+
+[node name="Sakura1039" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 870)
+
+[node name="Sakura1040" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 870)
+
+[node name="Sakura1041" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 870)
+
+[node name="Sakura1042" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 870)
+
+[node name="Sakura1043" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 870)
+
+[node name="Sakura1044" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 900)
+
+[node name="Sakura1045" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 900)
+
+[node name="Sakura1046" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 900)
+
+[node name="Sakura1047" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 900)
+
+[node name="Sakura1048" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 900)
+
+[node name="Sakura1049" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 780)
+
+[node name="Sakura1050" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 810)
+
+[node name="Sakura1051" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 840)
+
+[node name="Sakura1052" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 690)
+
+[node name="Sakura1053" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 720)
+
+[node name="Sakura1054" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 750)
+
+[node name="Sakura1055" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 870)
+
+[node name="Sakura1056" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 900)
+
+[node name="Sakura289" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 30)
+
+[node name="Sakura290" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 30)
+
+[node name="Sakura291" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 30)
+
+[node name="Sakura292" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 30)
+
+[node name="Sakura293" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 30)
+
+[node name="Sakura294" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 30)
+
+[node name="Sakura295" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 30)
+
+[node name="Sakura296" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 30)
+
+[node name="Sakura297" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 30)
+
+[node name="Sakura298" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 30)
+
+[node name="Sakura299" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 60)
+
+[node name="Sakura300" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 60)
+
+[node name="Sakura301" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 60)
+
+[node name="Sakura302" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 60)
+
+[node name="Sakura303" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 60)
+
+[node name="Sakura304" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 60)
+
+[node name="Sakura305" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 60)
+
+[node name="Sakura306" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 60)
+
+[node name="Sakura307" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 60)
+
+[node name="Sakura308" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 60)
+
+[node name="Sakura309" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 90)
+
+[node name="Sakura310" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 90)
+
+[node name="Sakura311" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 90)
+
+[node name="Sakura312" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 90)
+
+[node name="Sakura313" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 90)
+
+[node name="Sakura314" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 90)
+
+[node name="Sakura315" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 90)
+
+[node name="Sakura316" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 90)
+
+[node name="Sakura317" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 90)
+
+[node name="Sakura318" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 90)
+
+[node name="Sakura1546" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 30)
+
+[node name="Sakura1547" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 30)
+
+[node name="Sakura1548" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 30)
+
+[node name="Sakura1549" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 30)
+
+[node name="Sakura1550" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 30)
+
+[node name="Sakura1551" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 30)
+
+[node name="Sakura1552" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 30)
+
+[node name="Sakura1553" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 30)
+
+[node name="Sakura1554" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 60)
+
+[node name="Sakura1557" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 60)
+
+[node name="Sakura1558" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1754, 60)
+
+[node name="Sakura1559" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1776, 60)
+
+[node name="Sakura1560" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1798, 60)
+
+[node name="Sakura1561" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1820, 60)
+
+[node name="Sakura1562" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1842, 60)
+
+[node name="Sakura1563" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1732, 90)
+
+[node name="Sakura1555" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 90)
+
+[node name="Sakura1556" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1710, 120)
+
+[node name="Sakura319" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 120)
+
+[node name="Sakura320" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 120)
+
+[node name="Sakura321" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 120)
+
+[node name="Sakura322" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 120)
+
+[node name="Sakura323" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 120)
+
+[node name="Sakura324" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 120)
+
+[node name="Sakura325" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 120)
+
+[node name="Sakura326" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 120)
+
+[node name="Sakura327" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 120)
+
+[node name="Sakura328" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 120)
+
+[node name="Sakura329" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 150)
+
+[node name="Sakura330" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 150)
+
+[node name="Sakura331" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 150)
+
+[node name="Sakura332" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 150)
+
+[node name="Sakura333" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 150)
+
+[node name="Sakura334" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 150)
+
+[node name="Sakura335" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 150)
+
+[node name="Sakura336" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 150)
+
+[node name="Sakura337" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 150)
+
+[node name="Sakura338" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 150)
+
+[node name="Sakura229" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 480)
+
+[node name="Sakura230" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 480)
+
+[node name="Sakura231" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 480)
+
+[node name="Sakura232" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 480)
+
+[node name="Sakura233" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 480)
+
+[node name="Sakura234" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 480)
+
+[node name="Sakura235" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 480)
+
+[node name="Sakura236" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 480)
+
+[node name="Sakura237" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 480)
+
+[node name="Sakura238" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1688, 480)
+
+[node name="Sakura1057" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 360)
+
+[node name="Sakura1058" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 360)
+
+[node name="Sakura1059" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 360)
+
+[node name="Sakura1060" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 360)
+
+[node name="Sakura1061" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 360)
+
+[node name="Sakura1062" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 360)
+
+[node name="Sakura1063" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 360)
+
+[node name="Sakura1064" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 360)
+
+[node name="Sakura1065" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 360)
+
+[node name="Sakura1066" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 360)
+
+[node name="Sakura1067" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 390)
+
+[node name="Sakura1068" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 390)
+
+[node name="Sakura1069" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 390)
+
+[node name="Sakura1070" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 390)
+
+[node name="Sakura1071" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 390)
+
+[node name="Sakura1072" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 390)
+
+[node name="Sakura1073" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 390)
+
+[node name="Sakura1074" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 390)
+
+[node name="Sakura1075" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 390)
+
+[node name="Sakura1076" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 390)
+
+[node name="Sakura1077" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 420)
+
+[node name="Sakura1078" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 420)
+
+[node name="Sakura1079" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 420)
+
+[node name="Sakura1080" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 420)
+
+[node name="Sakura1081" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 420)
+
+[node name="Sakura1082" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 420)
+
+[node name="Sakura1083" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 420)
+
+[node name="Sakura1084" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 420)
+
+[node name="Sakura1085" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 420)
+
+[node name="Sakura1086" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 420)
+
+[node name="Sakura1087" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 450)
+
+[node name="Sakura1088" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 450)
+
+[node name="Sakura1089" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 450)
+
+[node name="Sakura1090" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 450)
+
+[node name="Sakura1091" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 450)
+
+[node name="Sakura1092" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 450)
+
+[node name="Sakura1093" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 450)
+
+[node name="Sakura1094" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 450)
+
+[node name="Sakura1095" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 450)
+
+[node name="Sakura1096" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 450)
+
+[node name="Sakura1097" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 480)
+
+[node name="Sakura1098" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 480)
+
+[node name="Sakura1099" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 480)
+
+[node name="Sakura1100" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 480)
+
+[node name="Sakura1101" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 480)
+
+[node name="Sakura1102" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 480)
+
+[node name="Sakura1103" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 480)
+
+[node name="Sakura1104" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 480)
+
+[node name="Sakura1105" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 480)
+
+[node name="Sakura1106" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 480)
+
+[node name="Sakura1107" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 510)
+
+[node name="Sakura1108" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 510)
+
+[node name="Sakura1109" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 510)
+
+[node name="Sakura1110" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 510)
+
+[node name="Sakura1111" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 510)
+
+[node name="Sakura1112" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 510)
+
+[node name="Sakura1113" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 510)
+
+[node name="Sakura1114" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 510)
+
+[node name="Sakura1115" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 510)
+
+[node name="Sakura1116" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 510)
+
+[node name="Sakura1117" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 540)
+
+[node name="Sakura1118" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 540)
+
+[node name="Sakura1119" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 540)
+
+[node name="Sakura1120" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 540)
+
+[node name="Sakura1121" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 540)
+
+[node name="Sakura1122" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 540)
+
+[node name="Sakura1123" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 540)
+
+[node name="Sakura1124" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 540)
+
+[node name="Sakura1125" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 540)
+
+[node name="Sakura1126" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 540)
+
+[node name="Sakura1127" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 570)
+
+[node name="Sakura1128" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 570)
+
+[node name="Sakura1129" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 570)
+
+[node name="Sakura1130" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 570)
+
+[node name="Sakura1131" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 570)
+
+[node name="Sakura1132" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 570)
+
+[node name="Sakura1133" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 570)
+
+[node name="Sakura1134" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 570)
+
+[node name="Sakura1135" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 570)
+
+[node name="Sakura1136" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 570)
+
+[node name="Sakura1137" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 600)
+
+[node name="Sakura1138" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 600)
+
+[node name="Sakura1139" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 600)
+
+[node name="Sakura1140" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 600)
+
+[node name="Sakura1141" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 600)
+
+[node name="Sakura1142" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 600)
+
+[node name="Sakura1143" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 600)
+
+[node name="Sakura1144" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 600)
+
+[node name="Sakura1145" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 600)
+
+[node name="Sakura1146" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 600)
+
+[node name="Sakura1147" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 630)
+
+[node name="Sakura1148" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 630)
+
+[node name="Sakura1149" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 630)
+
+[node name="Sakura1150" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 630)
+
+[node name="Sakura1151" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 630)
+
+[node name="Sakura1152" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 630)
+
+[node name="Sakura1153" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 630)
+
+[node name="Sakura1154" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 630)
+
+[node name="Sakura1155" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 630)
+
+[node name="Sakura1156" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 630)
+
+[node name="Sakura1157" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 180)
+
+[node name="Sakura1158" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 180)
+
+[node name="Sakura1159" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 180)
+
+[node name="Sakura1160" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 180)
+
+[node name="Sakura1161" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 180)
+
+[node name="Sakura1162" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 180)
+
+[node name="Sakura1163" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 180)
+
+[node name="Sakura1164" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 180)
+
+[node name="Sakura1165" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 180)
+
+[node name="Sakura1166" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 180)
+
+[node name="Sakura1169" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 210)
+
+[node name="Sakura1170" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 210)
+
+[node name="Sakura1171" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 210)
+
+[node name="Sakura1172" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 210)
+
+[node name="Sakura1173" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 210)
+
+[node name="Sakura1174" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 210)
+
+[node name="Sakura1175" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 210)
+
+[node name="Sakura1176" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 210)
+
+[node name="Sakura1177" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 210)
+
+[node name="Sakura1178" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 210)
+
+[node name="Sakura1179" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 240)
+
+[node name="Sakura1180" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 240)
+
+[node name="Sakura1181" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 240)
+
+[node name="Sakura1182" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 240)
+
+[node name="Sakura1183" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 240)
+
+[node name="Sakura1184" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 240)
+
+[node name="Sakura1185" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 240)
+
+[node name="Sakura1186" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 240)
+
+[node name="Sakura1187" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 240)
+
+[node name="Sakura1188" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 240)
+
+[node name="Sakura1189" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 270)
+
+[node name="Sakura1190" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 270)
+
+[node name="Sakura1191" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 270)
+
+[node name="Sakura1192" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 270)
+
+[node name="Sakura1193" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 270)
+
+[node name="Sakura1194" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 270)
+
+[node name="Sakura1195" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 270)
+
+[node name="Sakura1196" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 270)
+
+[node name="Sakura1197" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 270)
+
+[node name="Sakura1198" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 270)
+
+[node name="Sakura1275" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 60)
+
+[node name="Sakura1276" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 60)
+
+[node name="Sakura1277" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 60)
+
+[node name="Sakura1278" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 60)
+
+[node name="Sakura1279" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 60)
+
+[node name="Sakura1280" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 60)
+
+[node name="Sakura1281" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 60)
+
+[node name="Sakura1282" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 60)
+
+[node name="Sakura1283" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 60)
+
+[node name="Sakura1284" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 60)
+
+[node name="Sakura1315" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 30)
+
+[node name="Sakura1316" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 30)
+
+[node name="Sakura1317" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 30)
+
+[node name="Sakura1318" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 30)
+
+[node name="Sakura1319" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 30)
+
+[node name="Sakura1320" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 30)
+
+[node name="Sakura1321" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 30)
+
+[node name="Sakura1322" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 30)
+
+[node name="Sakura1323" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 30)
+
+[node name="Sakura1324" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 30)
+
+[node name="Sakura1285" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 90)
+
+[node name="Sakura1286" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 90)
+
+[node name="Sakura1287" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 90)
+
+[node name="Sakura1288" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 90)
+
+[node name="Sakura1289" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 90)
+
+[node name="Sakura1290" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 90)
+
+[node name="Sakura1291" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 90)
+
+[node name="Sakura1292" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 90)
+
+[node name="Sakura1293" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 90)
+
+[node name="Sakura1294" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 90)
+
+[node name="Sakura1295" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 120)
+
+[node name="Sakura1296" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 120)
+
+[node name="Sakura1297" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 120)
+
+[node name="Sakura1298" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 120)
+
+[node name="Sakura1299" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 120)
+
+[node name="Sakura1300" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 120)
+
+[node name="Sakura1301" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 120)
+
+[node name="Sakura1302" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 120)
+
+[node name="Sakura1303" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 120)
+
+[node name="Sakura1304" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 120)
+
+[node name="Sakura1305" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 150)
+
+[node name="Sakura1306" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 150)
+
+[node name="Sakura1307" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 150)
+
+[node name="Sakura1308" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 150)
+
+[node name="Sakura1309" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 150)
+
+[node name="Sakura1310" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 150)
+
+[node name="Sakura1311" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 150)
+
+[node name="Sakura1312" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 150)
+
+[node name="Sakura1313" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 150)
+
+[node name="Sakura1314" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 150)
+
+[node name="Sakura1199" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 300)
+
+[node name="Sakura1200" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 300)
+
+[node name="Sakura1201" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 300)
+
+[node name="Sakura1202" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 300)
+
+[node name="Sakura1203" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 300)
+
+[node name="Sakura1204" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 300)
+
+[node name="Sakura1205" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 300)
+
+[node name="Sakura1206" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 300)
+
+[node name="Sakura1207" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 300)
+
+[node name="Sakura1208" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 300)
+
+[node name="Sakura1209" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 330)
+
+[node name="Sakura1210" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 330)
+
+[node name="Sakura1211" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 330)
+
+[node name="Sakura1212" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 330)
+
+[node name="Sakura1213" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 330)
+
+[node name="Sakura1214" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 330)
+
+[node name="Sakura1215" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 330)
+
+[node name="Sakura1216" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 330)
+
+[node name="Sakura1217" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 330)
+
+[node name="Sakura1218" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 330)
+
+[node name="Sakura1219" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2502, 660)
+
+[node name="Sakura1220" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2524, 660)
+
+[node name="Sakura1221" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2546, 660)
+
+[node name="Sakura1222" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2568, 660)
+
+[node name="Sakura1325" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 360)
+
+[node name="Sakura1326" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 360)
+
+[node name="Sakura1327" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 360)
+
+[node name="Sakura1328" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 360)
+
+[node name="Sakura1329" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 390)
+
+[node name="Sakura1330" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 390)
+
+[node name="Sakura1331" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 390)
+
+[node name="Sakura1332" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 390)
+
+[node name="Sakura1333" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 420)
+
+[node name="Sakura1334" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 420)
+
+[node name="Sakura1335" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 420)
+
+[node name="Sakura1336" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 420)
+
+[node name="Sakura1413" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 330)
+
+[node name="Sakura1414" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 330)
+
+[node name="Sakura1415" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 330)
+
+[node name="Sakura1416" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 330)
+
+[node name="Sakura1417" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 330)
+
+[node name="Sakura1418" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 330)
+
+[node name="Sakura1419" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 330)
+
+[node name="Sakura1420" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 330)
+
+[node name="Sakura1421" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 330)
+
+[node name="Sakura1422" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 330)
+
+[node name="Sakura1423" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2106, 330)
+
+[node name="Sakura1424" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2128, 330)
+
+[node name="Sakura1425" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 330)
+
+[node name="Sakura1426" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 330)
+
+[node name="Sakura1454" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 300)
+
+[node name="Sakura1455" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 300)
+
+[node name="Sakura1456" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 300)
+
+[node name="Sakura1457" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 300)
+
+[node name="Sakura1458" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 300)
+
+[node name="Sakura1459" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 300)
+
+[node name="Sakura1460" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 300)
+
+[node name="Sakura1461" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 300)
+
+[node name="Sakura1462" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 300)
+
+[node name="Sakura1463" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 300)
+
+[node name="Sakura1576" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 270)
+
+[node name="Sakura1464" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2150, 300)
+
+[node name="Sakura1465" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 300)
+
+[node name="Sakura1443" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 360)
+
+[node name="Sakura1444" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 360)
+
+[node name="Sakura1445" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 360)
+
+[node name="Sakura1446" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 360)
+
+[node name="Sakura1504" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2194, 420)
+
+[node name="Sakura1505" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 420)
+
+[node name="Sakura1506" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 420)
+
+[node name="Sakura1507" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2260, 420)
+
+[node name="Sakura1514" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 420)
+
+[node name="Sakura1515" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 420)
+
+[node name="Sakura1516" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 420)
+
+[node name="Sakura1523" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2216, 570)
+
+[node name="Sakura1524" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2238, 570)
+
+[node name="Sakura1526" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 570)
+
+[node name="Sakura1527" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 570)
+
+[node name="Sakura1447" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2282, 360)
+
+[node name="Sakura1448" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2304, 360)
+
+[node name="Sakura1449" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 360)
+
+[node name="Sakura1450" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 360)
+
+[node name="Sakura1451" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 360)
+
+[node name="Sakura1452" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 360)
+
+[node name="Sakura1453" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2172, 360)
+
+[node name="Sakura1490" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 390)
+
+[node name="Sakura1491" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 390)
+
+[node name="Sakura1492" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 390)
+
+[node name="Sakura1493" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1886, 360)
+
+[node name="Sakura1494" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1908, 360)
+
+[node name="Sakura1495" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1930, 360)
+
+[node name="Sakura1496" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1952, 360)
+
+[node name="Sakura1497" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1974, 360)
+
+[node name="Sakura1498" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1996, 360)
+
+[node name="Sakura1499" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2018, 360)
+
+[node name="Sakura1500" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2040, 360)
+
+[node name="Sakura1501" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2062, 360)
+
+[node name="Sakura1502" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2084, 360)
+
+[node name="Sakura1503" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1864, 360)
+
+[node name="Sakura1337" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 450)
+
+[node name="Sakura1338" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 450)
+
+[node name="Sakura1339" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 450)
+
+[node name="Sakura1340" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 450)
+
+[node name="Sakura1341" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 480)
+
+[node name="Sakura1342" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 480)
+
+[node name="Sakura1343" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 480)
+
+[node name="Sakura1344" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 480)
+
+[node name="Sakura1345" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 510)
+
+[node name="Sakura1346" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 510)
+
+[node name="Sakura1347" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 510)
+
+[node name="Sakura1348" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 510)
+
+[node name="Sakura1349" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 540)
+
+[node name="Sakura1350" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 540)
+
+[node name="Sakura1351" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 540)
+
+[node name="Sakura1352" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 540)
+
+[node name="Sakura1353" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 570)
+
+[node name="Sakura1354" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 570)
+
+[node name="Sakura1355" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 570)
+
+[node name="Sakura1356" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 570)
+
+[node name="Sakura1357" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 600)
+
+[node name="Sakura1358" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 600)
+
+[node name="Sakura1359" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 600)
+
+[node name="Sakura1360" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 600)
+
+[node name="Sakura1361" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 630)
+
+[node name="Sakura1362" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 630)
+
+[node name="Sakura1363" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 630)
+
+[node name="Sakura1364" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 630)
+
+[node name="Sakura1365" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 180)
+
+[node name="Sakura1366" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 180)
+
+[node name="Sakura1367" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 180)
+
+[node name="Sakura1368" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 180)
+
+[node name="Sakura1369" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 210)
+
+[node name="Sakura1370" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 210)
+
+[node name="Sakura1371" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 210)
+
+[node name="Sakura1372" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 210)
+
+[node name="Sakura1373" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 240)
+
+[node name="Sakura1374" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 240)
+
+[node name="Sakura1375" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 240)
+
+[node name="Sakura1376" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 240)
+
+[node name="Sakura1377" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 270)
+
+[node name="Sakura1378" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 270)
+
+[node name="Sakura1379" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 270)
+
+[node name="Sakura1380" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 270)
+
+[node name="Sakura1381" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 60)
+
+[node name="Sakura1382" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 60)
+
+[node name="Sakura1383" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 60)
+
+[node name="Sakura1384" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 60)
+
+[node name="Sakura1385" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 30)
+
+[node name="Sakura1564" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2326, 30)
+
+[node name="Sakura1565" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2348, 30)
+
+[node name="Sakura1566" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2370, 30)
+
+[node name="Sakura1567" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 30)
+
+[node name="Sakura1568" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 90)
+
+[node name="Sakura1569" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2392, 60)
+
+[node name="Sakura1386" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 30)
+
+[node name="Sakura1387" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 30)
+
+[node name="Sakura1388" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 30)
+
+[node name="Sakura1389" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 90)
+
+[node name="Sakura1390" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 90)
+
+[node name="Sakura1391" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 90)
+
+[node name="Sakura1392" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 90)
+
+[node name="Sakura1393" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 120)
+
+[node name="Sakura1394" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 120)
+
+[node name="Sakura1395" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 120)
+
+[node name="Sakura1396" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 120)
+
+[node name="Sakura1397" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 150)
+
+[node name="Sakura1398" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 150)
+
+[node name="Sakura1399" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 150)
+
+[node name="Sakura1400" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 150)
+
+[node name="Sakura1401" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 300)
+
+[node name="Sakura1402" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 300)
+
+[node name="Sakura1403" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 300)
+
+[node name="Sakura1404" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 300)
+
+[node name="Sakura1405" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 330)
+
+[node name="Sakura1406" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 330)
+
+[node name="Sakura1407" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 330)
+
+[node name="Sakura1408" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 330)
+
+[node name="Sakura1409" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2414, 660)
+
+[node name="Sakura1410" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2436, 660)
+
+[node name="Sakura1411" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2458, 660)
+
+[node name="Sakura1412" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2480, 660)
+
+[node name="Sakura1223" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2590, 660)
+
+[node name="Sakura1224" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2612, 660)
+
+[node name="Sakura1225" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2634, 660)
+
+[node name="Sakura1226" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2656, 660)
+
+[node name="Sakura1227" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2678, 660)
+
+[node name="Sakura1228" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(2700, 660)
+
+[node name="Sakura15" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1402, 510)
+
+[node name="Sakura16" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1424, 510)
+
+[node name="Sakura17" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1446, 510)
+
+[node name="Sakura18" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1468, 510)
+
+[node name="Sakura19" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1490, 510)
+
+[node name="Sakura20" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1512, 510)
+
+[node name="Sakura21" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1534, 510)
+
+[node name="Sakura22" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1556, 510)
+
+[node name="Sakura23" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1578, 510)
+
+[node name="Sakura24" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1600, 510)
+
+[node name="Sakura25" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1622, 510)
+
+[node name="Sakura26" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1644, 510)
+
+[node name="Sakura27" parent="canvas" instance=ExtResource("14_25jtn")]
+position = Vector2(1666, 510)
+
+[node name="TomatosSing" parent="canvas" instance=ExtResource("23_mak6f")]
+position = Vector2(-375, 240)
+
+[node name="Bunny_)" parent="canvas" instance=ExtResource("23_qd421")]
+position = Vector2(308, 1680)
+
+[node name="Katana" parent="canvas" instance=ExtResource("26_h07m0")]
+position = Vector2(2244, 150)
+
 [node name="OakS" parent="canvas" instance=ExtResource("14_lh2ly")]
 position = Vector2(544, 930)
 
 [node name="background" type="Sprite2D" parent="."]
 z_index = -20
 texture_repeat = 2
-position = Vector2(374, 360)
-scale = Vector2(0.738571, 0.57)
+position = Vector2(297, 360)
+scale = Vector2(0.793571, 0.57)
 texture = ExtResource("6_4thk3")
+region_enabled = true
+region_rect = Rect2(0, 0, 2800, 2000)
+
+[node name="backgroundSakura" type="Sprite2D" parent="."]
+z_index = -20
+texture_repeat = 2
+position = Vector2(2068, 360)
+scale = Vector2(0.471428, 0.57)
+texture = ExtResource("18_ceugv")
 region_enabled = true
 region_rect = Rect2(0, 0, 2800, 2000)
 
@@ -20438,11 +25105,11 @@ offset_bottom = 40.0
 grow_horizontal = 0
 icon = ExtResource("13_y2d7u")
 
-[node name="StaticBody2D" parent="." instance=ExtResource("23_qd421")]
-position = Vector2(308, 1680)
+[node name="StaticBody2D" parent="." instance=ExtResource("27_qewml")]
+position = Vector2(2244, 180)
 
-[node name="StaticBody2D2" parent="." instance=ExtResource("23_mak6f")]
-position = Vector2(-375, 240)
+[node name="StaticBody2D1" parent="." instance=ExtResource("28_mko82")]
+position = Vector2(2244, 480)
 
 [connection signal="area_entered" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_entered"]
 [connection signal="area_exited" from="BOXman/bridge_detector" to="BOXman" method="_on_bridge_detector_area_exited"]

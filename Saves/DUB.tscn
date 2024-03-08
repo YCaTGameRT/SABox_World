@@ -2,15 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://dtpcbhbcq25d2" path="res://Sprites/DUBOK.png" id="1_tq4xw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_samid"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_txu0j"]
 size = Vector2(22, 30)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(16, 16)
+position = Vector2(16, 15.5)
+scale = Vector2(0.9375, 0.96875)
 texture = ExtResource("1_tq4xw")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(17, 15)
-shape = SubResource("RectangleShape2D_samid")
+shape = SubResource("RectangleShape2D_txu0j")
