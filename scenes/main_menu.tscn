@@ -1,8 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://b3wcvwxrd6od8"]
+[gd_scene load_steps=11 format=3 uid="uid://b3wcvwxrd6od8"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_7nhs7"]
 [ext_resource type="Texture2D" uid="uid://cw8mx8ijbgmd2" path="res://Sprites/EXIT.png" id="1_fadfd"]
-[ext_resource type="Texture2D" uid="uid://btumygdqdqnvg" path="res://Sprites/Play.png" id="2_dw3mq"]
 [ext_resource type="Texture2D" uid="uid://3a32gsyaxvpo" path="res://Sprites/MB.png" id="2_pmkuo"]
 [ext_resource type="Texture2D" uid="uid://0fjci5syshgr" path="res://Sprites/to_window_icon.png" id="3_5t20i"]
 [ext_resource type="Texture2D" uid="uid://b5k7erlgu3o4t" path="res://Sprites/Title.png" id="3_11f13"]
@@ -68,37 +67,12 @@ texture = ExtResource("3_11f13")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="Play" type="Button" parent="CanvasLayer/background/TextureRect/sidebar"]
+[node name="New Game" type="Button" parent="CanvasLayer/background/TextureRect/sidebar"]
 layout_mode = 1
 offset_left = 20.0
 offset_top = 232.0
 offset_right = 359.0
 offset_bottom = 297.0
-
-[node name="text" type="TextureRect" parent="CanvasLayer/background/TextureRect/sidebar/Play"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -44.0
-offset_top = -21.0
-offset_right = 44.0
-offset_bottom = 21.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_dw3mq")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="New Game" type="Button" parent="CanvasLayer/background/TextureRect/sidebar"]
-visible = false
-layout_mode = 0
-offset_left = 19.0
-offset_top = 313.0
-offset_right = 358.0
-offset_bottom = 378.0
 
 [node name="text" type="TextureRect" parent="CanvasLayer/background/TextureRect/sidebar/New Game"]
 layout_mode = 1
@@ -118,12 +92,11 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Load" type="Button" parent="CanvasLayer/background/TextureRect/sidebar"]
-visible = false
-layout_mode = 0
+layout_mode = 1
 offset_left = 19.0
-offset_top = 399.0
+offset_top = 313.0
 offset_right = 358.0
-offset_bottom = 464.0
+offset_bottom = 378.0
 
 [node name="text" type="TextureRect" parent="CanvasLayer/background/TextureRect/sidebar/Load"]
 layout_mode = 1
@@ -180,7 +153,6 @@ texture = ExtResource("6_hnd6k")
 expand_mode = 1
 stretch_mode = 4
 
-[connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/Play" to="." method="play"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/New Game" to="." method="play"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/Load" to="." method="play"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/Quit" to="." method="quit"]
