@@ -1,5 +1,6 @@
 extends Control
 
+@export var load_game_button: Button
 @export var toggle_fullscreen_button: Button
 @export var toggle_fullscreen_sprite: TextureRect
 @export var to_fullscreen_texture: Texture2D
@@ -8,6 +9,8 @@ extends Control
 func _ready():
 	if not OS.has_feature("pc"):
 		toggle_fullscreen_button.hide()
+	if not FileAccess.file_exists("user://save.sbws"):
+		load_game_button.hide()
 
 func _process(delta):
 	if Input.is_action_just_pressed("exit"): quit()

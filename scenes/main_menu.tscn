@@ -16,7 +16,7 @@ colors = PackedColorArray(0, 0, 0, 0.588235, 0, 0, 0, 0.588235, 0, 0, 0, 0)
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_gno61"]
 gradient = SubResource("Gradient_xgjnp")
 
-[node name="main_menu" type="Control" node_paths=PackedStringArray("toggle_fullscreen_button", "toggle_fullscreen_sprite")]
+[node name="main_menu" type="Control" node_paths=PackedStringArray("load_game_button", "toggle_fullscreen_button", "toggle_fullscreen_sprite")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,6 +24,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7nhs7")
+load_game_button = NodePath("CanvasLayer/background/TextureRect/sidebar/Load")
 toggle_fullscreen_button = NodePath("CanvasLayer/background/TextureRect/toggle_fullscreen")
 toggle_fullscreen_sprite = NodePath("CanvasLayer/background/TextureRect/toggle_fullscreen/TextureRect")
 to_fullscreen_texture = ExtResource("6_hnd6k")
