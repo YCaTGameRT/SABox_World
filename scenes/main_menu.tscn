@@ -154,7 +154,7 @@ texture = ExtResource("6_hnd6k")
 expand_mode = 1
 stretch_mode = 4
 
-[connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/New Game" to="." method="play"]
+[connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/New Game" to="." method="new_game"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/Load" to="." method="play"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/Quit" to="." method="quit"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/toggle_fullscreen" to="." method="toggle_fullscreen"]

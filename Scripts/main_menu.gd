@@ -25,6 +25,11 @@ func toggle_fullscreen():
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 		toggle_fullscreen_sprite.texture = to_window_texture
 
+func new_game():
+	if FileAccess.file_exists("user://save.sbws"):
+		DirAccess.remove_absolute("user://save.sbws")
+	play()
+
 func play():
 	get_tree().change_scene_to_packed(load("res://scenes/sceneI.tscn"))
 
