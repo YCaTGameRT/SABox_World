@@ -1,9 +1,15 @@
-class_name Save_manager extends Singleton
+class_name Save_manager extends Node
+
+static var _instance: Save_manager
+static func get_instance() -> Save_manager: return _instance
+func check_singleton():
+	if _instance == null: _instance = self
+	else: queue_free()
 
 @export var player: BOXMan_scene1_control
 
 func _ready():
-	super._ready()
+	check_singleton()
 	load_game()
 
 func load_game():
