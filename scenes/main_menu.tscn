@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://b3wcvwxrd6od8"]
+[gd_scene load_steps=14 format=3 uid="uid://b3wcvwxrd6od8"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_7nhs7"]
 [ext_resource type="Texture2D" uid="uid://cw8mx8ijbgmd2" path="res://Sprites/EXIT.png" id="1_fadfd"]
 [ext_resource type="Texture2D" uid="uid://3a32gsyaxvpo" path="res://Sprites/MB.png" id="2_pmkuo"]
 [ext_resource type="Texture2D" uid="uid://0fjci5syshgr" path="res://Sprites/to_window_icon.png" id="3_5t20i"]
 [ext_resource type="Texture2D" uid="uid://b5k7erlgu3o4t" path="res://Sprites/Title.png" id="3_11f13"]
+[ext_resource type="Script" path="res://Scripts/submenus_manager.gd" id="5_d13oi"]
 [ext_resource type="Texture2D" uid="uid://bkpg6mx2c1tax" path="res://Sprites/to_fullscreen_icon.png" id="6_hnd6k"]
 [ext_resource type="Texture2D" uid="uid://btumygdqdqnvg" path="res://Sprites/Play.png" id="6_p32h4"]
 [ext_resource type="Texture2D" uid="uid://cioffrisl6lah" path="res://Sprites/NewGame2.png" id="7_3o2b2"]
@@ -18,7 +19,7 @@ colors = PackedColorArray(0, 0, 0, 0.588235, 0, 0, 0, 0.588235, 0, 0, 0, 0)
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_gno61"]
 gradient = SubResource("Gradient_xgjnp")
 
-[node name="main_menu" type="Control" node_paths=PackedStringArray("main_submenu", "play_submenu", "back_button", "load_game_button", "toggle_fullscreen_button", "toggle_fullscreen_sprite")]
+[node name="main_menu" type="Control" node_paths=PackedStringArray("load_game_button", "toggle_fullscreen_button", "toggle_fullscreen_sprite")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,9 +27,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7nhs7")
-main_submenu = NodePath("CanvasLayer/background/TextureRect/sidebar/main_buttons")
-play_submenu = NodePath("CanvasLayer/background/TextureRect/sidebar/play_buttons")
-back_button = NodePath("CanvasLayer/background/TextureRect/sidebar/back")
 load_game_button = NodePath("CanvasLayer/background/TextureRect/sidebar/play_buttons/Load")
 toggle_fullscreen_button = NodePath("CanvasLayer/background/TextureRect/toggle_fullscreen")
 toggle_fullscreen_sprite = NodePath("CanvasLayer/background/TextureRect/toggle_fullscreen/TextureRect")
@@ -55,13 +53,17 @@ grow_vertical = 2
 texture = ExtResource("2_pmkuo")
 flip_h = true
 
-[node name="sidebar" type="TextureRect" parent="CanvasLayer/background/TextureRect"]
+[node name="sidebar" type="TextureRect" parent="CanvasLayer/background/TextureRect" node_paths=PackedStringArray("main_submenu", "play_submenu", "back_button")]
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
 offset_right = 611.0
 grow_vertical = 2
 texture = SubResource("GradientTexture1D_gno61")
+script = ExtResource("5_d13oi")
+main_submenu = NodePath("main_buttons")
+play_submenu = NodePath("play_buttons")
+back_button = NodePath("back")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/background/TextureRect/sidebar"]
 layout_mode = 0
@@ -223,9 +225,9 @@ texture = ExtResource("6_hnd6k")
 expand_mode = 1
 stretch_mode = 4
 
-[connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/main_buttons/New Game" to="." method="show_play_submenu"]
+[connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/main_buttons/New Game" to="CanvasLayer/background/TextureRect/sidebar" method="show_play_submenu"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/play_buttons/New Game" to="." method="new_game"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/play_buttons/Load" to="." method="play"]
-[connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/back" to="." method="show_main_submenu"]
+[connection signal="pressed" from="CanvasLayer/background/TextureRect/sidebar/back" to="CanvasLayer/background/TextureRect/sidebar" method="show_main_submenu"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/Quit" to="." method="quit"]
 [connection signal="pressed" from="CanvasLayer/background/TextureRect/toggle_fullscreen" to="." method="toggle_fullscreen"]
