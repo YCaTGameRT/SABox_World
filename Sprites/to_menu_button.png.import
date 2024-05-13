@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bafgef5p8whyi"
-path="res://.godot/imported/backar.png-88a80b3615e178f16df2b62767cab0e2.ctex"
+uid="uid://c6eqbrgdoafds"
+path="res://.godot/imported/to_menu_button.png-ccc9945fd54778046c3fea5b82f81131.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/backar.png"
-dest_files=["res://.godot/imported/backar.png-88a80b3615e178f16df2b62767cab0e2.ctex"]
+source_file="res://Sprites/to_menu_button.png"
+dest_files=["res://.godot/imported/to_menu_button.png-ccc9945fd54778046c3fea5b82f81131.ctex"]
 
 [params]
 

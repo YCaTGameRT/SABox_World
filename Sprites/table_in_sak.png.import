@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5yw01ix6347l"
-path="res://.godot/imported/IN developing.png-2f2b680f38e01f688c60297143fe541e.ctex"
+uid="uid://cb6vyd5ehyo4e"
+path="res://.godot/imported/table_in_sak.png-d7c299e8f5d845e21fab06c761e4d5e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/IN developing.png"
-dest_files=["res://.godot/imported/IN developing.png-2f2b680f38e01f688c60297143fe541e.ctex"]
+source_file="res://Sprites/table_in_sak.png"
+dest_files=["res://.godot/imported/table_in_sak.png-d7c299e8f5d845e21fab06c761e4d5e1.ctex"]
 
 [params]
 

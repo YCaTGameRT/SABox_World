@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtpcbhbcq25d2"
-path="res://.godot/imported/DUBOK.png-fc1cbdd32284f96ab1f33feb73783ebc.ctex"
+uid="uid://do87idt5byk3v"
+path="res://.godot/imported/grassSakura.png-81f25fb77283739e0ae407cea5d8aeea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/DUBOK.png"
-dest_files=["res://.godot/imported/DUBOK.png-fc1cbdd32284f96ab1f33feb73783ebc.ctex"]
+source_file="res://Sprites/grassSakura.png"
+dest_files=["res://.godot/imported/grassSakura.png-81f25fb77283739e0ae407cea5d8aeea.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1iotp4j2qrd7"
-path="res://.godot/imported/DUBOKSpring2.png-fe4187c6743344b974ef1a6d8c8772d5.ctex"
+uid="uid://b2hamuxwudovf"
+path="res://.godot/imported/INVISE_Oak.png-0e17ecb11c3a39c09995b52f69392ec5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/DUBOKSpring2.png"
-dest_files=["res://.godot/imported/DUBOKSpring2.png-fe4187c6743344b974ef1a6d8c8772d5.ctex"]
+source_file="res://Sprites/INVISE_Oak.png"
+dest_files=["res://.godot/imported/INVISE_Oak.png-0e17ecb11c3a39c09995b52f69392ec5.ctex"]
 
 [params]
 

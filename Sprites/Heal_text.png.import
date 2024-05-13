@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3a32gsyaxvpo"
-path="res://.godot/imported/MB.png-4cfa68776ed419422cef1051dfe8d2f5.ctex"
+uid="uid://b56b2wagvmxyb"
+path="res://.godot/imported/Heal_text.png-033ce42663500dd7a98486fbf0404d14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/MB.png"
-dest_files=["res://.godot/imported/MB.png-4cfa68776ed419422cef1051dfe8d2f5.ctex"]
+source_file="res://Sprites/Heal_text.png"
+dest_files=["res://.godot/imported/Heal_text.png-033ce42663500dd7a98486fbf0404d14.ctex"]
 
 [params]
 

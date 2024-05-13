@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vsvaraduw0i4"
-path="res://.godot/imported/HB.png-38d39a3a0c96d017d76b26466a78e48a.ctex"
+uid="uid://dk37xi51mf20j"
+path="res://.godot/imported/Spruce_Legacy.png-5b8959903307e285191c5d1965ad67a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/HB.png"
-dest_files=["res://.godot/imported/HB.png-38d39a3a0c96d017d76b26466a78e48a.ctex"]
+source_file="res://Sprites/Spruce_Legacy.png"
+dest_files=["res://.godot/imported/Spruce_Legacy.png-5b8959903307e285191c5d1965ad67a6.ctex"]
 
 [params]
 

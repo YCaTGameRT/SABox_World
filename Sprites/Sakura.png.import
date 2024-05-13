@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7ii5b4kfxkew"
-path="res://.godot/imported/DUBOKSakura.png-7f099d86a6d7243b3368912c84fc9cdd.ctex"
+uid="uid://bs1cppxht5yn4"
+path="res://.godot/imported/Sakura.png-2ccea2e40a683c9307be2e714fe1550a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/DUBOKSakura.png"
-dest_files=["res://.godot/imported/DUBOKSakura.png-7f099d86a6d7243b3368912c84fc9cdd.ctex"]
+source_file="res://Sprites/Sakura.png"
+dest_files=["res://.godot/imported/Sakura.png-2ccea2e40a683c9307be2e714fe1550a.ctex"]
 
 [params]
 

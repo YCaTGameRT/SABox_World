@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df6qg0y6djygh"
-path="res://.godot/imported/SBunny.png-f88aeb2972882a53eae74f8b387a46d3.ctex"
+uid="uid://gghxjxn1ljog"
+path="res://.godot/imported/Actions_text.png-adc1f6fffba209573d931374c6096ff9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SBunny.png"
-dest_files=["res://.godot/imported/SBunny.png-f88aeb2972882a53eae74f8b387a46d3.ctex"]
+source_file="res://Sprites/Actions_text.png"
+dest_files=["res://.godot/imported/Actions_text.png-adc1f6fffba209573d931374c6096ff9.ctex"]
 
 [params]
 

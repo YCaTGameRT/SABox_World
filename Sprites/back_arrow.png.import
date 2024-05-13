@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jy4l4vr1pvxl"
-path="res://.godot/imported/DUBOKSpring.png-c588e01622a3d6f1553a9a0aa91d0c17.ctex"
+uid="uid://b0bgudhe7enm4"
+path="res://.godot/imported/back_arrow.png-8f89d70ac1e86cc6cc0ccf9589865fce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/DUBOKSpring.png"
-dest_files=["res://.godot/imported/DUBOKSpring.png-c588e01622a3d6f1553a9a0aa91d0c17.ctex"]
+source_file="res://Sprites/back_arrow.png"
+dest_files=["res://.godot/imported/back_arrow.png-8f89d70ac1e86cc6cc0ccf9589865fce.ctex"]
 
 [params]
 

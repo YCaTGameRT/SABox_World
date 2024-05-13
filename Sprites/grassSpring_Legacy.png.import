@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0kwy01bh3cxl"
-path="res://.godot/imported/MBB.png-4a4ac0fc81f1bf7622d471e4b8e5c378.ctex"
+uid="uid://c4ewaut0ay0cd"
+path="res://.godot/imported/grassSpring_Legacy.png-b46da63cec2101007bddb4cdfa84f5b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/MBB.png"
-dest_files=["res://.godot/imported/MBB.png-4a4ac0fc81f1bf7622d471e4b8e5c378.ctex"]
+source_file="res://Sprites/grassSpring_Legacy.png"
+dest_files=["res://.godot/imported/grassSpring_Legacy.png-b46da63cec2101007bddb4cdfa84f5b6.ctex"]
 
 [params]
 

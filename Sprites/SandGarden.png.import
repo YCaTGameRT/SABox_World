@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coi6rnqu6paru"
-path="res://.godot/imported/grassSakuraB.png-9261bf391177833b121746642042e1eb.ctex"
+uid="uid://dh4e1v474i4hh"
+path="res://.godot/imported/SandGarden.png-ca9eb3188ed2ae78ec1e3dcab2af48c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/grassSakuraB.png"
-dest_files=["res://.godot/imported/grassSakuraB.png-9261bf391177833b121746642042e1eb.ctex"]
+source_file="res://Sprites/SandGarden.png"
+dest_files=["res://.godot/imported/SandGarden.png-ca9eb3188ed2ae78ec1e3dcab2af48c7.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bf7dhhn8hriw0"]
 
-[ext_resource type="Texture2D" uid="uid://df6qg0y6djygh" path="res://Sprites/SBunny.png" id="1_tjtyt"]
+[ext_resource type="Texture2D" uid="uid://bjnhf1my78lnn" path="res://Sprites/Spring_Bunny.png" id="1_tjtyt"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 

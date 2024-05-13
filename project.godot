@@ -18,7 +18,7 @@ boot_splash/bg_color=Color(0.619608, 0.588235, 0, 1)
 boot_splash/image="res://TPG.png"
 config/icon="res://BOXMan2.0.png"
 config/windows_native_icon="res://BOXMan2.0.ico"
-boot_splash/minimum_display_time=3000
+boot_splash/minimum_display_time=1500
 
 [display]
 

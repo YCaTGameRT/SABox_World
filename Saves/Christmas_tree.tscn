@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://j4evow7mpuft"]
 
-[ext_resource type="Texture2D" uid="uid://c52sswn38o2sr" path="res://Sprites/BIGYel.png" id="1_87n2p"]
+[ext_resource type="Texture2D" uid="uid://jvmuowrul0ha" path="res://Sprites/Christmas_tree.png" id="1_dx871"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_87n2p")
+texture = ExtResource("1_dx871")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-13, 100, -13, 85, 21, 85, 21, 100)

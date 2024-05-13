@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbni433bandvd"
-path="res://.godot/imported/ЕЩЬФЕЩУЫ!!!.png-ff15224ee6288256e901562d02e2a502.ctex"
+uid="uid://jvmuowrul0ha"
+path="res://.godot/imported/Christmas_tree.png-bfe9fd9aee2e4fec35b9ced111a7d59a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ЕЩЬФЕЩУЫ!!!.png"
-dest_files=["res://.godot/imported/ЕЩЬФЕЩУЫ!!!.png-ff15224ee6288256e901562d02e2a502.ctex"]
+source_file="res://Sprites/Christmas_tree.png"
+dest_files=["res://.godot/imported/Christmas_tree.png-bfe9fd9aee2e4fec35b9ced111a7d59a.ctex"]
 
 [params]
 

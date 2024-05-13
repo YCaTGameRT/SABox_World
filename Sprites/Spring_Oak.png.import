@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddlhv4axp8rc6"
-path="res://.godot/imported/tablesak.png-689340e85e47764d674dbe55b35708af.ctex"
+uid="uid://y1fqb8ouxg03"
+path="res://.godot/imported/Spring_Oak.png-c3440afe7c276182257d27d36627d1b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/tablesak.png"
-dest_files=["res://.godot/imported/tablesak.png-689340e85e47764d674dbe55b35708af.ctex"]
+source_file="res://Sprites/Spring_Oak.png"
+dest_files=["res://.godot/imported/Spring_Oak.png-c3440afe7c276182257d27d36627d1b0.ctex"]
 
 [params]
 

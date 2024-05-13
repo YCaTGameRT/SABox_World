@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0ixcd4bygjy4"
-path="res://.godot/imported/grassSpring2.png-0d3da21c4103745a7fd3cdb8614ec758.ctex"
+uid="uid://haohtybp063o"
+path="res://.godot/imported/Tomatoes_warning_sign.png-5b85a085c5d1e76f39083b2a7bc3bb16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/grassSpring2.png"
-dest_files=["res://.godot/imported/grassSpring2.png-0d3da21c4103745a7fd3cdb8614ec758.ctex"]
+source_file="res://Sprites/Tomatoes_warning_sign.png"
+dest_files=["res://.godot/imported/Tomatoes_warning_sign.png-5b85a085c5d1e76f39083b2a7bc3bb16.ctex"]
 
 [params]
 

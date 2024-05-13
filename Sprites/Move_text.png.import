@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bj87ofrv3e13c"
-path="res://.godot/imported/Yelka.png-81c43688e1e10cd3165ad686d2af1a23.ctex"
+uid="uid://bkvnqiij4vwcp"
+path="res://.godot/imported/Move_text.png-b99b7487cc00e5aad504cf473768d1c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Yelka.png"
-dest_files=["res://.godot/imported/Yelka.png-81c43688e1e10cd3165ad686d2af1a23.ctex"]
+source_file="res://Sprites/Move_text.png"
+dest_files=["res://.godot/imported/Move_text.png-b99b7487cc00e5aad504cf473768d1c0.ctex"]
 
 [params]
 

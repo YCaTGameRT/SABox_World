@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://clkpklphbgcvq"]
 
-[ext_resource type="Texture2D" uid="uid://bbni433bandvd" path="res://Sprites/ЕЩЬФЕЩУЫ!!!.png" id="1_hdavc"]
+[ext_resource type="Texture2D" uid="uid://haohtybp063o" path="res://Sprites/Tomatoes_warning_sign.png" id="1_3ppyv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uum1m"]
 size = Vector2(22, 30)
@@ -10,7 +10,7 @@ size = Vector2(22, 30)
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(12, 14)
 scale = Vector2(0.24, 0.32)
-texture = ExtResource("1_hdavc")
+texture = ExtResource("1_3ppyv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(12, 15)

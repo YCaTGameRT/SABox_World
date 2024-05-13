@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fytqrwjhlu4v"
-path="res://.godot/imported/SandSAD.png-7530ebee20eea13908764d6f7acadb60.ctex"
+uid="uid://bm51dx1s8kqs5"
+path="res://.godot/imported/Spruce.png-72f7ea7e68e814b21ebda5e038a0aa61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SandSAD.png"
-dest_files=["res://.godot/imported/SandSAD.png-7530ebee20eea13908764d6f7acadb60.ctex"]
+source_file="res://Sprites/Spruce.png"
+dest_files=["res://.godot/imported/Spruce.png-72f7ea7e68e814b21ebda5e038a0aa61.ctex"]
 
 [params]
 

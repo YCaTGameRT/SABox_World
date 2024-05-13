@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c52sswn38o2sr"
-path="res://.godot/imported/BIGYel.png-c69f6f8deac7ea5818ebc39fd53497b3.ctex"
+uid="uid://da8s5ce7c7ytf"
+path="res://.godot/imported/Oak.png-ce1c66ef9e8644433105b0d20ace8f9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/BIGYel.png"
-dest_files=["res://.godot/imported/BIGYel.png-c69f6f8deac7ea5818ebc39fd53497b3.ctex"]
+source_file="res://Sprites/Oak.png"
+dest_files=["res://.godot/imported/Oak.png-ce1c66ef9e8644433105b0d20ace8f9b.ctex"]
 
 [params]
 

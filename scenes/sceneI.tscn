@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=46 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
@@ -13,24 +13,23 @@
 [ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/arrow_button.png" id="10_j2jhc"]
 [ext_resource type="Script" path="res://Scripts/Stone.gd" id="11_nm24r"]
 [ext_resource type="Texture2D" uid="uid://c2afswagrebp8" path="res://Sprites/bridge.png" id="12_hg6xc"]
-[ext_resource type="Texture2D" uid="uid://wcjvj5tk5n1p" path="res://Sprites/MenueB.png" id="13_y2d7u"]
+[ext_resource type="Texture2D" uid="uid://c6eqbrgdoafds" path="res://Sprites/to_menu_button.png" id="13_y2d7u"]
 [ext_resource type="Texture2D" uid="uid://e3v3owknk6h2" path="res://Sprites/grassWinter.png" id="15_2j80h"]
-[ext_resource type="Texture2D" uid="uid://b0ixcd4bygjy4" path="res://Sprites/grassSpring2.png" id="17_lwg8k"]
-[ext_resource type="Texture2D" uid="uid://coi6rnqu6paru" path="res://Sprites/grassSakuraB.png" id="18_ceugv"]
+[ext_resource type="Texture2D" uid="uid://dqvanifid5jtc" path="res://Sprites/grassSpring.png" id="17_lwg8k"]
+[ext_resource type="Texture2D" uid="uid://do87idt5byk3v" path="res://Sprites/grassSakura.png" id="18_ceugv"]
 [ext_resource type="PackedScene" uid="uid://clkpklphbgcvq" path="res://Saves/MYTOMATOES.tscn" id="23_mak6f"]
 [ext_resource type="PackedScene" uid="uid://bf7dhhn8hriw0" path="res://Saves/Bunny.tscn" id="23_qd421"]
 [ext_resource type="PackedScene" uid="uid://dqkafnfhkdfdv" path="res://Saves/KatanaTop.tscn" id="26_h07m0"]
 [ext_resource type="PackedScene" uid="uid://doyk488jp4x8s" path="res://Saves/TableSakura.tscn" id="27_qewml"]
-[ext_resource type="Texture2D" uid="uid://cmciii0nu2obl" path="res://Sprites/INVISEDUB.png" id="28_bjos1"]
+[ext_resource type="Texture2D" uid="uid://b2hamuxwudovf" path="res://Sprites/INVISE_Oak.png" id="28_bjos1"]
 [ext_resource type="PackedScene" uid="uid://cv2r10ixlfjjp" path="res://Saves/SandGardenSak.tscn" id="28_mko82"]
-[ext_resource type="Texture2D" uid="uid://bj87ofrv3e13c" path="res://Sprites/Yelka.png" id="29_7vmhv"]
+[ext_resource type="Texture2D" uid="uid://dk37xi51mf20j" path="res://Sprites/Spruce_Legacy.png" id="29_7vmhv"]
 [ext_resource type="PackedScene" uid="uid://j4evow7mpuft" path="res://Saves/BIGYel.tscn" id="29_a1xse"]
-[ext_resource type="Texture2D" uid="uid://bxuvi1ri1mkud" path="res://Sprites/Yelka2.png" id="29_dj5vn"]
-[ext_resource type="Texture2D" uid="uid://7ii5b4kfxkew" path="res://Sprites/DUBOKSakura.png" id="30_6rx5f"]
+[ext_resource type="Texture2D" uid="uid://bm51dx1s8kqs5" path="res://Sprites/Spruce.png" id="29_dj5vn"]
+[ext_resource type="Texture2D" uid="uid://da8s5ce7c7ytf" path="res://Sprites/Oak.png" id="30_6rx5f"]
 [ext_resource type="Script" path="res://Scripts/save_manager.gd" id="30_cvwhh"]
-[ext_resource type="Texture2D" uid="uid://jy4l4vr1pvxl" path="res://Sprites/DUBOKSpring.png" id="30_nn0gb"]
-[ext_resource type="Texture2D" uid="uid://dtpcbhbcq25d2" path="res://Sprites/DUBOK.png" id="31_lw00e"]
-[ext_resource type="Texture2D" uid="uid://b1iotp4j2qrd7" path="res://Sprites/DUBOKSpring2.png" id="31_to2u4"]
+[ext_resource type="Texture2D" uid="uid://bs6rmcy4gs5ey" path="res://Sprites/Oak_Spring_Legacy.png" id="30_nn0gb"]
+[ext_resource type="Texture2D" uid="uid://y1fqb8ouxg03" path="res://Sprites/Spring_Oak.png" id="31_to2u4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
 size = Vector2(47.2616, 12.1905)
@@ -53,7 +52,7 @@ size = Vector2(374, 270)
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jie0i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_54t11"]
-texture = ExtResource("31_lw00e")
+texture = ExtResource("30_6rx5f")
 texture_region_size = Vector2i(22, 30)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
