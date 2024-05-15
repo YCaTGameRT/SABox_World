@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bkqasubg5lw2f"]
 
-[ext_resource type="Texture2D" uid="uid://dxsk8euyctuuy" path="res://Sprites/rock.png" id="1_65ev4"]
+[ext_resource type="Texture2D" uid="uid://dxsk8euyctuuy" path="res://Sprites/Rock.png" id="1_65ev4"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 

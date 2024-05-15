@@ -1,0 +1,791 @@
+[gd_scene load_steps=21 format=3 uid="uid://eoktbsge7j4m"]
+
+[ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="1_fuawb"]
+[ext_resource type="Script" path="res://Scripts/BOXMan_cucumber_battle_control.gd" id="2_eyrnp"]
+[ext_resource type="Texture2D" uid="uid://b8mjg7iajiw5l" path="res://Sprites/cucumber-stone-battle/sword.png" id="3_l3y24"]
+[ext_resource type="Texture2D" uid="uid://82h8d1mxibhk" path="res://Sprites/Grass.png" id="3_n6ysj"]
+[ext_resource type="PackedScene" path="res://Saves/DUB.tscn" id="4_0cf6r"]
+[ext_resource type="Script" path="res://Scripts/cucumber-stone-battle/Cucumber.gd" id="4_gkqhd"]
+[ext_resource type="Texture2D" uid="uid://ducfmaksdu0mn" path="res://Sprites/cucumber-stone-battle/cucumber.png" id="5_5o3x5"]
+[ext_resource type="Texture2D" uid="uid://317884ofuovq" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_1.png" id="6_mn20v"]
+[ext_resource type="Texture2D" uid="uid://c57ajyxg4fc2p" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_3.png" id="8_72ymx"]
+[ext_resource type="Texture2D" uid="uid://b3i8imtqsxk8c" path="res://Sprites/Arrow_button.png" id="9_cykbs"]
+[ext_resource type="Texture2D" uid="uid://cbyau71vmytg1" path="res://Sprites/cucumber-stone-battle/cucumber-stone_break_anim_2.png" id="9_inn0c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cmatm"]
+bg_color = Color(0.117647, 0.337255, 0.215686, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k1lip"]
+bg_color = Color(0.0470588, 0.568627, 0.0823529, 1)
+
+[sub_resource type="Theme" id="Theme_jnf3u"]
+ProgressBar/colors/font_color = Color(0, 0, 0, 1)
+ProgressBar/styles/background = SubResource("StyleBoxFlat_cmatm")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_k1lip")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6i4a4"]
+bg_color = Color(0.498039, 0, 0.0470588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2gmr"]
+bg_color = Color(0.890196, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_evm7s"]
+ProgressBar/colors/font_color = Color(0, 0, 0, 1)
+ProgressBar/styles/background = SubResource("StyleBoxFlat_6i4a4")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_w2gmr")
+
+[sub_resource type="Animation" id="Animation_354my"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_rplco"]
+resource_name = "cucumber_comes_animation"
+length = 7.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BOXman:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 3.5, 4.3, 5.2, 5.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(146, -112), Vector2(223, -111), Vector2(223, -111), Vector2(195.64, -111), Vector2(195.64, -111), Vector2(170.875, -111)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BOXman/Sword:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-1.08698, -19.0217), Vector2(-1.08698, -19.0217), Vector2(-27.7174, 4.89131)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [2.19811, 2.19811, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.10315, 1.13817), Vector2(1.10315, 1.13817), Vector2(0.543478, 0.543478)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("for_anim/Cucumber-stoneWithSword/Sword:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("for_anim/Cucumber-stoneWithSword:texture")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 3.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_mn20v"), ExtResource("9_inn0c")]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("for_anim/Cucumber-stoneWithSword:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 4.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("for_anim/Cucumber-stoneWithSword2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 6.4, 6.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(277, -119), Vector2(277, -119), Vector2(699, -696)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("for_anim/Cucumber-stoneWithSword3:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 6.4, 6.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(246, -119), Vector2(246, -119), Vector2(-274, 375)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("cucumber/sprite:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 6.8, 7.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.53938, -1.53938, 0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("cucumber/sprite:flip_h")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 7.2, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nk68q"]
+_data = {
+"RESET": SubResource("Animation_354my"),
+"cucumber_comes_animation": SubResource("Animation_rplco")
+}
+
+[node name="cucumber-stone-battle" type="Node2D"]
+
+[node name="BOXman" parent="." node_paths=PackedStringArray("anim_player") instance=ExtResource("1_fuawb")]
+position = Vector2(223, -111)
+script = ExtResource("2_eyrnp")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="Sprite2D" parent="BOXman" index="0"]
+flip_h = true
+
+[node name="Camera2D" type="Camera2D" parent="BOXman"]
+position = Vector2(-7.87697, -3.05176e-05)
+zoom = Vector2(2.4, 2.4)
+
+[node name="Sword" type="Sprite2D" parent="BOXman"]
+z_index = 1
+position = Vector2(-59.077, 4.06351)
+scale = Vector2(3.93846, 4.06349)
+texture = ExtResource("3_l3y24")
+
+[node name="cucumber" type="CharacterBody2D" parent="." node_paths=PackedStringArray("_player", "_anim")]
+position = Vector2(262, -120)
+script = ExtResource("4_gkqhd")
+_player = NodePath("../BOXman")
+_anim = NodePath("../AnimationPlayer")
+
+[node name="sprite" type="Sprite2D" parent="cucumber"]
+z_index = -2
+position = Vector2(-1, 1)
+rotation = -1.53938
+texture = ExtResource("5_5o3x5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cucumber"]
+position = Vector2(-78, 38)
+polygon = PackedVector2Array(74, -48, 78, -46, 80, -43, 82.56, -37, 82.56, -26, 76, -26, 75, -35, 71.57, -43, 71.57, -48)
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -20
+texture_repeat = 2
+position = Vector2(214, -82)
+texture = ExtResource("3_n6ysj")
+region_enabled = true
+region_rect = Rect2(0, 0, 2000, 1500)
+
+[node name="map" type="Node2D" parent="."]
+
+[node name="l" type="Node2D" parent="map"]
+
+[node name="StaticBody2D" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 116)
+
+[node name="StaticBody2D2" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 86)
+
+[node name="StaticBody2D3" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 56)
+
+[node name="StaticBody2D4" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 26)
+
+[node name="StaticBody2D5" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -4)
+
+[node name="StaticBody2D6" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -34)
+
+[node name="StaticBody2D7" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -64)
+
+[node name="StaticBody2D8" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -94)
+
+[node name="StaticBody2D9" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -124)
+
+[node name="StaticBody2D10" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -154)
+
+[node name="StaticBody2D11" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -184)
+
+[node name="StaticBody2D12" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -214)
+
+[node name="StaticBody2D13" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -244)
+
+[node name="StaticBody2D14" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -274)
+
+[node name="StaticBody2D15" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -304)
+
+[node name="StaticBody2D16" parent="map/l" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -334)
+
+[node name="r" type="Node2D" parent="map"]
+position = Vector2(1078, 0)
+
+[node name="StaticBody2D" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 116)
+
+[node name="StaticBody2D2" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 86)
+
+[node name="StaticBody2D3" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 56)
+
+[node name="StaticBody2D4" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, 26)
+
+[node name="StaticBody2D5" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -4)
+
+[node name="StaticBody2D6" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -34)
+
+[node name="StaticBody2D7" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -64)
+
+[node name="StaticBody2D8" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -94)
+
+[node name="StaticBody2D9" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -124)
+
+[node name="StaticBody2D10" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -154)
+
+[node name="StaticBody2D11" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -184)
+
+[node name="StaticBody2D12" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -214)
+
+[node name="StaticBody2D13" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -244)
+
+[node name="StaticBody2D14" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -274)
+
+[node name="StaticBody2D15" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -304)
+
+[node name="StaticBody2D16" parent="map/r" instance=ExtResource("4_0cf6r")]
+position = Vector2(-330, -334)
+
+[node name="b" type="Node2D" parent="map"]
+
+[node name="StaticBody2D" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-308, 116)
+
+[node name="StaticBody2D2" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-286, 116)
+
+[node name="StaticBody2D3" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-264, 116)
+
+[node name="StaticBody2D4" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-242, 116)
+
+[node name="StaticBody2D5" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-220, 116)
+
+[node name="StaticBody2D6" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-198, 116)
+
+[node name="StaticBody2D7" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-176, 116)
+
+[node name="StaticBody2D8" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-154, 116)
+
+[node name="StaticBody2D9" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-132, 116)
+
+[node name="StaticBody2D10" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-110, 116)
+
+[node name="StaticBody2D11" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-88, 116)
+
+[node name="StaticBody2D12" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-66, 116)
+
+[node name="StaticBody2D13" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-44, 116)
+
+[node name="StaticBody2D14" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(-22, 116)
+
+[node name="StaticBody2D15" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(0, 116)
+
+[node name="StaticBody2D16" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(22, 116)
+
+[node name="StaticBody2D17" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(44, 116)
+
+[node name="StaticBody2D18" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(66, 116)
+
+[node name="StaticBody2D19" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(88, 116)
+
+[node name="StaticBody2D20" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(110, 116)
+
+[node name="StaticBody2D21" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(132, 116)
+
+[node name="StaticBody2D22" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(154, 116)
+
+[node name="StaticBody2D23" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(176, 116)
+
+[node name="StaticBody2D24" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(198, 116)
+
+[node name="StaticBody2D25" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(220, 116)
+
+[node name="StaticBody2D26" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(242, 116)
+
+[node name="StaticBody2D27" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(264, 116)
+
+[node name="StaticBody2D28" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(286, 116)
+
+[node name="StaticBody2D29" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(308, 116)
+
+[node name="StaticBody2D30" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(330, 116)
+
+[node name="StaticBody2D31" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(352, 116)
+
+[node name="StaticBody2D32" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(374, 116)
+
+[node name="StaticBody2D33" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(396, 116)
+
+[node name="StaticBody2D34" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(418, 116)
+
+[node name="StaticBody2D35" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(440, 116)
+
+[node name="StaticBody2D36" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(462, 116)
+
+[node name="StaticBody2D37" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(484, 116)
+
+[node name="StaticBody2D38" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(506, 116)
+
+[node name="StaticBody2D39" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(528, 116)
+
+[node name="StaticBody2D40" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(550, 116)
+
+[node name="StaticBody2D41" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(572, 116)
+
+[node name="StaticBody2D42" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(594, 116)
+
+[node name="StaticBody2D43" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(616, 116)
+
+[node name="StaticBody2D44" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(638, 116)
+
+[node name="StaticBody2D45" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(660, 116)
+
+[node name="StaticBody2D46" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(682, 116)
+
+[node name="StaticBody2D47" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(704, 116)
+
+[node name="StaticBody2D48" parent="map/b" instance=ExtResource("4_0cf6r")]
+position = Vector2(726, 116)
+
+[node name="u" type="Node2D" parent="map"]
+position = Vector2(0, -450)
+
+[node name="StaticBody2D" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-308, 116)
+
+[node name="StaticBody2D2" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-286, 116)
+
+[node name="StaticBody2D3" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-264, 116)
+
+[node name="StaticBody2D4" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-242, 116)
+
+[node name="StaticBody2D5" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-220, 116)
+
+[node name="StaticBody2D6" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-198, 116)
+
+[node name="StaticBody2D7" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-176, 116)
+
+[node name="StaticBody2D8" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-154, 116)
+
+[node name="StaticBody2D9" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-132, 116)
+
+[node name="StaticBody2D10" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-110, 116)
+
+[node name="StaticBody2D11" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-88, 116)
+
+[node name="StaticBody2D12" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-66, 116)
+
+[node name="StaticBody2D13" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-44, 116)
+
+[node name="StaticBody2D14" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(-22, 116)
+
+[node name="StaticBody2D15" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(0, 116)
+
+[node name="StaticBody2D16" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(22, 116)
+
+[node name="StaticBody2D17" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(44, 116)
+
+[node name="StaticBody2D18" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(66, 116)
+
+[node name="StaticBody2D19" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(88, 116)
+
+[node name="StaticBody2D20" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(110, 116)
+
+[node name="StaticBody2D21" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(132, 116)
+
+[node name="StaticBody2D22" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(154, 116)
+
+[node name="StaticBody2D23" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(176, 116)
+
+[node name="StaticBody2D24" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(198, 116)
+
+[node name="StaticBody2D25" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(220, 116)
+
+[node name="StaticBody2D26" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(242, 116)
+
+[node name="StaticBody2D27" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(264, 116)
+
+[node name="StaticBody2D28" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(286, 116)
+
+[node name="StaticBody2D29" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(308, 116)
+
+[node name="StaticBody2D30" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(330, 116)
+
+[node name="StaticBody2D31" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(352, 116)
+
+[node name="StaticBody2D32" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(374, 116)
+
+[node name="StaticBody2D33" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(396, 116)
+
+[node name="StaticBody2D34" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(418, 116)
+
+[node name="StaticBody2D35" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(440, 116)
+
+[node name="StaticBody2D36" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(462, 116)
+
+[node name="StaticBody2D37" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(484, 116)
+
+[node name="StaticBody2D38" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(506, 116)
+
+[node name="StaticBody2D39" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(528, 116)
+
+[node name="StaticBody2D40" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(550, 116)
+
+[node name="StaticBody2D41" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(572, 116)
+
+[node name="StaticBody2D42" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(594, 116)
+
+[node name="StaticBody2D43" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(616, 116)
+
+[node name="StaticBody2D44" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(638, 116)
+
+[node name="StaticBody2D45" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(660, 116)
+
+[node name="StaticBody2D46" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(682, 116)
+
+[node name="StaticBody2D47" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(704, 116)
+
+[node name="StaticBody2D48" parent="map/u" instance=ExtResource("4_0cf6r")]
+position = Vector2(726, 116)
+
+[node name="for_anim" type="Node2D" parent="."]
+
+[node name="Cucumber-stoneWithSword" type="Sprite2D" parent="for_anim"]
+position = Vector2(259, -119)
+scale = Vector2(1.84, 1.84)
+texture = ExtResource("6_mn20v")
+flip_h = true
+
+[node name="Sword" type="Sprite2D" parent="for_anim/Cucumber-stoneWithSword"]
+visible = false
+position = Vector2(-27.7174, 4.89131)
+scale = Vector2(0.543478, 0.543478)
+texture = ExtResource("3_l3y24")
+
+[node name="Cucumber-stoneWithSword2" type="Sprite2D" parent="for_anim"]
+z_index = -1
+position = Vector2(277, -119)
+scale = Vector2(1.84, 1.84)
+texture = ExtResource("8_72ymx")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(0, 0, 15, 19)
+
+[node name="Cucumber-stoneWithSword3" type="Sprite2D" parent="for_anim"]
+z_index = -1
+position = Vector2(246, -119)
+scale = Vector2(1.84, 1.84)
+texture = ExtResource("8_72ymx")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(14, 0, 21, 19)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="tchscreen" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="movement" type="Control" parent="CanvasLayer/tchscreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="left" type="Control" parent="CanvasLayer/tchscreen/movement"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -108.0
+offset_right = 202.0
+grow_vertical = 0
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="CanvasLayer/tchscreen/movement/left"]
+position = Vector2(5, 103)
+rotation = -1.5708
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("9_cykbs")
+action = "movement_left"
+visibility_mode = 1
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="CanvasLayer/tchscreen/movement/left"]
+position = Vector2(181.925, 17)
+rotation = 1.5708
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("9_cykbs")
+action = "movement_right"
+visibility_mode = 1
+
+[node name="right" type="Control" parent="CanvasLayer/tchscreen/movement"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -118.0
+offset_top = -224.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer/tchscreen/movement/right"]
+position = Vector2(27, 37.075)
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("9_cykbs")
+action = "movement_up"
+visibility_mode = 1
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="CanvasLayer/tchscreen/movement/right"]
+position = Vector2(112.93, 218.925)
+rotation = 3.14159
+scale = Vector2(0.491428, 0.491428)
+texture_normal = ExtResource("9_cykbs")
+action = "movement_down"
+visibility_mode = 1
+
+[node name="cucumber_hp" type="ProgressBar" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -159.5
+offset_right = 159.5
+offset_bottom = 27.0
+grow_horizontal = 2
+theme = SubResource("Theme_jnf3u")
+step = 1.0
+value = 100.0
+
+[node name="Label" type="Label" parent="CanvasLayer/cucumber_hp"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.0
+offset_top = -1.0
+offset_right = 39.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "cucumber"
+
+[node name="player_hp" type="ProgressBar" parent="CanvasLayer"]
+offset_right = 190.0
+offset_bottom = 27.0
+theme = SubResource("Theme_evm7s")
+step = 1.0
+value = 100.0
+
+[node name="Label" type="Label" parent="CanvasLayer/player_hp"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.0
+offset_top = -1.0
+offset_right = 39.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "you"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nk68q")
+}
+
+[editable path="BOXman"]

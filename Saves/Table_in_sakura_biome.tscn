@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://doyk488jp4x8s"]
+
+[ext_resource type="Texture2D" uid="uid://cb6vyd5ehyo4e" path="res://Sprites/Table_in_sakura_biome.png" id="1_34rft"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(22.5, 14.5)
+scale = Vector2(0.45, 0.62)
+texture = ExtResource("1_34rft")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(4, 29, 6, 29, 6, 24, 37, 21, 37, 28, 40, 28, 41, 0, 5, 3, 3, 23, 3, 29)
