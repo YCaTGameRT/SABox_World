@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://dl6ve4yp1x0xj"]
+[gd_scene load_steps=33 format=3 uid="uid://dl6ve4yp1x0xj"]
 
 [ext_resource type="Script" path="res://Scripts/ingame.gd" id="1_df3qd"]
 [ext_resource type="PackedScene" uid="uid://c8tlpplw1f1ii" path="res://Saves/BOXman.tscn" id="2_4ff61"]
@@ -21,15 +21,9 @@
 [ext_resource type="PackedScene" uid="uid://bf7dhhn8hriw0" path="res://Saves/Spring_bunny.tscn" id="23_qd421"]
 [ext_resource type="PackedScene" uid="uid://dqkafnfhkdfdv" path="res://Saves/Katana.tscn" id="26_h07m0"]
 [ext_resource type="PackedScene" uid="uid://doyk488jp4x8s" path="res://Saves/Table_in_sakura_biome.tscn" id="27_qewml"]
-[ext_resource type="Texture2D" uid="uid://b2hamuxwudovf" path="res://Sprites/No_collision_oak.png" id="28_bjos1"]
 [ext_resource type="PackedScene" uid="uid://cv2r10ixlfjjp" path="res://Saves/Sand_garden.tscn" id="28_mko82"]
-[ext_resource type="Texture2D" uid="uid://dk37xi51mf20j" path="res://Sprites/Spruce_legacy.png" id="29_7vmhv"]
 [ext_resource type="PackedScene" uid="uid://j4evow7mpuft" path="res://Saves/Christmas_tree.tscn" id="29_a1xse"]
-[ext_resource type="Texture2D" uid="uid://bm51dx1s8kqs5" path="res://Sprites/Spruce.png" id="29_dj5vn"]
-[ext_resource type="Texture2D" uid="uid://da8s5ce7c7ytf" path="res://Sprites/Oak.png" id="30_6rx5f"]
 [ext_resource type="Script" path="res://Scripts/save_manager.gd" id="30_cvwhh"]
-[ext_resource type="Texture2D" uid="uid://bs6rmcy4gs5ey" path="res://Sprites/Spring_oak_legacy.png" id="30_nn0gb"]
-[ext_resource type="Texture2D" uid="uid://y1fqb8ouxg03" path="res://Sprites/Spring_oak.png" id="31_to2u4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcjgw"]
 size = Vector2(47.2616, 12.1905)
@@ -51,72 +45,10 @@ size = Vector2(374, 270)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jie0i"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_54t11"]
-texture = ExtResource("30_6rx5f")
-texture_region_size = Vector2i(22, 30)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11, 15, -11, -15, 11, -15, 11, 15)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8cxsc"]
-texture = ExtResource("28_bjos1")
-texture_region_size = Vector2i(22, 30)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_spwxw"]
-texture = ExtResource("29_7vmhv")
-texture_region_size = Vector2i(22, 30)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11, -15, 11, -15, 11, 15, -11, 15)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1jfwd"]
-texture = ExtResource("30_6rx5f")
-texture_region_size = Vector2i(22, 30)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11, -15, 11, -15, 11, 15, -11, 15)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gbsbt"]
-texture = ExtResource("29_dj5vn")
-texture_region_size = Vector2i(22, 30)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11, -15, 11, -15, 11, 15, -11, 15)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ba8s6"]
-texture = ExtResource("30_nn0gb")
-texture_region_size = Vector2i(22, 30)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11, -15, 11, -15, 11, 15, -11, 15)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m5cog"]
-texture = ExtResource("31_to2u4")
-texture_region_size = Vector2i(22, 30)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11, -15, 11, -15, 11, 15, -11, 15)
-
 [sub_resource type="TileSet" id="TileSet_ws71y"]
 tile_size = Vector2i(22, 30)
 physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_jie0i")
-sources/1 = SubResource("TileSetAtlasSource_54t11")
-sources/2 = SubResource("TileSetAtlasSource_8cxsc")
-sources/3 = SubResource("TileSetAtlasSource_spwxw")
-sources/4 = SubResource("TileSetAtlasSource_1jfwd")
-sources/5 = SubResource("TileSetAtlasSource_gbsbt")
-sources/6 = SubResource("TileSetAtlasSource_ba8s6")
-sources/7 = SubResource("TileSetAtlasSource_m5cog")
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_df3qd")
