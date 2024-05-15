@@ -5,7 +5,4 @@ func _process(delta):
 
 func exit():
 	Save_manager.get_instance().save_game()
-	get_tree().change_scene_to_packed(load("res://scenes/main_menu.tscn"))
-
-
-
+	get_tree().change_scene_to_packed(load("res://Scenes/main_menu.tscn"))
