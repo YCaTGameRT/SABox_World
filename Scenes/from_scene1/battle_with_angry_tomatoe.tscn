@@ -88,7 +88,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("tomatoe/Sprite2D:visible")
+tracks/4/path = NodePath("tomatoe/sprite:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -117,9 +117,10 @@ _data = {
 
 [node name="battle_with_angry_tomatoe" type="Node2D"]
 
-[node name="BOXman" parent="." instance=ExtResource("1_s08bw")]
+[node name="BOXman" parent="." node_paths=PackedStringArray("anim_player2") instance=ExtResource("1_s08bw")]
 position = Vector2(223, -111)
 script = ExtResource("2_u7cjs")
+anim_player2 = NodePath("../AnimationPlayer")
 
 [node name="Sprite2D" parent="BOXman" index="0"]
 flip_h = true
@@ -140,11 +141,13 @@ position = Vector2(-47.2616, 24.3809)
 scale = Vector2(2, 2)
 texture = ExtResource("4_35h2n")
 
-[node name="tomatoe" type="CharacterBody2D" parent="."]
+[node name="tomatoe" type="CharacterBody2D" parent="." node_paths=PackedStringArray("_player", "_anim2")]
 position = Vector2(292, -109)
 script = ExtResource("9_lckan")
+_player = NodePath("../BOXman")
+_anim2 = NodePath("../AnimationPlayer")
 
-[node name="Sprite2D" type="Sprite2D" parent="tomatoe"]
+[node name="sprite" type="Sprite2D" parent="tomatoe"]
 texture = ExtResource("10_ynbgh")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tomatoe"]

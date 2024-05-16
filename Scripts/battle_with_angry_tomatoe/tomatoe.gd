@@ -13,8 +13,8 @@ func _physics_process(delta):
 		velocity = vector * _speed
 		
 		if vector.x > 0:
-			_sprite.flip_h = false
-		elif vector.x < 0:
 			_sprite.flip_h = true
+		elif vector.x < 0:
+			_sprite.flip_h = false
 		
 		move_and_slide()
