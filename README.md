@@ -27,6 +27,6 @@
       <a><strong>TeamPlayGame</strong>: farfind and YCaTGameRT.</a>
     <h2>Licenses</h2>
       <h3>Code license:</h3>
-        <a>The code is licensed by MIT License</a>
+        <a>The code is licensed by <a href="https://github.com/YCaTGameRT/SABox_World/blob/main/LICENSE">MIT License</a></a>
     </body>
 </html>
